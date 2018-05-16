@@ -1,0 +1,334 @@
+# DM-UY 2193 Intro to Web
+
+![NYU](http://ws2.polishedsolid.com/de/nyu_soe_logo.png)
+#### Integrated Digital Media • Technology, Culture & Society Department 
+
+    Heather Moore • hm90@nyu.edu • Fall 2018 
+    Tuesdays & Thursdays • 8:30-10:20a • Room TBD • 3 credit hrs
+    Office hours by appointment or directly after class 
+
+###Slack: nyuweb.slack.com
+
+## Course overview
+
+Intro to Web Development is a live-coding and discussion course focused on HTML, CSS and JavaScript.
+
+We will examining some history of the web, and spend a lot of time exploring the structure of visual pieces: html, 
+css, and javascript. We will evaluate some of the ways in which people create webpages, and ultimately 
+build on these perspectives to create our pages online. This course employs three interconnected practices: reading, 
+talking and coding.
+ 
+The first objective is to expose you to a wide range of readings and code exercises that deal with the structure and function of the web. Engaging in discussion with your peers is crucial to the creation of a learning community. The structure of this course will reinforce that, showing that what you see and find is not what others see and find. Student led discussions are perhaps the most important part. The course will not be dominated by the professor. Many classes will be held as a mob programming sessions.
+
+## Course Structure
+Class time will be spent on lecture, live-coding, Q&A, and student facilitations. Assignments will consist of online tutorials as well as weekly projects that build on each week’s topics of discussion.
+
+## Software to get in advance
+* Browser: Chrome
+* Github Account: github.com/join
+* Text Editor of your choice
+
+## Grading
+
+**Class Participation + Short Weekly Assignments 40%**
+
+  Consists of three components: attendance, contributions to discussions, and graded assignments. Please do not underestimate the effect that each element will have on your final grade.
+  
+  Attendance and active participation in discussion is a requirement. If you don't show up, you can't participate. If you know you must miss a class, email me with `Name: ABSENT-yyyy-mm-dd` in the subject line before the class. You are responsible for doing all the exercises on time and showing up with questions and ideas that contribute to the learning community.
+  
+  Weekly assignments will be submitted on GitHub and will be given a + (sufficient), ++ (extra effort), or a - (insufficient effort). If you receive a -, you will need to redo the assignment before the next week.
+
+
+**PLEASE NOTE: 3 unexcused absences will result in your grade dropping 10%**
+
+  
+**Peer Facilitation 30%**
+
+Leading Class Discussion. Presentations are an opportunity for a pair of students to structure and facilitate the discussion of an assigned activity.
+
+**Final Project 30%**
+
+You will be building a website using html, css and javascript. It can be a game, a content site, an artistic rendering done with css. I highly suggest starting work on this early. You must submit a title, brief description, short outline and tech component list by November 15th.
+ 
+## Qualitative Grading Overview
+
+Each student will be judged on the quality, experimentation, and improvement that their work shows.
+
+### A. Very Good (90-100)
+
+Performance, participation, and attendance of the student has been of the highest level, showing sustained excellence in meeting course responsibilities. Work clearly differentiates itself from other work, has memorable impact, pursues concepts and techniques above and beyond what is discussed in class.
+
+### B. Good (80-89)
+
+Performance, participation, and attendance of the student has been good, though not of the highest level. Work demonstrates a better than average web design and development process.
+
+### C. Average (70-79)
+
+Performance and attendance of the student has been adequate, satisfactorily meeting the course requirements. Work is average, showing a basic understanding of the web development process.
+
+### D. Poor (60-69)
+
+Performance and attendance of the student has been less than adequate. Work is lacking in many or most areas. Problems may include lack of interest, procrastination, poor planning and poor craft.
+
+### F. Unacceptable (59 & Below)
+
+Performance and attendance of the student has been such that course requirements have not been met. Work shows no overall understanding of the course material on many levels.
+
+## Academic Honesty
+
+All work for this class must be your own and specific to this semester. Any work recycled from other classes or from another, non-original source will be rejected with serious implications for the student. Plagiarism, knowingly representing the words or ideas of another as one’s own work in any academic exercise, is absolutely unacceptable. Any student who commits plagiarism must re-do the assignment for a grade no higher than a D. In fact, a D is the highest possible course grade for any student who commits plagiarism.
+
+## Accommodations
+
+If you are student with a disability who is requesting accommodations, please
+ contact New York University’s Moses Center for Students with Disabilities at 1-212-998-4980 or mosescsd@nyu.edu.  You must be registered with CSD to receive accommodations.  Information about the Moses Center can be found at www.nyu.edu/csd. The Moses Center is located at 726 Broadway on the 2nd floor.
+
+## Feedback
+
+We would love your feedback on the course! Please DM me in Slack.
+
+## Notable Dates
+You can find the official academic calendar [here](https://www.nyu.edu/registrar/calendars/university-academic-calendar.html#1184)
+
+**Monday, September 17, 2018**  - Monday, September 17, 2018 Last day to drop a class and receive a refund of 100% of tuition & fees for Undergraduate, Graduate and Diploma students who are dropping classes, but will remain enrolled in at least one course.
+
+Last day to drop Fall 2018 classes and not receive a grade of 'W'
+
+**Monday, October 8, 2018** - Fall Recess
+No classes scheduled
+
+**Monday, November 5, 2018** - Last day to use the Leave and Withdrawal process to submit a fall semester term withdrawal request or submit a request to withdraw from a course. Students should consult the academic calendar of their home school for specific deadlines pertaining to course withdrawal for the term.
+
+**Wednesday, November 21, 2018 - Friday, November 23, 2018** - Student Thanksgiving Recess
+No classes scheduled
+
+**Friday, December 14, 2018** - Last day of Fall 2018 classes
+
+
+## Schedule of Meetings & Readings
+
+**Part I: Starter Skills**
+
+**Week 1 (9/4,9/6): Commandline, Git, GitHub, Editor, HTML, CSS**
+
+Activities
+* Push a basic HTML page to Gitpages public page [https://www.flickr.com/]
+* Add basic style to the page inline
+
+Topics
+* Git: push, pull, merge, commit, branch
+* HTML structure
+* Tags: HTML, BODY, HEAD, H1, P, OL, LI, TABLE, STRONG, A, IMG, FORM, STYLE, ARTICLE, NAV
+* Tag attributes
+* Browser basic styles
+* Semantic HTML
+* Evolution of HTML
+
+Refs
+* https://developer.mozilla.org/en-US/docs/Web/HTML/Element (All elements)
+* http://blog.teamtreehouse.com/git-for-designers-part-1
+
+**Week 2 (9/11,9/13): CSS, Box Model**
+
+Activities
+* Style pages from external style sheets
+* Create a basic webpage with box model layout
+* Push a modification to your page (branch/merge with git)
+
+Topics
+* CSS Selectors & Declarations
+* Link tag
+* The Cascade
+* Inheritance
+* Text styles
+* Border, Margin & Padding
+* Inline & Block & Inline-Block
+* Layout
+* Floats
+
+Refs
+* https://flukeout.github.io/
+
+**Week 3 (9/18,9/20): Flexbox & CSS Grid**
+
+Activities
+* Redo page with flexbox layout
+* Redo page with CSS Grid
+
+Topics
+* Browser compatibility
+* Resets
+
+Refs
+* https://flexboxfroggy.com/
+ 
+
+**Week 4 (9/25,9/27): UX, Mobile CSS, em, rem, fonts**
+
+Activities
+* Create a wireframe
+* Update page for mobile with media queries
+* Intro to fonts + colors
+
+Topics
+* Media Queries
+* Rems, ems, rem-calcs
+* Colors RGB, Hex
+
+Refs
+* https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good
+-b8e2a6c78b06
+* https://github.com/necolas/idiomatic-css
+* https://goodstuff.fm/nbsp/137
+* https://www.nngroup.com/
+* https://color.adobe.com/explore/?filter=most-popular&time=month
+* http://www.colorzilla.com/gradient-editor/
+
+**Week 5 (10/2,10/4): Frameworks**
+
+Activities
+* Overlay a framework onto your page
+* Inspect a progress bar component to see what you get for free
+* Make our own very basic framework
+
+Topics
+* When to use a framework?
+* HTML email styling
+* Beware: Over-specific selectors
+* SASS
+* BEM
+
+Refs
+* http://getskeleton.com/
+* https://foundation.zurb.com/emails/email-templates.html
+
+
+**Week 6 (10/11): Javascript Intro, JSON, DOM Events**
+
+Activities
+* Make an alert pop up from browser console
+* Make page react to clicks & scrolls
+
+Topics
+* Global variables
+* Functions
+* Loose typing
+* JSON
+* Numbers, Strings, Expressions
+
+Refs
+* http://es6katas.org/
+* https://syntax.fm/show/039/is-jquery-dead
+
+**Week 7 (10/16,10/18): JS Continued**
+
+**Week 8 (10/23,10/25): CSS Animations, Touch Events**
+
+Activities
+* Make page react to swipes & taps
+* Use of keyframes for animation
+
+Topics
+* CSS Animation property
+* Keyframes
+* Easings
+
+Refs
+* https://blog.prototypr.io/how-i-started-drawing-css-images-3fd878675c89
+* https://codepen.io/matchboxhero/pen/LzdgOv?editors=1100
+* https://easings.net/en
+
+- October 9th is a Legistlative day operating on a Monday schedule. We will not 
+have class on the 9th.
+
+
+**Week 9 (10/30,11/1): Accessibility, Bubbling/Capturing Events**
+
+Activities
+* Guest lecture on accessibility from Claire
+* Show examples of accessible and inaccessible websites
+* Try to navigate with just your keyboard
+* Show capture vs bubble stack and how to control event propogation
+* Show a focus event that does not bubble
+
+Topics
+*The A11Y Project
+*ARIA
+*Add/remove event listeners
+*Multiple handlers
+*The event object
+
+Refs
+* https://www.w3.org/WAI/fundamentals/accessibility-intro/
+* http://zomigi.com/blog/videos-of-screen-readers-using-aria-updated/
+* https://javascript.info/bubbling-and-capturing
+
+Claire will teach on the 16th?
+
+**Week 10 (11/6,11/8): Forms, Http Methods**
+
+Activities
+* Build a form and submit it
+
+Topics
+* GET/POST
+* Input elements
+* Checkboxes/Radios
+* Form UX
+
+Refs
+* https://www.smashingmagazine.com/2017/06/designing-efficient-web-forms/
+
+
+**Week 11 (11/13,11/15): JS Application**
+
+Activities
+* Build basic vue.js app
+
+Topics
+* Webpack
+
+Refs
+* https://jsfiddle.net/boilerplate/vue
+
+
+**Week 12 (11/20): JS Application Continued**
+
+Activities
+
+Topics
+
+Refs
+
+**Week 13 (11/27,11/29): JS Application Continued, User Testing**
+
+Activities
+* Perform a UX test on a peer
+
+Topics
+* User research
+* UX research
+
+Refs
+
+
+**Week 14 (12/4,12/6): PMing & Freelancing**
+
+Activities
+* Create a useful user story
+* Review a real readlined IC Agreement
+
+Topics
+* LLC vs Corp
+* MSA & SOW contracts/redlining
+* IC agreements
+* Time tracking & reporting
+* Setting expectations for working with lawyers & bookkeepers/accountants
+* Taxes (and taxes from remote work)  
+
+Refs
+* https://www.northwestregisteredagent.com/
+* https://www.mbopartners.com/blog/what-should-an-independent-contractor-agreement-include
+
+**Week 15 (12/11,12/13): Final Presentations**
+
