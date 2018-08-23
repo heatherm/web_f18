@@ -1,361 +1,404 @@
 <!doctype html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="utf-8">
-    <title>NYU Web Dev Fall 2018</title>
-    <meta name="description" content="HTML, CSS and Javascript Basics">
-    <meta name="author" content="Heather Moore">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset='utf-8'>
+  <title>NYU Web Dev Fall 2018</title>
+  <meta name='description' content='HTML, CSS and Javascript Basics'>
+  <meta name='author' content='Heather Moore'>
+  <meta name='apple-mobile-web-app-capable' content='yes'>
+  <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css"
-          id="theme">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js" defer></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css'
+        id='theme'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js' defer></script>
 </head>
 <body>
-<div class="reveal">
-    <div class="slides">
-        <section>
-            <h1>Intro to Web</h1>
-            <h3>Fall 2018</h3>
-            <h5>Tandon School of Engineering, NYU</h5>
-            <p>
-                <small>Prof <a href="http://heather.work">Heather Moore</a> hm90@nyu.edu</small>
-            </p>
-        </section>
+<div class='reveal'>
+  <div class='slides'>
+    <section>
+      <h1>Intro to Web</h1>
+      <h3>Fall 2018</h3>
+      <h5>Tandon School of Engineering, NYU</h5>
+      <p>
+        <small>Prof <a href='http://heather.work'>Heather Moore</a> hm90@nyu.edu</small>
+      </p>
+    </section>
 
-        <section>
-            <h2>Today</h2>
-            <ul>
-                <li>Intros</li>
-                <li>Syllabus</li>
-                <li>Git + Github</li>
-                <li>HTML + CSS Basics</li>
-                <li>Homework 1 <strong>Due next Tuesday</strong></li>
-            </ul>
-        </section>
+    <section>
+      <h2>Today</h2>
+      <ul>
+        <li>Intros</li>
+        <li>Syllabus</li>
+        <li>Browser Basics</li>
+        <li>HTML + CSS Basics</li>
+        <li>Homework 1 <strong>Due next Tuesday</strong></li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Intro to Web</h2>
-            <p>Introduction to "font end" web development</p>
-            <small>HTML, CSS, JavaScript</small>
-        </section>
+    <section>
+      <h2>Pair Interviews</h2>
+      <p>Introduce your partner...</p>
+    </section>
 
-        <section>
-            <h2>Who is in here?</h2>
-            <p>Mostly 2nd and 3rd year IDM students</p>
-            <p>And why...?</p>
-        </section>
+    <section>
+      <h2>Intro to Web - DM-UY 2193</h2>
+      <p>Introduction to "font end" web development</p>
+      <small>HTML, CSS, JavaScript</small>
+      <blockquote>In this course, students focus on client-side programming [...] to
+                  enable the production of a website of professional quality in design and production.
+      </blockquote>
+    </section>
 
-        <section>
-            <h2>CSS can be rough</h2>
-            <img src="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2013/07/css-is-awesome-700x375.jpg">
-        </section>
+    <section>
+      <img
+           width='600'
+           src='https://scontent-arn2-1.cdninstagram.com/vp/e76d9847da9930a76832db99eb63a44a/5C17F143/t51.2885-15/e35/38833135_1872689819464232_3545839121706516480_n.jpg'>
+    </section>
 
-        <section>
-            <h2>The ecosystem is full and ever-changing</h2>
-            <img src="https://cdn-images-1.medium.com/max/1600/1*aalTd6nKuVR31c3-bEED8g.jpeg">
-        </section>
+    <section>
+      <h2>Goals</h2>
+      <ul>
+        <li>Create and host a dynamic, responsive website</li>
+        <li>Know how to get help when you need it</li>
+        <li>Be able to build for many audiences</li>
+        <li>Be able to start a web business in NY</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>DM-UY 2193</h2>
-            <blockquote>In this course, students focus on client-side programming [...] to
-                enable the production of a website of professional quality in design and production.
-            </blockquote>
-        </section>
+    <section>
+      <h2>Tech Used</h2>
+      <ul>
+        <li>Editor (I don't care which one). I use IDEA.</li>
+        <li>Chrome</li>
+        <li>Git & Github</li>
+        <li>CSS: Gulp & SASS (+ node & npm)</li>
+        <li>Vanilla JS & Vue.js</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Goals</h2>
-            <ul>
-                <li>Create and host a dynamic, responsive website</li>
-                <li>Know how to get help when you need it</li>
-                <li>Be able to build for different audiences</li>
-                <li>Be able to start a web business in NY</li>
-            </ul>
-        </section>
+    <section>
+      <h2>Feedback</h2>
+      <p>+1</p>
+    </section>
 
-        <section>
-            <h2>NOTICE</h2>
-            <p>This is my first time teaching this particular course. There will be
-                mistakes. Things may change as we go. I welcome constructive feedback.</p>
-        </section>
+    <section>
+      <h2>Syllabus Highlights</h2>
+    </section>
 
-        <section>
-            <h2>Communication</h2>
-            <p>
-                Slack @ nyuweb.slack.com
-            </p>
-            <p>
-                Channel #2018-fall-students
-            </p>
+    <section>
+      <h2>Communication</h2>
+      <p>
+        nyuweb.slack.com #2018-fall-students
+      </p>
+      <p>
+        hm90@nyu.edu
+      </p>
 
-            <small>Join with your .nyu email</small>
-            <small>Office hour are after class or by appointment</small>
-        </section>
+      <small>Office hours are after class or by appointment</small>
+    </section>
 
-        <section>
-            <h2>Classes</h2>
-            <p>
-                TTh 8:30-10:20
-            </p>
-            <small><span>Please arrive on time</span><span class="fragment">. I might not let you in.</span></small>
-        </section>
+    <section>
+      <h2>Classes</h2>
+      <p>
+        TTh 8:30-10:20
+      </p>
+    </section>
 
-        <section>
-            <h2>Waitlisted?</h2>
-            <p>I will look at the list later today and get back to you in a few days.</p>
-        </section>
+    <section>
+      <h2>Grading</h2>
+      <p>
+        40% Participation + Homework
+      </p>
+      <p>
+        30% Peer Facilitation
+      </p>
+      <p>
+        30% Final Project
+      </p>
 
-        <section>
-            <h2>Grading</h2>
-            <p>
-                40% Participation + Homework
-            </p>
-            <p>
-                30% Peer Facilitation
-            </p>
-            <p>
-                30% Final Project
-            </p>
+      <small>No exams, no midterms, no final</small>
+      <small>PLEASE NOTE: 3 unexcused absences will result in your grade dropping 10%</small>
+    </section>
 
-            <small>No exams, no midterms, no final</small>
-            <small>PLEASE NOTE: 3 unexcused absences will result in your grade dropping 10%</small>
-        </section>
+    <section>
+      <h2>Class Structure</h2>
+      <ul>
+        <li>30 min review / warm up</li>
+        <li>30 min new content</li>
+        <li>5 min break</li>
+        <li>35 min team activity / share out</li>
+        <li>10 min wrap</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Class Structure</h2>
-            <ul>
-                <li>30 min review / warm up</li>
-                <li>30 min new content</li>
-                <li>5 min break</li>
-                <li>35 min team activity / share out</li>
-                <li>10 min wrap</li>
-            </ul>
-        </section>
+    <section>
+      <h2>Accommodations</h2>
+      <p>
+        Contact New York University’s Moses Center for Students with Disabilities at <a
+           href='tel:1-212-998-4980'>1-212-998-4980</a> or
+        <a href='mailto:mosescsd@nyu.edu'>mosescsd@nyu.edu</a>
+      </p>
+      <small>You must be registered with CSD to receive accommodations, but come talk to me so we can get you setup
+             ASAP
+      </small>
+    </section>
 
-        <section>
-            <h2>Accommodations</h2>
-            <p>
-                Contact New York University’s Moses Center for Students with Disabilities at <a
-                    href="tel:1-212-998-4980">1-212-998-4980</a> or
-                <a href="mailto:mosescsd@nyu.edu">mosescsd@nyu.edu</a>
-            </p>
-            <small class="fragment">You must be registered with CSD to receive accommodations...</small>
+    <section>
+      <h2>Waitlisted?</h2>
+      <p>I will look at the list later today and get back to you in a few days.</p>
+    </section>
 
-            <small class="fragment">but come talk to me so we can get you setup ASAP</small>
-        </section>
+    <section>
+      <h2>Final Words</h2>
+      <p>Do not cheat</p>
+      <p>Push your own learning</p>
+      <p>Teach what you know</p>
+    </section>
 
-        <section>
-            <h2>Tech Stack</h2>
-            <ul>
-                <li>Editor (I don't care which one). I use IDEA.</li>
-                <li>Chrome</li>
-                <li>Git & Github</li>
-                <li>CSS: Gulp & SASS (+ node & npm)</li>
-                <li>Vanilla JS & Vue.js</li>
-            </ul>
-        </section>
+    <section>
+      <h2>Thoughts?</h2>
+      <h2>Comments?</h2>
+    </section>
 
-        <section>
-            <h2>Obligatory Statements</h2>
-            <p>Do not cheat</p>
-            <p>Act with integrity</p>
-            <p>Push your own learning</p>
-            <p>Teach what you know</p>
-        </section>
+    <section>
+      <h2>Today</h2>
+      <ul>
+        <li style='text-decoration: line-through'>Intros</li>
+        <li style='text-decoration: line-through'>Syllabus</li>
+        <li>Browser Basics</li>
+        <li>HTML + CSS Basics</li>
+        <li>Homework 1 <strong>Due next Tuesday</strong></li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Thoughts?</h2>
-            <h2>Comments?</h2>
-        </section>
+    <section>
+      <h2>Let's create a website</h2>
+    </section>
 
-        <section>
-            <h2>Today</h2>
-            <ul>
-                <li style="text-decoration: line-through">Intros</li>
-                <li style="text-decoration: line-through">Syllabus</li>
-                <li>Git + Github</li>
-                <li>HTML + CSS Basics</li>
-                <li>Homework 1 <strong>Due next Tuesday</strong></li>
-            </ul>
-        </section>
+    <section>
+      <h2>Github Pages</h2>
+      <ul>
+        <li>New Repo</li>
+        <li>Add index.html</li>
+        <li>Settings > Github Pages > set github source to master branch</li>
+        <li>Click autogenerated link</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Let's create a website</h2>
-        </section>
+    <section>
+      <h2>What went into showing me this?</h2>
+      <img src='img/basic.png'>
+    </section>
 
-        <section>
-            <h2>Github Pages</h2>
-            <ul>
-                <li>New Repo</li>
-                <li>Add index.html</li>
-                <li>Settings > Github Pages > set github source to master branch</li>
-                <li>Click autogenerated link</li>
-            </ul>
-        </section>
+    <section>
+      <h2>Chrome Browser to Github.io Server</h2>
+      <ol>
+        <li>Browser Requests the index.html</li>
+        <li>Server Sends the index.html page to my browser</li>
+        <li>Browser reads and renders index.html</li>
+      </ol>
+      <img src='img/browser-server-communication.jpg'>
+    </section>
 
-        <section>
-            <h2>How am I seeing that page?</h2>
-            <img src="img/basic.png">
-        </section>
+    <section>
+      <h2>Read + Render</h2>
+      <img width='600px' src='https://cdn-images-1.medium.com/max/1600/1*ngIVtZnJxZX6vuzv6jQbew.png'>
+    </section>
 
-        <section>
-            <h2>Chrome Browser</h2>
-            <p>Requests the index.html page from a server</p>
-        </section>
+    <section>
+      <h2>Neverending...</h2>
+      <img src='https://d3nulzlctd9uky.cloudfront.net/blog/wp-content/uploads/2016/11/growing-pythagoras-tree.gif?x24020'>
+    </section>
 
-        <section>
-            <h2>Github.io Server</h2>
-            <p>Stores the index.html page</p>
-            <p>Enables the editing of index.html</p>
-            <p>Sends the index.html page to my browser</p>
-        </section>
+    <section>
+      <h2 style='color: lightgreen'>Rendering Engine</h2>
+      <p>Reads + Renders</p>
+      <p>A render process, usually one per tab</p>
+      <p>8kB chunks from the networking layer</p>
+      <img width='300px' src='https://cdn-images-1.medium.com/max/1600/1*ngIVtZnJxZX6vuzv6jQbew.png'>
+    </section>
 
-        <section>
-            <h2>Chrome Browser</h2>
-            <p><strong>Reads</strong> the index.html page</p>
-            <p><strong>Renders</strong> the index.html page</p>
-        </section>
+    <section>
+      <h2 style='color: lightgreen'>Render Steps</h2>
+      <ol>
+        <li>Load index.html</li>
+        <li>Parse HTML</li>
+        <li>Create "DOM" tree</li>
+        <li>Create render tree</li>
+        <li>Layout render tree</li>
+        <li>Paint</li>
+      </ol>
+    </section>
 
-        <section>
-            <h2>index.html</h2>
-            <p>HTML - Hyper Text Markup Language</p>
-            <p>HTML is made up of <strong style="color: lightseagreen">tags</strong> that<br/> label pieces of
-                <strong>content</strong></p>
-        </section>
+    <section>
+      <h2>Parsing</h2>
+      <p>We need a way to specify different parts of the page and how/where they get drawn.</p>
+    </section>
 
-        <section>
-            <h2 style="color: lightseagreen">h1 Tag</h2>
+    <section>
+      <h2>Markup?</h2>
+      <img src='https://www.evermap.com/AutoInk/AutoInkWrite.gif'>
+      <img src='https://i.ytimg.com/vi/DcdH-wI6Ups/maxresdefault.jpg'>
+    </section>
 
-            <h2>
-                &lt;h1&gt;Hi, Header&lt;/h1&gt;
-            </h2>
-        </section>
+    <section>
+      <h2>Markdown?</h2>
+      <pre><code>
+                Heading
+                =======
 
-        <section>
-            <h2 style="color: lightseagreen">h1 Tag</h2>
+                ## Sub-heading
+            </code></pre>
+    </section>
 
-            <h2>
-                <mark>&lt;h1&gt;</mark>Hi, Header&lt;/h1&gt;
-            </h2>
-        </section>
+    <section>
+      <h2>HTML</h2>
+      <p>Hyper Text Markup Language</p>
+      <p>Denotes structural semantics for text such as headers, paragraphs, lists, links, quotes</p>
+    </section>
 
-        <section>
-            <h2 style="color: lightseagreen">h1 Tag</h2>
+    <section>
+      <h2>Header Tag: h1</h2>
+      <p>lower case!</p>
 
-            <h2>
-                &lt;h1&gt;Hi, Header<mark>&lt;/h1&gt;</mark>
-            </h2>
-            <br/>
-            <p>closing tag has a forward slash</p>
-        </section>
+      <h2>
+        &lt;h1&gt;Hi, Header&lt;/h1&gt;
+      </h2>
+    </section>
 
-        <section>
-            <h2>Starter Tags</h2>
-            <table class="w3-table-all notranslate">
-                <tbody><tr>
-                    <th style="width:20%">Tag</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td><a href="tag_doctype.asp">&lt;!DOCTYPE&gt;</a>&nbsp;</td>
-                    <td>Defines the document type</td>
-                </tr>
-                <tr>
-                    <td><a href="tag_html.asp">&lt;html&gt;</a></td>
-                    <td>Defines an HTML document</td>
-                </tr>
-                <tr>
-                    <td><a href="tag_head.asp">&lt;head&gt;</a></td>
-                    <td>Defines information about the document</td>
-                </tr>
-                <tr>
-                    <td><a href="tag_title.asp">&lt;title&gt;</a></td>
-                    <td>Defines a title for the document</td>
-                </tr>
-                <tr>
-                    <td><a href="tag_body.asp">&lt;body&gt;</a></td>
-                    <td>Defines the document's body</td>
-                </tr>
-                </tbody></table>
-        </section>
+    <section>
+      <h2>Opening Tag</h2>
 
-        <section>
-            <h2>Starter Tags</h2>
-            <table class="w3-table-all notranslate">
-                <tbody>
-                <tr>
-                    <td><a href="tag_hn.asp">&lt;h1&gt; to &lt;h6&gt;</a></td>
-                    <td> Defines HTML headings</td>
-                </tr>
-                <tr>
-                    <td><a href="tag_p.asp">&lt;p&gt;</a></td>
-                    <td>Defines a paragraph</td>
-                </tr>
-                <tr>
-                    <td><a href="tag_br.asp">&lt;br&gt;</a></td>
-                    <td>Inserts a single line break</td>
-                </tr>
-                <tr>
-                    <td><a href="tag_hr.asp">&lt;hr&gt;</a></td>
-                    <td> Defines a thematic change in the content</td>
-                </tr>
-                <tr>
-                    <td><a href="tag_comment.asp">&lt;!--...--&gt;</a></td>
-                    <td>Defines a comment</td>
-                </tr>
-                </tbody></table>
-        </section>
+      <h2>
+        <mark>&lt;h1&gt;</mark>
+      </h2>
+    </section>
 
-        <section>
-            <h2>What about the style tag?</h2>
-            <h3>
+    <section>
+      <h2>
+        <mark>&lt;h1&gt;</mark>
+        Hi, Header
+      </h2>
+    </section>
+
+    <section>
+      <h2>Close Tag</h2>
+
+      <h2>
+        &lt;h1&gt;Hi, Header
+        <mark>&lt;/h1&gt;</mark>
+      </h2>
+      <br/>
+      <p>Closing tag has a forward slash</p>
+    </section>
+
+    <section>
+      <h2>Tags</h2>
+      <p>And open + close tag turns into a DOM element</p>
+      <p>**Not all elements require a start and end**</p>
+      <p>Tags can be nested</p>
+      <p>Tags can have attributes</p>
+    </section>
+
+    <section>
+      <h3>Opening Tag Attributes</h3>
+      <p>onmouseenter allows an element to specify scripts to
+         be run</p>
+      <h6>
+        &lt;h1
+        <mark>onmouseenter="alert()"</mark>&gt;
+      </h6>
+    </section>
+
+    <section>
+      <h2>Class Attribute</h2>
+      <p>Provides a way of classifying similar elements</p>
+      <h6>
+        &lt;h1
+        <mark>class="header--green"</mark>&gt;<br>
+        &lt;h3
+        <mark>class="header--green"</mark>&gt;
+      </h6>
+    </section>
+
+    <section>
+      <h2>Attributes</h2>
+      <p>Attributes available depend on the tag</p>
+      <p>Attributes can add or modify tag behavior</p>
+    </section>
+
+    <section>
+      <h2>Style Tag</h2>
+      <h3>
             <pre>
                 <code>
                 &lt;style&gt;
-                    h1 {color:<span style="color:red">red;</span>}
-                    p  {color:<span style="color:blue">blue;</span>}
+                    h1 {color:<span style='color:red'>red;</span>}
+                    p  {color:<span style='color:blue'>blue;</span>}
                 &lt;/style&gt;
                 </code>
             </pre>
-            </h3>
-        </section>
+      </h3>
+    </section>
 
-        <section>
-            <h2>&lt;style&gt;</h2>
-            <ul>
-                <li>Defines style information for an HTML document</li>
-                <li>Uses CSS to define those styles</li>
+    <section>
+      <h2>&lt;style&gt;</h2>
+      <ul>
+        <li>Defines style information for an HTML document</li>
+        <li>Uses CSS to define those styles</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>CSS</h2>
+      <p>Controls the layout, colors and fonts</p>
+      <code>
+        h1 {color:<span style='color:red'>red;</span>}
+      </code>
+      <p>Makes all h1 elements red</p>
+    </section>
+
+    <section>
+      <h2>Adding CSS</h2>
+      <ul>
+        <li>Inline: style attribute</li>
+        <li>Internal: style tag</li>
+        <li>External: stylesheets</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Inline example</h2>
+      <h6>style attribute</h6>
+      <pre>
                 <code>
-                    h1 {color:<span style="color:red">red;</span>}
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 <mark>style="color:red;"</mark>&gt;<span style='color:red'></span>Hi, header</span>&lt;/h1&gt;
+  &lt;p&gt;This is some text.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
                 </code>
-            </ul>
-        </section>
+            </pre>
+    </section>
 
-        <section>
-            <h2>CSS</h2>
-            <ul>
-                <li>Controls the layout</li>
-                <li>Can be added to HTML many ways</li>
-                <li>Internal: style tag</li>
-                <li>External: stylesheets</li>
-                <li>Cascading Style Sheets</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Internal example</h2>
-            <pre>
+    <section>
+      <h2>Internal example</h2>
+      <h6>style tag</h6>
+      <pre>
                 <code>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
 <mark>    &lt;style&gt;
-        h1 {color:<span style="color:red">red;</span>}
-        p  {color:<span style="color:blue">blue;</span>}
+        h1 {color:<span style='color:red'>red;</span>}
+        p  {color:<span style='color:blue'>blue;</span>}
     &lt;/style&gt;</mark>
 &lt;/head&gt;
 &lt;body&gt;
@@ -365,11 +408,12 @@
 &lt;/html&gt;
                 </code>
             </pre>
-        </section>
+    </section>
 
-        <section>
-            <h2>External example</h2>
-            <pre>
+    <section>
+      <h2>External example</h2>
+      <h6>style sheet</h6>
+      <pre>
                 <code>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -383,11 +427,11 @@
 &lt;/html&gt;
                 </code>
             </pre>
-        </section>
+    </section>
 
-        <section>
-            <h2>Cascade example</h2>
-            <pre>
+    <section>
+      <h2>Cascade example</h2>
+      <pre>
                 <code>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -402,29 +446,33 @@
 &lt;/html&gt;
                 </code>
             </pre>
-        </section>
+    </section>
 
-        <section>
-            <h2>Homework</h2>
-            <ol>
-                <li>Make a webpage using starter tags</li>
-                <li>Link to two external style sheets</li>
-                <li>Style a 'p' tag <mark>different</mark> ways between the sheets</li>
-                <li>Use the text in the 'p' tag to describe what's happening</li>
-                <li>Push to github pages</li>
-            </ol>
-        </section>
+    <section>
+      <h2>Wrapup</h2>
+      <ol>
+        <li>Github, Tags, CSS, JS</li>
+      </ol>
+    </section>
 
-        <section>
-            <h2>Wrapup</h2>
-            <ol>
-                <li>Starter Github</li>
-                <li>Starter Tags</li>
-                <li>Starter CSS</li>
-            </ol>
-        </section>
+    <section>
+      <h2>Homework 1 due Next Tuesday</h2>
+      <ol>
+        <li>Make a webpage using 10 tags and 5 attributes</li>
+        <li>Style your tags in an external css sheet</li>
+        <li>Push to github pages</li>
+      </ol>
+    </section>
 
-    </div>
+    <section>
+      <h2>For Thursday</h2>
+      <ol>
+        <li>Sign up for a free Github <a href='https://github.com/'>account</a></li>
+        <li>Get the free education <a href='https://education.github.com/pack'>pack</a></li>
+      </ol>
+    </section>
+
+  </div>
 </div>
 <script>
   Reveal.initialize({

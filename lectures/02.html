@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>NYU Web Dev Fall 2018</title>
+    <meta name="description" content="HTML, CSS and Javascript Basics">
+    <meta name="author" content="Heather Moore">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css"
+          id="theme">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js" defer></script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li>Review</li>
+                <li>Git</li>
+                <li>HTML Deep Dive</li>
+                <li>Homework 1 <strong>Due next Tuesday</strong></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Syllabus Negotiation</h2>
+        </section>
+
+        <section>
+            <h2>Github</h2>
+            <ul>
+                <li>Added a Repo</li>
+                <li>Pushed to our Pages site</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Request - Response</h2>
+            <img src="img/browser-server-communication.jpg">
+        </section>
+
+        <section>
+            <h2>Read + Render</h2>
+            <img width="600px" src="https://cdn-images-1.medium.com/max/1600/1*ngIVtZnJxZX6vuzv6jQbew.png">
+        </section>
+
+        <section>
+            <h2>HTML</h2>
+            <p>Structural Semantics for text</p>
+        </section>
+
+        <section>
+            <h2>Tags (h1, p)</h2>
+            <p>Become DOM elements</p>
+            <p>Have attributes</p>
+        </section>
+
+        <section>
+            <h2>Attributes</h2>
+            <p>Differ by tag</p>
+            <p>Affect tag behavior</p>
+        </section>
+
+        <section>
+            <h2 style="color: red;">CSS</h2>
+            <p>Controls the layout, colors and fonts</p>
+            <code>
+                h1 {color:<span style="color:red">red</span>;}
+            </code>
+        </section>
+
+        <section>
+            <h2>Adding CSS</h2>
+            <ul>
+            <li>Inline</li>
+            <li>Internal</li>
+            <li>External</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>HW Questions?</h2>
+        </section>
+
+        <section>
+            <h2>Git</h2>
+            <p>Distributed Version Control System (VCS)</p>
+            <p>Track and Share files</p>
+            <p>"repo" = directory</p>
+        </section>
+
+        <section>
+            <h2>Basics</h2>
+            <p><code>git init</code> - initialize a repo</p>
+            <p><code>git status</code> - edited files</p>
+            <p><code>git diff</code> - changes in the files</p>
+            <p><code>git log</code> - prior (committed) changes</p>
+        </section>
+
+        <section>
+            <h2>Make a commit</h2>
+            <p>
+                <pre>
+                <code>
+                    git status
+                    git add *
+                    git commit -m 'first commit'
+                </code>
+                </pre>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Publish your commit</h2>
+            <p>
+            First time
+            <pre>
+                <code>
+git remote add origin https://github.com/heatherm/webfr.git
+                </code>
+            </pre>
+            After that
+            <pre>
+                <code>
+                    git push origin master
+                </code>
+                </pre>
+            </pre>
+        </section>
+
+        <section>
+            <h2>HTML Page</h2>
+            <pre>
+                <code>
+&#x3C;!doctype html&#x3E;
+&#x3C;html lang=&#x27;en-US&#x27;&#x3E;
+&#x3C;head&#x3E;
+  &#x3C;meta charset=&#x27;UTF-8&#x27;&#x3E;
+  &#x3C;meta name=&#x22;viewport&#x22;
+        content=&#x22;width=device-width, initial-scale=1.0&#x22;&#x3E;
+  &#x3C;title&#x3E;descriptive and concise&#x3C;/title&#x3E;
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+  &#x3C;h1&#x3E;Hi header ↗&#x3C;/h1&#x3E;
+  &#x3C;p&#x3E;Some text.&#x3C;/p&#x3E;
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Style</h2>
+            <p>Lowercase element names</p>
+            <pre>
+                <code>
+                        &#x3C;<mark>h1</mark>&#x3E;Hi header&#x3C;/<mark>h1</mark>&#x3E;
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Style</h2>
+            <p>Lowercase attributes names & hyphens</p>
+            <pre>
+                <code>
+              &#x3C;h1 <mark>class='main-header'</mark>&#x3E;Hi header&#x3C;/h1&#x3E;
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Style</h2>
+            <p>Lowercase attributes names, hyphens, no spaces</p>
+            <pre>
+                <code>
+              &#x3C;h1 <mark>class='main-header'</mark>&#x3E;Hi header&#x3C;/h1&#x3E;
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Style</h2>
+            <p>80 characters (max?)</p>
+            <pre>
+                <code>
+&#x3C;h1 <mark>class='main-header'</mark>&#x3E;Hi header that runs on and on and on and on and on andon and on and on and on and on and&#x3C;/h1&#x3E;</code>
+            </pre>
+        </section>
+
+
+    </div>
+</div>
+<script>
+  Reveal.initialize({
+    history: true
+  })
+</script>
+</body>
+</html>

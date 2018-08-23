@@ -4,21 +4,23 @@
 #### Integrated Digital Media • Technology, Culture & Society Department 
 
     Heather Moore • hm90@nyu.edu • Fall 2018 
-    Tuesdays & Thursdays • 8:30-10:20a • Room TBD • 3 credit hrs
-    Office hours by appointment or directly after class 
+    Tuesdays & Thursdays • 8:30-10:20a • 2 MTC Room 824 • 3 credit hrs
+    Office hours directly after class or by appointment 
 
 ###Slack: nyuweb.slack.com
 
-## Course overview
+## Course prerequisites
+
+Basic computer knowledge. Basic familiarity with any programming/scripting language is preferred but no required.
+
+## Course description
 
 Intro to Web Development is a live-coding and discussion course focused on HTML, CSS and JavaScript.
 
-We will examining some history of the web, and spend a lot of time exploring the structure of visual pieces: html, 
-css, and javascript. We will evaluate some of the ways in which people create webpages, and ultimately 
-build on these perspectives to create our pages online. This course employs three interconnected practices: reading, 
-talking and coding.
- 
-The first objective is to expose you to a wide range of readings and code exercises that deal with the structure and function of the web. Engaging in discussion with your peers is crucial to the creation of a learning community. The structure of this course will reinforce that, showing that what you see and find is not what others see and find. Student led discussions are perhaps the most important part. The course will not be dominated by the professor. Many classes will be held as a mob programming sessions.
+We will examining some history of the web, and explore integration of three of it's main components: the content (html), the presentation (css), and the behavior (javascript). We will evaluate some of the ways in which people structure the content and create styled and interactive webpages.
+
+This course employs three interconnected practices: reading, talking and coding. The first objective is to expose you to a wide range of readings and code exercises that deal with the structure and function of the web. Engaging in discussion with your peers is crucial to the creation of a learning community. The structure of this course will reinforce that, showing that what you see and find is not what others see and find. Student led discussions are perhaps the most important part. The course will not be dominated by the professor.
+
 
 ## Course Structure
 Class time will be spent on lecture, live-coding, Q&A, and student facilitations. Assignments will consist of online tutorials as well as weekly projects that build on each week’s topics of discussion.
@@ -107,26 +109,24 @@ No classes scheduled
 
 ## Schedule of Meetings & Readings
 
-**Part I: Starter Skills**
-
-**Week 1 (9/4,9/6): Commandline, Git, GitHub, Editor, HTML, CSS**
+**Week 1 (9/4,9/6): Commandline, Git, GitHub, Editor, Browser, HTML, CSS**
 
 Activities
 * Push a basic HTML page to Gitpages public page [https://www.flickr.com/]
 * Add basic style to the page inline
 
 Topics
-* Git: push, pull, merge, commit, branch
+* Git: status, commit, push
 * HTML structure
-* Tags: HTML, BODY, HEAD, H1, P, OL, LI, TABLE, STRONG, A, IMG, FORM, STYLE, ARTICLE, NAV
+* Tags: HTML, BODY, HEAD, H1, P, OL, LI, TABLE, EM, A, IMG, FORM, STYLE, ARTICLE, NAV
 * Tag attributes
-* Browser basic styles
+* Browser rendering
 * Semantic HTML
-* Evolution of HTML
 
 Refs
 * https://developer.mozilla.org/en-US/docs/Web/HTML/Element (All elements)
 * http://blog.teamtreehouse.com/git-for-designers-part-1
+* 19:20 - 28:30 Dame Wendy & Hypertext [https://vimeo.com/268653081]
 
 **Week 2 (9/11,9/13): CSS, Box Model**
 
@@ -153,7 +153,7 @@ Refs
 
 Activities
 * Redo page with flexbox layout
-* Redo page with CSS Grid
+* Add CSS Grid to a component better rendered via grid
 
 Topics
 * Browser compatibility
@@ -220,6 +220,9 @@ Refs
 * http://es6katas.org/
 * https://syntax.fm/show/039/is-jquery-dead
 
+- October 9th is a Legistlative day operating on a Monday schedule. We will not 
+have class on the 9th.
+
 **Week 7 (10/16,10/18): JS Continued**
 
 **Week 8 (10/23,10/25): CSS Animations, Touch Events**
@@ -238,14 +241,10 @@ Refs
 * https://codepen.io/matchboxhero/pen/LzdgOv?editors=1100
 * https://easings.net/en
 
-- October 9th is a Legistlative day operating on a Monday schedule. We will not 
-have class on the 9th.
-
-
 **Week 9 (10/30,11/1): Accessibility, Bubbling/Capturing Events**
 
 Activities
-* Guest lecture on accessibility from Claire
+* Guest lecture on accessibility
 * Show examples of accessible and inaccessible websites
 * Try to navigate with just your keyboard
 * Show capture vs bubble stack and how to control event propogation
