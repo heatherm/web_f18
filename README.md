@@ -3,11 +3,11 @@
 ![NYU](http://ws2.polishedsolid.com/de/nyu_soe_logo.png)
 #### Integrated Digital Media • Technology, Culture & Society Department 
 
-    Heather Moore • hm90@nyu.edu • Fall 2018 
+    Heather Moore • hm90 at nyu dotedu • Fall 2018 
     Tuesdays & Thursdays • 8:30-10:20a • 2 MTC Room 824 • 3 credit hrs
     Office hours directly after class or by appointment 
 
-###Slack: nyuweb.slack.com
+### Slack: nyuweb.slack.com
 
 ## Course prerequisites
 
