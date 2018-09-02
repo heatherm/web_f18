@@ -29,10 +29,6 @@
         </section>
 
         <section>
-            <h2>Syllabus Negotiation</h2>
-        </section>
-
-        <section>
             <h2>Github</h2>
             <ul>
                 <li>Added a Repo</li>
@@ -116,16 +112,17 @@
 
         <section>
             <h2>Publish your commit</h2>
-            <p>First time</p>
+            <p>First time, establish a destination</p>
             <pre>
                 <code>
 git remote add origin https://github.com/heatherm/webfr.git
+git push origin master
                 </code>
             </pre>
-            After that
+            After that, it will always go to the repo you set
             <pre>
                 <code>
-                    git push origin master
+git push origin master
                 </code>
                 </pre>
         </section>
@@ -153,7 +150,7 @@ git remote add origin https://github.com/heatherm/webfr.git
 
         <section>
             <h2>Style</h2>
-            <p>Lowercase element names</p>
+            <p>Tags are case insensitive, but lowercase is easiest to read for most</p>
             <pre>
                 <code>
                         &#x3C;<mark>h1</mark>&#x3E;Hi header&#x3C;/<mark>h1</mark>&#x3E;
@@ -190,7 +187,191 @@ git remote add origin https://github.com/heatherm/webfr.git
             </pre>
         </section>
 
+        <section>
+            <ul>
+                <li style='text-decoration: line-through'>Review</li>
+                <li style='text-decoration: line-through'>Git</li>
+                <li>HTML Deep Dive</li>
+                <li>Homework 1 <strong>Due next Tuesday</strong></li>
+            </ul>
+        </section>
 
+        <section>
+            <h2>HTML Deep Dive</h2>
+        </section>
+
+        <section>
+            <h2>Images</h2>
+            &#x3C;img src=&#x22;images/apple.png&#x22; alt=&#x22;Apple Logo&#x22;&#x3E;
+        </section>
+
+        <section>
+            <h2>Text</h2>
+        </section>
+
+        <section>
+            <h2>Headers</h2>
+            &#x3C;h1&#x3E;<span style="font-size: 60px">Extra Large</span>&#x3C;/h1&#x3E;
+            <br>
+            &#x3C;h2&#x3E;<span style="font-size: 50px">Large</span>&#x3C;/h2&#x3E;
+            <br>
+            &#x3C;h3&#x3E;<span style="font-size: 36px">Medium</span>&#x3C;/h3&#x3E;
+            <br>
+            &#x3C;h4&#x3E;<span style="font-size: 30px">small</span>&#x3C;/h4&#x3E;
+            <p>There's also h5 and h6, but you should only ever need ~3 different sizes</p>
+        </section>
+
+        <section>
+            <h2>Paragraphs</h2>
+            &#x3C;p&#x3E;For the uninitiated, Starbucks&#x2019;s PSL is a cup of frothy milk with a hint of coffee, a tonne of sugar, pumpkin puree and a few &#x201C;autumnal&#x201D; spices chucked in.&#x3C;/p&#x3E;
+        </section>
+
+        <section>
+            <h2>Lists - Unordered</h2>
+            <pre>
+            &#x3C;ul&#x3E;
+                &#x3C;li&#x3E;milk&#x3C;/li&#x3E;             * milk
+                &#x3C;li&#x3E;eggs&#x3C;/li&#x3E;             * eggs
+                &#x3C;li&#x3E;coffee&#x3C;/li&#x3E;           * coffee
+            &#x3C;/ul&#x3E;
+                </pre>
+        </section>
+
+        <section>
+            <h2>Lists - Ordered</h2>
+            <pre>
+            &#x3C;<mark>ol</mark>&#x3E;
+                &#x3C;li&#x3E;one&#x3C;/li&#x3E;                  1. one
+                &#x3C;li&#x3E;two&#x3C;/li&#x3E;                  2. two
+                &#x3C;li&#x3E;three&#x3C;/li&#x3E;                3. three
+            &#x3C;/ol&#x3E;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Links</h2>
+            <pre>
+        &#x3C;a href=&#x22;https://gooogle.com&#x22;&#x3E;Google&#x3C;/a&#x3E;
+        &#x3C;a href=&#x22;tel:+18005551212&#x22;&#x3E;Call to reserve!&#x3C;/a&#x3E;
+        &#x3C;a href=&#x22;skype:OurSkypeName?call&#x22;&#x3E;Skype Us!&#x3C;/a&#x3E;
+        &#x3C;a href=&#x22;mailto:someone@example.com?cc=someoneelse@example.com&#x26;
+                bcc=andsomeoneelse@example.com&#x26;subject=Summer%20Party&#x26;
+                body=You%20are%20invited%20to%20a%20big%20summer%20party!&#x22;&#x3E;
+                Send mail!&#x3C;/a&#x3E;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Italic and Bold</h2>
+            <p>This liquid is <strong>highly toxic</strong> —
+                if you drink it, <strong>you may <em>die</em></strong>.</p>
+            &#x3C;p&#x3E;This liquid is &#x3C;strong&#x3E;highly toxic&#x3C;/strong&#x3E; &#x2014;
+            if you drink it, &#x3C;strong&#x3E;you may &#x3C;em&#x3E;die&#x3C;/em&#x3E;&#x3C;/strong&#x3E;.&#x3C;/p&#x3E;
+        </section>
+
+        <section>
+            <h2>&#x3C;b&#x3E;, &#x3C;i&#x3E; and &#x3C;u&#x3E;</h2>
+            <p>same, but not</p>
+        </section>
+
+        <section>
+            <h2>&#x3C;em&#x3E; and &#x3C;i&#x3E;</h2>
+            <p>Both italicize text, but having the same look doesn't imply the same meaning</p>
+            <p>Ask yourself: Am I wanting to add verbal stress?</p>
+        </section>
+
+        <section>
+            <h2>Why care about semantics?</h2>
+            <p>Lots of non-seeing things look at your webpage, including ~5% of the human population :)</p>
+        </section>
+
+        <section>
+            <h2>Semantic Tags</h2>
+            <pre>
+header: &#x3C;header&#x3E;
+navigation bar: &#x3C;nav&#x3E;
+main content (unique to the page, use once): &#x3C;main&#x3E;.
+subsections: &#x3C;article&#x3E;, &#x3C;section&#x3E
+sidebar: &#x3C;aside&#x3E;; often placed inside &#x3C;main&#x3E;
+footer: &#x3C;footer&#x3E;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Non-Semantic Tags</h2>
+            <pre>
+        div: &#x3C;div&#x3E;
+        span: &#x3C;span&#x3E;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Breaks</h2>
+            <pre>
+        Line break: &#x3C;br&#x3E;
+        Horizontal Rule: &#x3C;hr&#x3E;
+            </pre>
+            <p>Paragraph with a break<br>in the line</p>
+            <hr>
+        </section>
+
+        <section>
+            <h2>Meta</h2>
+            <p>Within the &#x3C;head&#x3E; for SEO/FB/ETC</p>
+            <pre>
+&#x3C;meta charset=&#x22;utf-8&#x22;&#x3E;
+&#x3C;meta name=&#x22;author&#x22; content=&#x22;Heather Moore&#x22;&#x3E;
+&#x3C;meta name=&#x22;description&#x22; content=&#x22;This class teaches front end webdev.&#x22;&#x3E;
+&#x3C;meta name=&#x22;keywords&#x22; content=&#x22;html, css, javascript&#x22;&#x3E;
+&#x3C;meta property=&#x22;og:image&#x22; content=&#x22;https://logo.png&#x22;&#x3E;
+&#x3C;meta name=&#x22;twitter:title&#x22; content=&#x22;Web Development Syllabus&#x22;&#x3E;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Multimedia</h2>
+<audio controls>
+  <source src="viper.mp3" type="audio/mp3">
+  <source src="viper.ogg" type="audio/ogg">
+  <p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
+</audio>
+<pre>
+&#x3C;audio controls&#x3E;
+    &#x3C;source src=&#x22;song.mp3&#x22; type=&#x22;audio/mp3&#x22;&#x3E;
+    &#x3C;source src=&#x22;song.ogg&#x22; type=&#x22;audio/ogg&#x22;&#x3E;
+    &#x3C;p&#x3E;Your browser doesn&#x27;t support HTML5 audio.&#x3C;/p&#x3E;
+&#x3C;/audio&#x3E;
+
+&#x3C;video controls&#x3E;
+&#x3C;/video&#x3E;
+</pre>
+        </section>
+
+        <section>
+            <h2>More?</h2>
+            <ul>
+                <li>Code</li>
+                <li>Quotes</li>
+                <li>Tables</li>
+                <li>Forms</li>
+                <li>iFrames</li>
+                <li>svg</li>
+            </ul>
+        </section>
+
+        <section>
+            <ul>
+                <li style='text-decoration: line-through'>Review</li>
+                <li style='text-decoration: line-through'>Git</li>
+                <li style='text-decoration: line-through'>HTML Deep Dive</li>
+                <li>Homework 1 <strong>Due next Tuesday</strong></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Tuesday: hw/01.md</h2>
+            <p>Push a webpage to your GitHub Pages site</p>
+        </section>
     </div>
 </div>
 <script>

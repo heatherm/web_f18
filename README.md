@@ -7,7 +7,7 @@
     Tuesdays & Thursdays • 8:30-10:20a • 2 MTC Room 824 • 3 credit hrs
     Office hours directly after class or by appointment 
 
-### Slack: nyuweb.slack.com
+### [nyuweb.slack.com](nyuweb.slack.com)
 
 ## Course prerequisites
 
@@ -21,18 +21,17 @@ We will examining some history of the web, and explore integration of three of i
 
 This course employs three interconnected practices: reading, talking and coding. The first objective is to expose you to a wide range of readings and code exercises that deal with the structure and function of the web. Engaging in discussion with your peers is crucial to the creation of a learning community. The structure of this course will reinforce that, showing that what you see and find is not what others see and find. Student led discussions are perhaps the most important part. The course will not be dominated by the professor.
 
-
 ## Course Structure
 Class time will be spent on lecture, live-coding, Q&A, and student facilitations. Assignments will consist of online tutorials as well as weekly projects that build on each week’s topics of discussion.
 
 ## Software to get in advance
 * Browser: Chrome
 * Github Account: github.com/join
-* Text Editor of your choice
+* [Webstorm Editor](hw/01.md)
 
 ## Grading
 
-**Class Participation + Short Weekly Assignments 40%**
+### 40% - Class Participation + Short Weekly Assignments
 
   Consists of three components: attendance, contributions to discussions, and graded assignments. Please do not underestimate the effect that each element will have on your final grade.
   
@@ -43,12 +42,11 @@ Class time will be spent on lecture, live-coding, Q&A, and student facilitations
 
 **PLEASE NOTE: 3 unexcused absences will result in your grade dropping 10%**
 
-  
-**Peer Facilitation 30%**
+### 30% - Peer Facilitation
 
 Leading Class Discussion. Presentations are an opportunity for a pair of students to structure and facilitate the discussion of an assigned activity.
 
-**Final Project 30%**
+### 30% - Final Project
 
 You will be building a website using html, css and javascript. It can be a game, a content site, an artistic rendering done with css. I highly suggest starting work on this early. You must submit a title, brief description, short outline and tech component list by November 15th.
  
@@ -111,9 +109,11 @@ No classes scheduled
 
 **Week 1 (9/4,9/6): Commandline, Git, GitHub, Editor, Browser, HTML, CSS**
 
+[Homework](hw/01.md)
+
 Activities
-* Push a basic HTML page to Gitpages public page [https://www.flickr.com/]
-* Add basic style to the page inline
+* Push a basic HTML page to Gitpages public page
+* Add basic style to the page
 
 Topics
 * Git: status, commit, push
@@ -127,6 +127,7 @@ Refs
 * https://developer.mozilla.org/en-US/docs/Web/HTML/Element (All elements)
 * http://blog.teamtreehouse.com/git-for-designers-part-1
 * 19:20 - 28:30 Dame Wendy & Hypertext [https://vimeo.com/268653081]
+* https://www.10bestdesign.com/dirtymarkup/
 
 **Week 2 (9/11,9/13): CSS, Box Model**
 
