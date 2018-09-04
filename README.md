@@ -124,10 +124,10 @@ Topics
 * Semantic HTML
 
 Refs
-* https://developer.mozilla.org/en-US/docs/Web/HTML/Element (All elements)
-* http://blog.teamtreehouse.com/git-for-designers-part-1
-* 19:20 - 28:30 Dame Wendy & Hypertext [https://vimeo.com/268653081]
-* https://www.10bestdesign.com/dirtymarkup/
+* [List of HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+* [Git Explained](http://blog.teamtreehouse.com/git-for-designers-part-1)
+* [19:20 - 28:30 Dame Wendy & Hypertext](https://vimeo.com/268653081)
+* [HTML Validator](https://www.10bestdesign.com/dirtymarkup/)
 
 **Week 2 (9/11,9/13): CSS, Box Model**
 
@@ -148,7 +148,10 @@ Topics
 * Floats
 
 Refs
-* https://flukeout.github.io/
+* [CSS Selector Game](https://flukeout.github.io/)
+* [Branching](https://www.youtube.com/watch?v=QV0kVNvkMxc&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=8)
+* [Merging](https://www.youtube.com/watch?v=XX-Kct0PfFc&index=9&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
+* [Ethics of copying CSS](https://www.quora.com/Is-it-ethical-to-copy-css-snippets-from-various-best-designs-from-web-and-create-your-own-customized-template)
 
 **Week 3 (9/18,9/20): Flexbox & CSS Grid**
 
