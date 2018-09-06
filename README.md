@@ -112,7 +112,7 @@ No classes scheduled
 [Homework](hw/01.md)
 
 Activities
-* Push a basic HTML page to Gitpages public page
+* Push a basic HTML page to GitPages public page
 * Add basic style to the page
 
 Topics
@@ -128,6 +128,8 @@ Refs
 * [Git Explained](http://blog.teamtreehouse.com/git-for-designers-part-1)
 * [19:20 - 28:30 Dame Wendy & Hypertext](https://vimeo.com/268653081)
 * [HTML Validator](https://www.10bestdesign.com/dirtymarkup/)
+* [Normalize.css](https://necolas.github.io/normalize.css/)
+* [Languages of the Internet](https://en.wikipedia.org/wiki/Languages_used_on_the_Internet)
 
 **Week 2 (9/11,9/13): CSS, Box Model**
 
@@ -248,7 +250,7 @@ Refs
 **Week 9 (10/30,11/1): Accessibility, Bubbling/Capturing Events**
 
 Activities
-* Guest lecture on accessibility
+* Guest lecture (Claire) on accessibility on 11/1 
 * Show examples of accessible and inaccessible websites
 * Try to navigate with just your keyboard
 * Show capture vs bubble stack and how to control event propogation
@@ -265,8 +267,6 @@ Refs
 * https://www.w3.org/WAI/fundamentals/accessibility-intro/
 * http://zomigi.com/blog/videos-of-screen-readers-using-aria-updated/
 * https://javascript.info/bubbling-and-capturing
-
-Claire will teach on the 16th?
 
 **Week 10 (11/6,11/8): Forms, Http Methods**
 

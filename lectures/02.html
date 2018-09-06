@@ -128,6 +128,27 @@ git push origin master
         </section>
 
         <section>
+            <p>Remotes will be setup for you if you use <code>git clone</code></p>
+            <pre>
+                <code>
+git clone https://github.com/heatherm/webfr.git
+git remote show
+git remote show origin
+                </code>
+                <output>
+* remote origin
+  Fetch URL: https://github.com/heatherm/web_f18.git
+  Push  URL: https://github.com/heatherm/web_f18.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+                </output>
+            </pre>
+        </section>
+
+        <section>
             <h2>Essential HTML</h2>
             <p>Language, Viewport, Charset</p>
             <pre>
@@ -147,6 +168,27 @@ git push origin master
 &#x3C;/html&#x3E;
                 </code>
             </pre>
+        </section>
+
+        <section>
+            <h2>Language per element</h2>
+
+            <pre><code>
+&#x3C;blockquote lang=&#x201D;<mark>fr</mark>&#x201D;&#x3E;
+    Le plus grand faible des hommes
+&#x3C;/blockquote&#x3E;
+            </code></pre>
+            <p>Note: ISO 639-1 defines <mark>abbreviations</mark> for languages.</p>
+        </section>
+
+        <section>
+            <h2>Viewport Example</h2>
+            <p>Assumes 940px wide viewport if not specified</p>
+        </section>
+
+        <section>
+            <h2>Charset Example</h2>
+            <p>Browser will default to encoding based on the host computer</p>
         </section>
 
         <section>
@@ -202,12 +244,39 @@ git push origin master
         </section>
 
         <section>
-            <h2>Images</h2>
-            &#x3C;img src=&#x22;images/apple.png&#x22; alt=&#x22;Apple Logo&#x22;&#x3E;
+            <h2>Reset & Normalize</h2>
         </section>
 
         <section>
-            <h2>Text</h2>
+            <h2>What is kbd?</h2>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd">MDN Docs</a>
+        </section>
+
+        <section>
+            <h2>Where is q getting a quote?</h2>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">MDN Docs</a>
+        </section>
+
+        <section>
+            <p>Web created in 1994</p>
+            <p>HTML 4 in 1997 - W3C says degrade gracefully</p>
+            <p>2000 - That didn't work</p>
+            <p>2007 - Let's do the best with what we have - WHATWG</p>
+        </section>
+
+        <section>
+            <p>You have the power to affect change...</p>
+            <a href="https://developer.mozilla.org/en-US/users/signin?next=/en-US/docs/Web/HTML/Element/q%24edit">Edit the q element docs</a>
+        </section>
+
+        <section>
+            <h2>Useful Categories</h2>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories">Content Types</a>
+        </section>
+
+        <section>
+            <h2>Images</h2>
+            &#x3C;img src=&#x22;images/apple.png&#x22; alt=&#x22;Apple Logo&#x22;&#x3E;
         </section>
 
         <section>
@@ -263,6 +332,19 @@ git push origin master
         </section>
 
         <section>
+            <h2>Semantic Tags</h2>
+            <pre>
+header: &#x3C;header&#x3E;
+navigation bar: &#x3C;nav&#x3E;
+main content (unique to the page, use once): &#x3C;main&#x3E;.
+subsections: &#x3C;article&#x3E;, &#x3C;section&#x3E
+sidebar: &#x3C;aside&#x3E;; often placed inside &#x3C;main&#x3E;
+footer: &#x3C;footer&#x3E;
+            </pre>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Inline_text_semantics">Also text semantics</a>
+        </section>
+
+        <section>
             <h2>Italic and Bold</h2>
             <p>This liquid is <strong>highly toxic</strong> —
                 if you drink it, <strong>you may <em>die</em></strong>.</p>
@@ -284,18 +366,6 @@ git push origin master
         <section>
             <h2>Why care about semantics?</h2>
             <p>Lots of non-seeing things look at your webpage, including ~5% of the human population :)</p>
-        </section>
-
-        <section>
-            <h2>Semantic Tags</h2>
-            <pre>
-header: &#x3C;header&#x3E;
-navigation bar: &#x3C;nav&#x3E;
-main content (unique to the page, use once): &#x3C;main&#x3E;.
-subsections: &#x3C;article&#x3E;, &#x3C;section&#x3E
-sidebar: &#x3C;aside&#x3E;; often placed inside &#x3C;main&#x3E;
-footer: &#x3C;footer&#x3E;
-            </pre>
         </section>
 
         <section>
@@ -372,6 +442,7 @@ footer: &#x3C;footer&#x3E;
         <section>
             <h2>Tuesday: hw/01.md</h2>
             <p>Push a webpage to your GitHub Pages site</p>
+            <p>Submit repo in github classroom</p>
         </section>
     </div>
 </div>
