@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Inline height and width examples</title>
+    <style>
+        h1 {
+            color: green;
+        }
+
+        /*h1[onmouseenter="alert('alert')"] {*/
+            /*color: blue;*/
+        /*}*/
+
+        h1[onmouseenter] {
+            color: red;
+        }
+
+        h1[onmouseenter="alert('alert')"] {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Default = green</h1>
+<h1 onmouseenter="">Moused = blue</h1>
+<h1 onmouseenter>Moused = blue</h1>
+<h1 onmouseenter="alert('alert')">Moused = red</h1>
+<h1 onmousedown>Mousedown = green</h1>
+<h1 class="foo">class = green</h1>
+</body>
+</html>

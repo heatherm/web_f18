@@ -1,0 +1,35 @@
+#foo {
+    color: red;
+}
+
+h1 {color: red;}
+body h1 {color: green;}
+
+h2.grape {color: purple;}
+h2 {color: silver;}
+
+html > body table tr[id="totals"] td ul > li {color: maroon;}
+li#answer {color: navy;}
+
+h1 + p {
+    color: red;
+    font-weight:bold;
+} /* 0,0,0,2 */
+p {
+    color: blue;
+    background: yellow;
+    font-style: normal;
+} /* 0,0,0,1 */
+
+*.thoughts {
+    color: black;
+    background: silver;
+}/* 0,0,1,0 */
+
+div.inherited {
+    color: red;
+}
+
+.inherited a {
+    /*color: inherit;*/
+}

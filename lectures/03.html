@@ -12,8 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css"
           id="theme">
+    <link rel="stylesheet" href="lecture.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js" defer></script>
+    <script src="https://cdn.rawgit.com/hakimel/reveal.js/3.6.0/plugin/notes/notes.js" defer></script>
+
 </head>
 <body>
 <div class="reveal">
@@ -21,78 +24,16 @@
         <section>
             <h2>Today</h2>
             <ul>
-                <li>Style Sheets</li>
-                <li>CSS Selectors</li>
+                <li>Review</li>
+                <li>CSS</li>
+                <li>Selectors</li>
                 <li>Inheritance</li>
                 <li>Border, Margin, Padding</li>
             </ul>
         </section>
 
         <section>
-            <h2>Stylesheets</h2>
-            <ul>
-                <li>Contain CSS rules</li>
-                <li></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Request - Response</h2>
-            <img src="img/browser-server-communication.jpg">
-        </section>
-
-        <section>
-            <h2>Read + Render</h2>
-            <img width="600px" src="https://cdn-images-1.medium.com/max/1600/1*ngIVtZnJxZX6vuzv6jQbew.png">
-        </section>
-
-        <section>
-            <h2>HTML</h2>
-            <p>Structural Semantics for text</p>
-        </section>
-
-        <section>
-            <h2>Tags (h1, p)</h2>
-            <p>Become DOM elements</p>
-            <p>Have attributes</p>
-        </section>
-
-        <section>
-            <h2>Attributes</h2>
-            <p>Differ by tag</p>
-            <p>Affect tag behavior</p>
-        </section>
-
-        <section>
-            <h2 style="color: red;">CSS</h2>
-            <p>Controls the layout, colors and fonts</p>
-            <code>
-                h1 {color:<span style="color:red">red</span>;}
-            </code>
-        </section>
-
-        <section>
-            <h2>Adding CSS</h2>
-            <ul>
-                <li>Inline</li>
-                <li>Internal</li>
-                <li>External</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>HW Questions?</h2>
-        </section>
-
-        <section>
             <h2>Git</h2>
-            <p>Distributed Version Control System (VCS)</p>
-            <p>Track and Share files</p>
-            <p>"repo" = directory</p>
-        </section>
-
-        <section>
-            <h2>Basics</h2>
             <p><code>git init</code> - initialize a repo</p>
             <p><code>git status</code> - edited files</p>
             <p><code>git diff</code> - changes in the files</p>
@@ -100,31 +41,15 @@
         </section>
 
         <section>
-            <h2>Make a commit</h2>
+            <h2>Commit + Push</h2>
             <pre>
                 <code>
                     git status
                     git add *
                     git commit -m 'first commit'
+                    git push origin master
                 </code>
             </pre>
-        </section>
-
-        <section>
-            <h2>Publish your commit</h2>
-            <p>First time, establish a destination</p>
-            <pre>
-                <code>
-git remote add origin https://github.com/heatherm/webfr.git
-git push origin master
-                </code>
-            </pre>
-            After that, it will always go to the repo you set
-            <pre>
-                <code>
-git push origin master
-                </code>
-                </pre>
         </section>
 
         <section>
@@ -150,143 +75,6 @@ git push origin master
         </section>
 
         <section>
-            <h2>Coding Style</h2>
-            <p>Tags are case insensitive, but lowercase is easiest to read for most</p>
-            <pre>
-                <code>
-                        &#x3C;<mark>h1</mark>&#x3E;Hi header&#x3C;/<mark>h1</mark>&#x3E;
-                </code>
-            </pre>
-        </section>
-
-        <section>
-            <h2>Style</h2>
-            <p>Lowercase attributes names & hyphens</p>
-            <pre>
-                <code>
-              &#x3C;h1 <mark>class='main-header'</mark>&#x3E;Hi header&#x3C;/h1&#x3E;
-                </code>
-            </pre>
-        </section>
-
-        <section>
-            <h2>Style</h2>
-            <p>Lowercase attributes names, hyphens, no spaces</p>
-            <pre>
-                <code>
-              &#x3C;h1 <mark>class='main-header'</mark>&#x3E;Hi header&#x3C;/h1&#x3E;
-                </code>
-            </pre>
-        </section>
-
-        <section>
-            <h2>Style</h2>
-            <p>80 characters (max?)</p>
-            <pre>
-                <code>
-&#x3C;h1 <mark>class='main-header'</mark>&#x3E;Hi header that runs on and on and on and on and on andon and on and on and on and on and&#x3C;/h1&#x3E;</code>
-            </pre>
-        </section>
-
-        <section>
-            <ul>
-                <li style='text-decoration: line-through'>Review</li>
-                <li style='text-decoration: line-through'>Git</li>
-                <li>HTML Deep Dive</li>
-                <li>Homework 1 <strong>Due next Tuesday</strong></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>HTML Deep Dive</h2>
-        </section>
-
-        <section>
-            <h2>Images</h2>
-            &#x3C;img src=&#x22;images/apple.png&#x22; alt=&#x22;Apple Logo&#x22;&#x3E;
-        </section>
-
-        <section>
-            <h2>Text</h2>
-        </section>
-
-        <section>
-            <h2>Headers</h2>
-            &#x3C;h1&#x3E;<span style="font-size: 60px">Extra Large</span>&#x3C;/h1&#x3E;
-            <br>
-            &#x3C;h2&#x3E;<span style="font-size: 50px">Large</span>&#x3C;/h2&#x3E;
-            <br>
-            &#x3C;h3&#x3E;<span style="font-size: 36px">Medium</span>&#x3C;/h3&#x3E;
-            <br>
-            &#x3C;h4&#x3E;<span style="font-size: 30px">small</span>&#x3C;/h4&#x3E;
-            <p>There's also h5 and h6, but you should only ever need ~3 different sizes</p>
-        </section>
-
-        <section>
-            <h2>Paragraphs</h2>
-            &#x3C;p&#x3E;For the uninitiated, Starbucks&#x2019;s PSL is a cup of frothy milk with a hint of coffee, a tonne of sugar, pumpkin puree and a few &#x201C;autumnal&#x201D; spices chucked in.&#x3C;/p&#x3E;
-        </section>
-
-        <section>
-            <h2>Lists - Unordered</h2>
-            <pre>
-            &#x3C;ul&#x3E;
-                &#x3C;li&#x3E;milk&#x3C;/li&#x3E;             * milk
-                &#x3C;li&#x3E;eggs&#x3C;/li&#x3E;             * eggs
-                &#x3C;li&#x3E;coffee&#x3C;/li&#x3E;           * coffee
-            &#x3C;/ul&#x3E;
-                </pre>
-        </section>
-
-        <section>
-            <h2>Lists - Ordered</h2>
-            <pre>
-            &#x3C;<mark>ol</mark>&#x3E;
-                &#x3C;li&#x3E;one&#x3C;/li&#x3E;                  1. one
-                &#x3C;li&#x3E;two&#x3C;/li&#x3E;                  2. two
-                &#x3C;li&#x3E;three&#x3C;/li&#x3E;                3. three
-            &#x3C;/ol&#x3E;
-            </pre>
-        </section>
-
-        <section>
-            <h2>Links</h2>
-            <pre>
-        &#x3C;a href=&#x22;https://google.com&#x22;&#x3E;Google&#x3C;/a&#x3E;
-        &#x3C;a href=&#x22;tel:+18005551212&#x22;&#x3E;Call to reserve!&#x3C;/a&#x3E;
-        &#x3C;a href=&#x22;skype:OurSkypeName?call&#x22;&#x3E;Skype Us!&#x3C;/a&#x3E;
-        &#x3C;a href=&#x22;mailto:someone@example.com?cc=someoneelse@example.com&#x26;
-                bcc=andsomeoneelse@example.com&#x26;subject=Summer%20Party&#x26;
-                body=You%20are%20invited%20to%20a%20big%20summer%20party!&#x22;&#x3E;
-                Send mail!&#x3C;/a&#x3E;
-            </pre>
-        </section>
-
-        <section>
-            <h2>Italic and Bold</h2>
-            <p>This liquid is <strong>highly toxic</strong> —
-                if you drink it, <strong>you may <em>die</em></strong>.</p>
-            &#x3C;p&#x3E;This liquid is &#x3C;strong&#x3E;highly toxic&#x3C;/strong&#x3E; &#x2014;
-            if you drink it, &#x3C;strong&#x3E;you may &#x3C;em&#x3E;die&#x3C;/em&#x3E;&#x3C;/strong&#x3E;.&#x3C;/p&#x3E;
-        </section>
-
-        <section>
-            <h2>&#x3C;b&#x3E;, &#x3C;i&#x3E; and &#x3C;u&#x3E;</h2>
-            <p>same, but not</p>
-        </section>
-
-        <section>
-            <h2>&#x3C;em&#x3E; and &#x3C;i&#x3E;</h2>
-            <p>Both italicize text, but having the same look doesn't imply the same meaning</p>
-            <p>Ask yourself: Am I wanting to add verbal stress?</p>
-        </section>
-
-        <section>
-            <h2>Why care about semantics?</h2>
-            <p>Lots of non-seeing things look at your webpage, including ~5% of the human population :)</p>
-        </section>
-
-        <section>
             <h2>Semantic Tags</h2>
             <pre>
 header: &#x3C;header&#x3E;
@@ -296,83 +84,313 @@ subsections: &#x3C;article&#x3E;, &#x3C;section&#x3E
 sidebar: &#x3C;aside&#x3E;; often placed inside &#x3C;main&#x3E;
 footer: &#x3C;footer&#x3E;
             </pre>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Inline_text_semantics">Also text semantics</a>
         </section>
 
         <section>
-            <h2>Non-Semantic Tags</h2>
-            <pre>
-        div: &#x3C;div&#x3E;
-        span: &#x3C;span&#x3E;
-            </pre>
+            <h2>HW Questions?</h2>
         </section>
 
         <section>
-            <h2>Breaks</h2>
-            <pre>
-        Line break: &#x3C;br&#x3E;
-        Horizontal Rule: &#x3C;hr&#x3E;
-            </pre>
-            <p>Paragraph with a break<br>in the line</p>
-            <hr>
-        </section>
-
-        <section>
-            <h2>Meta</h2>
-            <p>Within the &#x3C;head&#x3E; for SEO/FB/ETC</p>
-            <pre>
-&#x3C;meta charset=&#x22;utf-8&#x22;&#x3E;
-&#x3C;meta name=&#x22;author&#x22; content=&#x22;Heather Moore&#x22;&#x3E;
-&#x3C;meta name=&#x22;description&#x22; content=&#x22;This class teaches front end webdev.&#x22;&#x3E;
-&#x3C;meta name=&#x22;keywords&#x22; content=&#x22;html, css, javascript&#x22;&#x3E;
-&#x3C;meta property=&#x22;og:image&#x22; content=&#x22;https://logo.png&#x22;&#x3E;
-&#x3C;meta name=&#x22;twitter:title&#x22; content=&#x22;Web Development Syllabus&#x22;&#x3E;
-            </pre>
-        </section>
-
-        <section>
-            <h2>Multimedia</h2>
-<audio controls>
-  <source src="viper.mp3" type="audio/mp3">
-  <source src="viper.ogg" type="audio/ogg">
-  <p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
-</audio>
-<pre>
-&#x3C;audio controls&#x3E;
-    &#x3C;source src=&#x22;song.mp3&#x22; type=&#x22;audio/mp3&#x22;&#x3E;
-    &#x3C;source src=&#x22;song.ogg&#x22; type=&#x22;audio/ogg&#x22;&#x3E;
-    &#x3C;p&#x3E;Your browser doesn&#x27;t support HTML5 audio.&#x3C;/p&#x3E;
-&#x3C;/audio&#x3E;
-
-&#x3C;video controls&#x3E;
-&#x3C;/video&#x3E;
-</pre>
-        </section>
-
-        <section>
-            <h2>More?</h2>
-            <ul>
-                <li>Code</li>
-                <li>Quotes</li>
-                <li>Tables</li>
-                <li>Forms</li>
-                <li>iFrames</li>
-                <li>svg</li>
-            </ul>
-        </section>
-
-        <section>
+            <h2>Today</h2>
             <ul>
                 <li style='text-decoration: line-through'>Review</li>
-                <li style='text-decoration: line-through'>Git</li>
-                <li style='text-decoration: line-through'>HTML Deep Dive</li>
-                <li>Homework 1 <strong>Due next Tuesday</strong></li>
+                <li>CSS</li>
+                <li>Selectors</li>
+                <li>Inheritance</li>
+                <li>Border, Margin, Padding</li>
             </ul>
         </section>
 
         <section>
-            <h2>Tuesday: hw/01.md</h2>
-            <p>Push a webpage to your GitHub Pages site</p>
+            <h2>History</h2>
+            <p>1994 - Introduced</p>
+            <p>1996 - CSS1</p>
+            <p>1998 - CSS2</p>
+            <p>2012/Now - CSS3-4ish Modules</p>
         </section>
+
+        <section>
+            <h2><a href="http://www.css3.info/modules/">Module Statuses</a></h2>
+            <ul>
+                <li><a href="https://www.w3.org/TR/css-backgrounds-3/">Backgrounds & Borders</a></li>
+                <li><a href="https://www.w3.org/TR/css-color-3/">Color</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>CSS Zen Garden</h2>
+            <p>One line changes it all</p>
+            <p>Get rid of burger.com font tags all over</p>
+        </section>
+
+        <section>
+            <h2>Stylesheets</h2>
+            <ul>
+                <li>Contain CSS rules</li>
+                <li>.css</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How to include?</h2>
+            <p>&lt;link&gt; tags</p>
+            <p>@import</p>
+        </section>
+
+        <section>
+            <h2>What kinds of elements are styled?</h2>
+        </section>
+
+        <section>
+            <h2>Replaced + Nonreplaced</h2>
+            <p>img & input vs. everything else</p>
+            <p>Content from elsewhere?</p>
+        </section>
+
+        <section>
+            <h2>Block + Inline</h2>
+            <p>p vs. a</p>
+            <p>Default display value block or inline.</p>
+        </section>
+
+        <section>
+            <h2>Inline</h2>
+            <ul>
+                <li>Size to content</li>
+                <li>Do not break flow</li>
+                <li>Cannot contain block</li>
+                <li>Often replaced</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Block</h2>
+            <ul>
+                <li>Fills Parent</li>
+                <li>Breaks before and after</li>
+                <li>Can contain inline</li>
+                <li>Not often replaced</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>CSS Rule</h2>
+            <p>Selector + <mark>Declaration</mark></p>
+            <p>h1 <mark>{ color: red; font-size: 15px }</mark></p>
+        </section>
+
+        <section>
+            <h2>Element Selector</h2>
+            <pre class="big">
+<code>
+<mark>h1</mark> {
+    color: red;
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Many elements</h2>
+            <pre class="big">
+<code>
+h1<mark>,</mark> h2<mark>,</mark> h3 {
+    color: red;
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Element + attribute</h2>
+            <pre class="big">
+<code>
+h1<mark>[</mark>onmouseenter<mark>]</mark> {
+    color: red;
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2 class="header--green">By class</h2>
+            <pre class="big">
+<code>
+&lt;h2 class="header--green"&gt;
+
+<span style="color:green;"><mark>.</mark>header--green</span> {
+    color: green;
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2 class="header--green">By element + class</h2>
+            <pre class="big">
+<code>
+&lt;h2 class="header--green"&gt;
+
+<span style="color:green;">h2<mark>.</mark>header--green</span> {
+    color: green;
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2 class="header--green">Multiple classes</h2>
+            <pre class="big">
+<code>
+&lt;h2 class="one<mark>&nbsp;</mark>two"&gt;
+
+<span style="color:green;"><mark>.</mark>one<mark>.</mark>two</span> {
+    color: green;
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2 class="header--green">By unique id</h2>
+            <pre class="big">
+<code>
+&lt;h2 id="title"&gt;
+
+<span style="color:green;"><mark>#</mark>title</span> {
+    color: green;
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2 class="header--green">By element and id</h2>
+            <pre class="big">
+<code>
+&lt;h2 id="title"&gt;
+
+<span style="color:green;">h2<mark>#</mark>title</span> {
+    color: green;
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>By ancestry</h2>
+            <pre class="big">
+<code>
+&lt;div id="outer"&gt;
+    &lt;div id="middle"&gt;
+        &lt;<span style="color: green">div id="inner"</span>&gt;
+
+div<mark>&nbsp;</mark>div<mark>&nbsp;</mark><span style="color:green;">div</span> {
+    color: green;
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>By ancestry (skip)</h2>
+            <pre class="big">
+<code>
+&lt;div id="outer"&gt;
+    &lt;div id="middle"&gt;
+        &lt;<span style="color: green">div id="inner"</span>&gt;
+
+#outer <span style="color:green;">div</span> {
+    color: green;
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h3><mark>.</mark>article<mark>&nbsp;</mark>section<mark>.</mark>abstract<mark>&nbsp;</mark>p</h3>
+            <p>Find an element with a <mark>class</mark> of <em>article</em>,<br>
+                find its <mark>children</mark> <em>section elements with 'abstract' <mark>class</mark></em><br>
+                and then find all <em>p <mark>children</mark></em> of that.</p>
+        </section>
+
+        <section>
+            <h2>Specificity + Inheritance</h2>
+            <p>Both used to determine which styles to apply</p>
+        </section>
+
+        <section>
+            <h2>Specificity</h2>
+            <p>0,0,0,0</p>
+        </section>
+
+        <section>
+            <h2>Inline</h2>
+            <p>1,0,0,0</p>
+        </section>
+
+        <section>
+            <h2>Id</h2>
+            <p>0,1,0,0</p>
+        </section>
+
+        <section>
+            <h2>Class, Attribute</h2>
+            <p>0,0,1,0</p>
+        </section>
+
+        <section>
+            <h2>Element</h2>
+            <p>0,0,0,1</p>
+        </section>
+
+        <section>
+            <h2>Sibling example</h2>
+            <p>break out styles</p>
+        </section>
+
+        <section>
+            <h2>!important</h2>
+            <p>resolved later and together</p>
+        </section>
+
+        <section>
+            <h2>Inheritance</h2>
+            <p>color + border</p>
+        </section>
+
+        <section>
+            <h2>Value</h2>
+            <p>zero specificity</p>
+        </section>
+
+        <section>
+            <h2>User Agent</h2>
+            <p>&lt;a&gt; tag takes browser style over inherited</p>
+        </section>
+
+        <section>
+            <h2>Text</h2>
+            <p>weight, font, size</p>
+        </section>
+
+        <section>
+            <h2>All together now</h2>
+            <p>font: italic normal bold normal 3em/1.5 Helvetica, Arial, sans-serif;weight, font, size</p>
+        </section>
+
+        <section>
+            <h2>Adding a font</h2>
+            <a href="https://codepen.io/team/sparkbox/full/OMdwoJ">Google fonts + font face</a>
+        </section>
+
+        <section>
+            <h2>Tuesday: hw/02.md</h2>
+            <p>Push a webpage to your GitHub Pages site</p>
+            <p>Submit repo in github classroom</p>
+        </section>
+
     </div>
 </div>
 <script>

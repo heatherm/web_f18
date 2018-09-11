@@ -151,6 +151,7 @@ Topics
 
 Refs
 * [CSS Selector Game](https://flukeout.github.io/)
+* [Zen Garden](http://www.csszengarden.com/)
 * [Branching](https://www.youtube.com/watch?v=QV0kVNvkMxc&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=8)
 * [Merging](https://www.youtube.com/watch?v=XX-Kct0PfFc&index=9&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
 * [Ethics of copying CSS](https://www.quora.com/Is-it-ethical-to-copy-css-snippets-from-various-best-designs-from-web-and-create-your-own-customized-template)
@@ -180,6 +181,8 @@ Topics
 * Media Queries
 * Rems, ems, rem-calcs
 * Colors RGB, Hex
+* Imports and media for print
+* Feature queries
 
 Refs
 * https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good
@@ -225,6 +228,7 @@ Topics
 Refs
 * http://es6katas.org/
 * https://syntax.fm/show/039/is-jquery-dead
+* https://githubengineering.com/removing-jquery-from-github-frontend/
 
 - October 9th is a Legistlative day operating on a Monday schedule. We will not 
 have class on the 9th.

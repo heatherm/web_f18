@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Replaced and nonreplaced element example</title>
+    <style>
+        html {
+            background-color: grey;
+        }
+        body img, span {
+            border: 1px solid red;
+        }
+
+        img::before, span::before {
+            content: '****'
+        }
+    </style>
+</head>
+<body>
+<img src="../lectures/img/browser-server-communication.jpg">
+<br/>
+<span>HELLO I AM A SPAN</span>
+</body>
+</html>

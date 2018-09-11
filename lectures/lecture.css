@@ -1,0 +1,25 @@
+.reveal pre.big {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.reveal pre.big code {
+    font-size: 56px;
+    line-height: 56px;
+    overflow-x: hidden;
+
+}
+
+h2.header--green {
+    color: green;
+}
+
+h2.header--shadow {
+    text-shadow: 1px 1px 1px #FFF,
+    3px 3px 5px red;
+}
+
+h2.one.two {
+    color: red;
+}
