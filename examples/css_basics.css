@@ -1,35 +1,43 @@
-#foo {
-    color: red;
-}
+@import url('https://fonts.googleapis.com/css?family=Monofett');
 
-h1 {color: red;}
-body h1 {color: green;}
+/*#foo {*/
+    /*color: red;*/
+/*}*/
 
-h2.grape {color: purple;}
-h2 {color: silver;}
+/*body h1 {color: green;}*/
+/*h1 {color: red;}*/
 
-html > body table tr[id="totals"] td ul > li {color: maroon;}
-li#answer {color: navy;}
 
-h1 + p {
-    color: red;
-    font-weight:bold;
-} /* 0,0,0,2 */
-p {
-    color: blue;
-    background: yellow;
-    font-style: normal;
-} /* 0,0,0,1 */
+/*h2.grape {color: purple;}*/
+/*h2 {color: silver;}*/
 
-*.thoughts {
-    color: black;
-    background: silver;
-}/* 0,0,1,0 */
+/*li#answer {color: navy;}*/
+/*html > body table tr[id="totals"] td ul > li {color: maroon;}*/
+
+/*h1 + p {*/
+    /*color: red !important;*/
+    /*font-weight:bold;*/
+/*} !* 0,0,0,2 *!*/
+
+/*p {*/
+    /*color: blue;*/
+    /*background: yellow;*/
+    /*font-style: normal;*/
+/*} !* 0,0,0,1 *!*/
+
+/**.thoughts {*/
+    /*color: black;*/
+    /*background: silver;*/
+/*}!* 0,0,1,0 *!*/
+
 
 div.inherited {
-    color: red;
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
 }
 
-.inherited a {
-    /*color: inherit;*/
+.fas {
+    color: #ffcb6b;
 }
+
