@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Inline-block height and width examples</title>
+    <style>
+        .nav {
+            background-color: #668074;
+            list-style-type: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav li {
+            display: list-item; /* default, block outside, inline inside */
+            /*display: inline; !* one row, but no width height *!*/
+            /*display: inline-block; !* one row, but with width height *!*/
+            font-size: 20px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<p>Resize the viewport using each of the display values above to clearly see the difference:</p>
+<ul class="nav">
+    <li>
+        <a href="#home">Home</a>
+    </li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#clients">Our Clients</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+</ul>
+</body>
+</html>

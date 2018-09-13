@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Inline-block height and width examples</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+
+        .left {
+            float: left;
+            background-color: red;
+        }
+
+        h1 {
+            clear: right;
+            /*clear: left;*/
+            /*clear: both;*/
+        }
+    </style>
+</head>
+<body>
+<p>Our h1 "Hello" is clearing anything floated to the right. Try updating to "clear: left" to get it to clear our red div which is floated to the left.</p>
+<hr>
+<div class="left"> Floated Red Box </div>
+<h1>Hello</h1>
+</body>
+</html>

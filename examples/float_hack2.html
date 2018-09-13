@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport'
+          content='width=device-width, initial-scale=1.0'>
+    <!--TODO add a link tag to connect to your style.css-->
+    <title>Why do we clear?</title>
+    <style>
+        div {
+            border: 1px solid black;
+            width: 500px;
+            background-color: gray;
+        }
+
+        p {
+            /*float: left;*/
+            /*width: 30%;*/
+            border: 1px solid red;
+        }
+
+        .cf::after {
+            /*display: table;*/
+            /*content: '';*/
+            /*clear: both;*/
+        }
+    </style>
+</head>
+<body>
+<ol>
+    <li>Give the p tags a width</li>
+    <li>Float the ptags, bam! columns</li>
+    <li>Add the clearfix</li>
+</ol>
+<div class="cf">
+    <p>
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+    </p>
+    <p>
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+    </p>
+    <p>
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+    </p>
+</div>
+</body>
+</html>
