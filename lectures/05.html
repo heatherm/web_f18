@@ -19,154 +19,20 @@
 <div class="reveal">
     <div class="slides">
         <section>
-            <h2>GitHub Comments</h2>
-            <p>HW Grading: -1, 0, 1</p>
-            <p>-1 means I will reach out and ask you to resubmit</p>
-        </section>
-
-        <section>
-            <h2>Office Hours</h2>
-            <p>T/Th 10:20-11a</p>
-        </section>
-
-        <section>
-            <h2>Validations</h2>
-            <p>Future homework should go through HTML & CSS validation before being turned in!</p>
-        </section>
-
-        <section>
-            <h2>h2.abstract<br> vs <br>h2 .abstract</h2>
+            <h2>Sign up for facilitation</h2>
+            <p>Review requirements</p>
         </section>
 
         <section>
             <h2>Today</h2>
             <ul>
                 <li>Review</li>
-                <li>Border, Margin, Padding</li>
-                <li>Inline/Block</li>
-                <li>Layout</li>
+                <li>Inline-Block</li>
+                <li>Floats/Flexbox/Grid Evolution</li>
                 <li>Floats</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Elements, according to CSS</h2>
-            <ol>
-                <li>Replaced</li>
-                <li>Nonreplaced</li>
-                <li>Block</li>
-                <li>Inline</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Selectors</h2>
-            <ul style="list-style-type: none; text-align: center;">
-                <li>
-                    <mark>.</mark>
-                    abstract - classname
-                </li>
-                <li>
-                    <mark>#</mark>
-                    title - id
-                </li>
-                <li>h1
-                    <mark>,</mark>
-                    h2 - multiple
-                </li>
-                <li>.foo
-                    <mark>+</mark>
-                    p - sibling
-                </li>
-                <li>.foo
-                    <mark>&gt;</mark>
-                    p - child
-                </li>
-                <li>a
-                    <mark>:</mark>
-                    hover - states
-                </li>
-                <li>a
-                    <mark>[href]</mark>
-                    - attributes
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>CSS Rules</h2>
-            <p>h2 { color: red }</p>
-        </section>
-
-        <section>
-            <h2>Specificity</h2>
-            <ul style="list-style-type: none; text-align: center;">
-                <li>h2 - 0,0,0,1</li>
-                <li>h2 + p - 0,0,0,2</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>What has specificity 0?</h2>
-        </section>
-
-        <section>
-            <h2>Inheritance</h2>
-            <ul>
-                <li>Color - YES</li>
-                <li>Border - NO</li>
-                <li>Specs try to do the right thing</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>What wins over inline specificity?</h2>
-            <p>???? > 1,0,0,0</p><!--!important-->
-        </section>
-
-        <section>
-            <h2><a href="https://www.w3.org/TR/CSS21/cascade.html#cascading-order">Order</a></h2>
-            <ul>
-                <li>User Agent</li>
-                <li>User</li>
-                <li>Author</li>
-                <li>Author !important</li>
-                <li>User !important</li><!--underline links-->
-            </ul>
-        </section>
-
-        <section>
-            <h2>Font CSS</h2>
-            <ul>
-                <li>font-weight</li>
-                <li>color</li>
-                <li>font-size</li>
-                <li>letter-spacing</li>
-                <li>text-decoration</li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">text-align</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Extra CSS for Homework</h2>
-            <ul>
-                <li>background-color</li>
-                <li>width: 25%</li>
-                <li>border-radius (make circle)</li>
-                <li>@font-face</li>
-                <li>Font Awesome Icons</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Today</h2>
-            <ul>
-                <li style='text-decoration: line-through'>Review</li>
-                <li>Block/Inline</li>
-                <li>Border, Margin, Padding</li>
-                <li>Inline & Block & Inline-Block</li>
-                <li>Layout</li>
-                <li>Floats</li>
+                <li>Float Shapes</li>
+                <li>Flexbox</li>
+                <li>CSS Variables</li>
             </ul>
         </section>
 
@@ -179,133 +45,219 @@
         </section>
 
         <section>
-            <h2>Basic Box Model</h2>
-            <img src="https://mdn.mozillademos.org/files/8685/boxmodel-(3).png" alt="basic box model">
-        </section>
-
-        <section>
-            <h2>Rectangles.</h2>
-            <figure>
-                <img width="300" src="https://www.razberi.info/images/2016_3/2015_17/moqt-css-size-boxing.jpg" alt="another basic box model example" />
-                <footer><small>source: razberi.info</small></footer>
-            </figure>
-            <ul>
-                <li>width and height are only of the content box</li>
-                <li>nonreplaced inline elements don't get width and height</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Let's look at the Dev Inspector</h2>
-        </section>
-
-        <section>
-            <h2>OK, So layout is affected by:</h2>
-            <ol>
-                <li>Type of Element</li>
-                <li>Content</li>
-                <li>All those boxes outside the content</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>What else affects layout?</h2>
-        </section>
-
-        <section>
-            <h2>Containing Block</h2>
-            <ul>
-                <li>nearest block element around me</li>
-                <li>affects my <a href="../examples/04_inline-block.html">layout (example 1)</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>What else affects layout?</h2>
-        </section>
-
-        <section>
             <h2>CSS Display</h2>
-            <ul>
-                <li>a as clickable block</li>
-                <li>list elements in one inline row</li>
-                <li>css display does not change html element status</li>
-                <li><a href="../examples/04_inline-block.html">Examples #6</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>What about all those boxes outside the content?</h2>
-        </section>
-
-        <section>
-            <h2>Border</h2>
-            <ul>
-                <li>border-width</li>
-                <li>border-color (defaults to font or is set)</li>
-                <li>border-style</li>
-            </ul>
+            <p>You may want to set the display within CSS. Ex: Make a link bigger</p>
         </section>
 
         <section>
             <h2>Padding</h2>
-            <ul>
-                <li>between content and border</li>
-                <li>background color extends with element</li>
-                <li>can do just one ex: padding-left</li>
-                <li>does not affect line-height of inline elements <a href="../examples/04_inline-block.html">(ex: 6 atag)</a></li>
-                <li><strong>does</strong> affect line-height of inline replaced elements (images)</li>
-                <!--images embedded in text will push text above it up or affect line height-->
-            </ul>
+            <p>An extension of the content box</p>
+        </section>
+
+        <section>
+            <h2>Border</h2>
+            <p>Outside the padding</p>
         </section>
 
         <section>
             <h2>Margin</h2>
-            <ul>
-                <li>creates space outside the border</li>
-                <li>background does not extend with this</li>
-                <li>can do just one ex: margin-left</li>
-                <li>they collapse <a href="../examples/04_inline-block.html">ex: 7</a></li>
-                <li>can be negative</li>
-            </ul>
+            <p>Outside the border</p>
         </section>
 
         <section>
-            <h2>Percentages relate to container</h2>
-            <p>margin 10% == 10% of parents width</p>
-            <p><a href="../examples/04_inline-block.html">ex: 4</a></p>
-        </section>
-
-        <section>
-            <h2>CSS properties in caniuse.com</h2>
+            <h2>The containing box</h2>
+            <p>Percentage measurements</p>
+            <p>Location</p>
         </section>
 
         <section>
             <h2>Floats</h2>
-            <p>Generates a block box</p>
             <p>Pulls box out of flow</p>
-            <p>Content flows around it</p>
-            <p>Will stick out of parent unless parent is floated</p>
-            <p>Can't float over each other</p>
-            <p><a href="../examples/04_inline-block.html">ex: 8</a></p>
+        </section>
+
+        <section>
+            <p>Block and Inline elements take on or interpret styles differently</p>
+            <p>text-align doesn't work on inline elements, for example</p>
+        </section>
+
+        <section>
+            <h2>Feels like a lot of rules!!!</h2>
+        </section>
+
+        <section>
+            <p>There's boxes and there's text</p>
+        </section>
+
+        <section>
+            <p>Text can be styled through fonts and line-heights etc</p>
+            <p>Boxes are styled with spacing and position</p>
+        </section>
+
+        <section>
+            <p>Despite there being a lot of special rules, you can do what you want 99% of the time, so go forth!</p>
+        </section>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li style='text-decoration: line-through'>Review</li>
+                <li>Inline-Block</li>
+                <li>Floats/Flexbox/Grid Evolution</li>
+                <li>Floats</li>
+                <li>Float Shapes</li>
+                <li>Flexbox</li>
+                <li>CSS Variables</li>
+            </ul>
+        </section>
+
+        <section>
+            <p>Blocks and text..and:</p>
+            <p>table-layout for tabular data</p>
+            <p>position: absolute for explicit positioning</p>
+        </section>
+
+        <section>
+            <h2>Absolute positioning</h2>
+            <p>Positioned absolutely with respect to the nearest 'relative' positioned element</p>
+            <p><a href="../examples/absolute.html">Example</a>/p>
+        </section>
+
+        <section>
+            <h2>Inline-Block</h2>
+            <p>Inline, but with width and height</p>
+            <p>img, button, textarea, input, and select</p>
+            <p><a href="../examples/inline-block.html">Example</a></p>
+        </section>
+
+        <section>
+            <h2>Continue with Floats</h2>
         </section>
 
         <section>
             <h2>Clearing Floats</h2>
             <p>clear: both;</p>
             <p>moves the element beyond floats</p>
+            <p><a href="../examples/clear_float.html">Example</a></p>
         </section>
 
         <section>
             <h2>Float Shapes</h2>
+            <p>You can specify how adjacent inline content flows against your floated content.</p>
+            <p><a href="../examples/float_shape.html">Example</a></p>
         </section>
 
         <section>
-            <h2>HW2</h2>
-            <p>Pass validators</p>
-            <p>Have semantic HTML</p>
-            <p></p>
+            <h2>That is what floats were born to do.</h2>
         </section>
+
+        <section>
+            <h2>Evolution</h2>
+            <p>Tables -> Floats -> Flexbox -> Grid</p>
+        </section>
+
+        <section>
+            <h2>Tables?</h2>
+            <p><a href="https://realart.com/blog/2008/12/give-up-and-use-tables/">In 2008, the trend was to give up after 47 minutes :)</a></p>
+            <p><a href="https://chibimagic.wordpress.com/2009/03/10/give-up-and-use-tables-if-youre-dumb-and-dont-know-css/">Trend was not loved by all</a></p>
+            <p><a href="https://shouldiusetablesforlayout.com/">In sum.</a></p>
+        </section>
+
+        <section>
+            <h2>Hacking with Floats</h2>
+            <p><a href="../examples/float_hack.html">Example</a></p>
+            <p><a href="../examples/float_hack.html">Example 2</a></p>
+        </section>
+
+        <section>
+            <h2>Flexbox</h2>
+            <p>Proposed 2008 - Working 2015 - Rec 2017</p>
+            <p>Solves some of the problems we were seeing</p>
+        </section>
+
+        <section>
+            <h2>Flexbox</h2>
+            <ol>
+                <li>Direction</li>
+                <li>Alignment</li>
+                <li>Order</li>
+                <li>Flexibility</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Let's go see our <a href="../examples/flex_nav.html">nav</a></h2>
+        </section>
+
+        <section>
+            <h2><a href="https://www.w3.org/TR/2018/WD-css-align-3-20180830/">Alignment Spec</a></h2>
+        </section>
+
+        <section>
+            <h2>4 for Flexbox</h2>
+            <ol>
+                <li>justify-content</li>
+                <li>align-content</li>
+                <li>align-self</li>
+                <li>align-items</li>
+            </ol>
+        </section>
+
+        <section>
+            <p><a href="../examples/flex_messages.html">More complex flex</a></p>
+        </section>
+
+        <section>
+            <p><a href="../examples/flex_site.html">A whole basic site in flex</a></p>
+        </section>
+
+        <section>
+            <p><a href="../examples/flex_store.html">Store layout</a></p>
+        </section>
+
+        <section>
+            <p>Where will it fall down?</p>
+            <img src="img/badforflex.png">
+        </section>
+
+        <section>
+            <h2>Using percentages?</h2>
+            <p>Percentage paddings & margins on flex items get different behavior in different browsers</p>
+        </section>
+
+        <section>
+            <h2>Let's talk about CSS</h2>
+        </section>
+
+        <section>
+            <h2>Variables</h2>
+            <p>:root { --link-color: #FFF; }</p>
+            <p>a { color: var(--link-color); }</p>
+        </section>
+
+        <section>
+            <h2>Opacity</h2>
+            <p>opacity: 0.5</p>
+        </section>
+
+        <section>
+            <h2>Gradients</h2>
+            <p>background-image: linear-gradient(top, #000, #FFF);</p>
+        </section>
+
+        <section>
+            <h2>Box Shadow</h2>
+            <p>box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.5);</p>
+        </section>
+
+        <section>
+            <h2>Cursor</h2>
+            <p>cursor: pointer;</p>
+        </section>
+
+        <section>
+            <h2>More Thursday!</h2>
+        </section>
+
     </div>
 </div>
 <script>

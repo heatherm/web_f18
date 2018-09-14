@@ -2,32 +2,47 @@
 <html lang='en-US'>
 <head>
     <meta charset='UTF-8'>
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <title>Inline-block height and width examples</title>
+    <meta name='viewport'
+          content='width=device-width, initial-scale=1.0'>
+    <!--TODO add a link tag to connect to your style.css-->
+    <title>Float shape example</title>
     <style>
         div {
-            height: 100px;
-            width: 100px;
-            background-color: black;
+            border: 1px solid black;
+            width: 500px;
         }
-
-        .left {
+        img {
+            background-color: blue;
+            /*padding: 10px;*/
+            /*border: 10px solid red;*/
+            /*margin: 20px;*/
+            border-radius: 100px;
             float: left;
-            background-color: red;
-        }
-
-        h1 {
-            clear: right;
-            /*clear: left;*/
-            /*clear: both;*/
+            /*shape-outside: margin-box;*/
+            /*shape-outside: polygon(0 0, 100% 100%, 0 100%);*/
         }
     </style>
 </head>
 <body>
-<p>Our h1 "Hello" is clearing anything floated to the right. Try updating to "clear: left" to get it to clear our red div which is floated to the left.</p>
-<hr>
-<div class="left"> Floated Red Box </div>
-<h1>Hello</h1>
+<p>The floated image below can set "shape-outside" in css to dictate how inline content next to it flows.</p>
+<ul>
+    <li>First, calculate the right border-radius once you've added padding, border, and margin</li>
+    <li>Second, look at the different values of shape-outside</li>
+    <li>Third, what happens with a different shape-outside?</li>
+    <li>Last, what happens if the image is not floated?</li>
+</ul>
+<p>Note: the flow shape respects the border-radius set.</p>
+<div>
+    <img src="https://placekitten.com/200/200">
+    <p>
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+    </p>
+</div>
 </body>
 </html>

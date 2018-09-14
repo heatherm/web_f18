@@ -167,7 +167,9 @@ Topics
 * Resets
 
 Refs
-* https://flexboxfroggy.com/
+[Flex Box Froggy](https://flexboxfroggy.com/)
+[Grid Garden](https://cssgridgarden.com/)
+
  
 
 **Week 4 (9/25,9/27): UX, Mobile CSS, em, rem, fonts**

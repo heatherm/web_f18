@@ -5,43 +5,57 @@
     <meta name='viewport'
           content='width=device-width, initial-scale=1.0'>
     <!--TODO add a link tag to connect to your style.css-->
-    <title>Float shape example</title>
+    <title>Why do we clear?</title>
     <style>
         div {
             border: 1px solid black;
             width: 500px;
+            background-color: gray;
         }
-        img {
-            background-color: blue;
-            /*padding: 10px;*/
-            /*border: 10px solid red;*/
-            /*margin: 20px;*/
-            border-radius: 100px;
-            float: left;
-            /*shape-outside: margin-box;*/
-            /*shape-outside: polygon(0 0, 100% 100%, 0 100%);*/
+
+        p {
+            /*float: left;*/
+            /*width: 30%;*/
+            border: 1px solid red;
+        }
+
+        .cf::after {
+            /*display: table;*/
+            /*content: '';*/
+            /*clear: both;*/
         }
     </style>
 </head>
 <body>
-<p>The floated image below can set "shape-outside" in css to dictate how inline content next to it flows.</p>
-<ul>
-    <li>First, calculate the right border-radius once you've added padding, border, and margin</li>
-    <li>Second, look at the different values of shape-outside</li>
-    <li>Third, what happens with a different shape-outside?</li>
-    <li>Last, what happens if the image is not floated?</li>
-</ul>
-<p>Note: the flow shape respects the border-radius set.</p>
-<div>
-    <img src="https://placekitten.com/200/200">
+<ol>
+    <li>Give the p tags a width</li>
+    <li>Float the ptags, bam! columns</li>
+    <li>Add the clearfix</li>
+</ol>
+<div class="cf">
     <p>
-        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
-        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
-        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
-        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
-        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
-        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
-        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+    </p>
+    <p>
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+    </p>
+    <p>
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm Lorem ipsu lorm
+        Lorem ipsu lorm Lorem ipsu lorm
     </p>
 </div>
 </body>

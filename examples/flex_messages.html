@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Inline-block height and width examples</title>
+    <style>
+        /*take up full screen*/
+        html, body {
+            margin: 0;
+            height: 100%;
+            border: 1px solid black;
+        }
+
+        body {
+            display: flex; /*common to use this to make everybody flex*/
+            flex-flow: column; /* horizontal by default */
+        }
+
+        .messages {
+            font-size: 2em;
+            display: flex;
+            flex-flow: column-reverse;
+            flex: 1;
+        }
+
+        form {
+            display: flex;
+            padding: 10px;
+            background-color: #668074;
+        }
+
+        input {
+            font-size: 2em;
+            line-height: 2em;
+            flex: 1;
+        }
+
+        button {
+            font-size: 2em;
+            padding: 0 1em;
+        }
+
+    </style>
+</head>
+<body>
+<ol class="messages">
+    <li>Great thanks</li>
+    <li>How are you</li>
+    <li>Hello you</li>
+    <li>Hello</li>
+</ol>
+
+<form>
+    <input type="text">
+    <button>Send</button>
+</form>
+</body>
+</html>

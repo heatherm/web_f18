@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="minireset.css">-->
+    <title>Inline-block height and width examples</title>
+    <style>
+        #cats {
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+            /*align-items: center;*/
+            /*justify-content: space-evenly;*/
+        }
+
+        ul {
+            padding: 0;
+            list-style: none inside;
+        }
+        .cat {
+            border: 3px solid black;
+            border-radius: 10px;
+            padding: 2%;
+            margin: 2%;
+            display: flex;
+            flex-flow: column;
+        }
+        .cat img {
+            order: -1;
+            align-self: center;
+            max-width: 100%;
+            max-height:200px;
+        }
+        .cat > button {
+            margin-top: auto;
+            height: 50px;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: forestgreen;
+            color: white;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<section id="cats">
+    <section class="cat">
+        <h1>Kitty1</h1>
+        <p>This cat was found in a dumpster outside of NYU</p>
+        <ul>
+            <li>2 months
+            <li>All shots
+            <li>Spayed
+            <li>Tortoise shell
+        </ul>
+        <img src="http://placekitten.com/300/200"
+             alt="Tortoise shell kitten for adoption">
+        <button>Adopt</button>
+    </section>
+    <section class="cat">
+        <h1>Kitty1</h1>
+        <p>This cat was found in a dumpster outside of NYU</p>
+        <ul>
+            <li>2 months
+            <li>All shots
+            <li>Spayed
+            <li>Tortoise shell
+        </ul>
+        <img src="http://placekitten.com/200/300"
+             alt="Tortoise shell kitten for adoption">
+        <button>Adopt</button>
+    </section>
+    <section class="cat">
+        <h1>Kitty1</h1>
+        <p>This cat was found in a dumpster outside of NYU</p>
+        <ul>
+            <li>2 months
+            <li>All shots
+            <li>Spayed
+            <li>Tortoise shell
+        </ul>
+        <img src="http://placekitten.com/200/300"
+             alt="Tortoise shell kitten for adoption">
+        <button>Adopt</button>
+    </section>
+    <section class="cat">
+        <h1>Kitty1</h1>
+        <p>This cat was found in a dumpster outside of NYU</p>
+        <ul>
+            <li>2 months
+            <li>All shots
+            <li>Spayed
+            <li>Tortoise shell
+        </ul>
+        <img src="http://placekitten.com/200/300"
+             alt="Tortoise shell kitten for adoption">
+        <button>Adopt</button>
+    </section>
+    <section class="cat">
+        <h1>Kitty1</h1>
+        <p>This cat was found in a dumpster outside of NYU</p>
+        <ul>
+            <li>2 months
+            <li>All shots
+            <li>Spayed
+            <li>Tortoise shell
+        </ul>
+        <img src="http://placekitten.com/200/300"
+             alt="Tortoise shell kitten for adoption">
+        <button>Adopt</button>
+    </section>
+</section>
+</body>
+</html>

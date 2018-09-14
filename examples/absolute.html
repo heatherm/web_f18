@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Inline-block height and width examples</title>
+    <style>
+        div {
+            background-color: #668074;
+            border: 2px solid black;
+            padding: 25px;
+            font-size: 40px;
+        }
+
+        .one {
+            /*position: relative;*/
+            height: 400px;
+            width: 400px;
+        }
+        .two {
+            /*position: relative;*/
+            height: 200px;
+            width: 200px;
+        }
+        .three {
+            /*position: absolute;*/
+            /*top: 0;*/
+            /*right: 0;*/
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="one">
+    1
+    <div class="two">
+        2
+        <div class="three">
+            3
+        </div>
+    </div>
+</div>
+</body>
+</html>
