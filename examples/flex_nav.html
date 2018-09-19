@@ -4,17 +4,14 @@
     <meta charset='UTF-8'>
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <title>Inline-block height and width examples</title>
+    <title>Flex nav example</title>
     <style>
-        a {
-            color: white;
-        }
-
         .nav {
+            background-color: #5a7880;
             list-style-type: none;
             padding: 0;
             margin: 0;
-            /*display: flex;*/
+            display: flex; /* row is default */
             /*justify-content: center;*/
             /*justify-content: space-between;*/
             /*justify-content: space-around;*/
@@ -22,33 +19,34 @@
         }
 
         .nav li {
-            width: 100px;
+            color: white;
             background-color: #668074;
             font-size: 20px;
             border: 2px solid black;
             text-align: center;
 
             /*1*/
-            /*flex: 1; !* divide space equally *!*/
-            /*flex: auto; !*lays out normal length then distributes extra evenly*!*/
+            /*flex: 1; !* divide space equally, make them flexible, but tight for longer text *!*/
+            /*flex: auto; !*lays out normal length then distributes extra evenly, nothing overflows until they all do*!*/
 
             /*2*/
-            /*align-self: center; !* vertical centering *!*/
+            /*align-self: center; !* vertical centering, but it shrinks *!*/
 
-            /*3*/
-            /*display: flex; !* make an anon flex item *!*/
+            /*kill 2 and start 3*/
+            /*display: flex; !* make li an anon flex item *!*/
             /*align-items: center;*/
+            /*justify-content: center;*/
         }
 
     </style>
 </head>
 <body>
 <ul class="nav">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li><a href="#clients">Our Clients</a></li>
-    <li><a href="#contact">Contact Us By Phone</a></li>
-    <li><a href="#contact">Contact Us By Phone or Email or <br>Skype or Tin Can<br> or Airmail</a></li>
+    <li>Home</li>
+    <li>About Us</li>
+    <li>Our Clients</li>
+    <li>Contact Us By Phone</li>
+    <li>Contact Us By Phone or Email or <br>Skype or Tin Can<br> or Airmail</li>
 </ul>
 </body>
 </html>

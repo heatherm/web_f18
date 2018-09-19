@@ -16,8 +16,8 @@
 
         .nav li {
             display: list-item; /* default, block outside, inline inside */
-            /*display: inline; !* one row, but no width height *!*/
-            /*display: inline-block; !* one row, but with width height *!*/
+            display: inline; /* one row, but no width height */
+            display: inline-block; /* one row, but with width height */
             font-size: 20px;
             padding: 20px;
             border: 1px solid black;
@@ -26,9 +26,16 @@
         a {
             color: white;
         }
+
+        .gradient {
+            border: 5px solid black;
+            background-image: linear-gradient(#000, #FFF)
+        }
     </style>
 </head>
 <body>
+
+<div class="gradient">kajshdfkjhsdaf kjahsdf kjhasd fkjhasdfkl</div>
 <p>Resize the viewport using each of the display values above to clearly see the difference:</p>
 <ul class="nav">
     <li>

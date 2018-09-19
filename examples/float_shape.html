@@ -13,13 +13,14 @@
         }
         img {
             background-color: blue;
-            /*padding: 10px;*/
-            /*border: 10px solid red;*/
-            /*margin: 20px;*/
-            border-radius: 100px;
-            float: left;
+            padding: 10px;
+            border: 10px solid red;
+            margin: 10px;
+            /*clip-path: circle();*/
+            /*border-radius: 120px; !* update to include padding and border to 40 each and this to 160, then 180 *!*/
+            float: left; /* if it is not floated, we can't do shape outside */
             /*shape-outside: margin-box;*/
-            /*shape-outside: polygon(0 0, 100% 100%, 0 100%);*/
+            shape-outside: polygon(0 0, 100% 100%, 0 100%);
         }
     </style>
 </head>
@@ -29,7 +30,8 @@
     <li>First, calculate the right border-radius once you've added padding, border, and margin</li>
     <li>Second, look at the different values of shape-outside</li>
     <li>Third, what happens with a different shape-outside?</li>
-    <li>Last, what happens if the image is not floated?</li>
+    <li>Fourth, what happens if the image is not floated?</li>
+    <li>Last, replace border radius with clip path</li>
 </ul>
 <p>Note: the flow shape respects the border-radius set.</p>
 <div>
