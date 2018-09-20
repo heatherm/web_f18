@@ -175,12 +175,12 @@ Topics
 * Grid
 
 Refs
-[Flex Box Froggy](https://flexboxfroggy.com/)
-[Grid Garden](https://cssgridgarden.com/)
-[Flex or Grid?](https://www.youtube.com/watch?v=hs3piaN4b5I)
-[CSS Guidelines](https://cssguidelin.es/)
-[Patterns & Fallbacks for old browsers](https://gridbyexample.com/patterns/)
-[Amazing women of CSS](https://rachelandrew.co.uk/archives/2016/10/11/the-amazing-women-of-css/)
+* [Flex Box Froggy](https://flexboxfroggy.com/)
+* [Grid Garden](https://cssgridgarden.com/)
+* [Flex or Grid?](https://www.youtube.com/watch?v=hs3piaN4b5I)
+* [CSS Guidelines](https://cssguidelin.es/)
+* [Patterns & Fallbacks for old browsers](https://gridbyexample.com/patterns/)
+* [Amazing women of CSS](https://rachelandrew.co.uk/archives/2016/10/11/the-amazing-women-of-css/)
 
 **Week 4 (9/25,9/27): UX, Mobile CSS, em, rem, fonts**
 
