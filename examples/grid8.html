@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport'
+          content='width=device-width, initial-scale=1.0'>
+    <title>Grid template areas.</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            font: 1em sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                    "header header aside1"
+                    "header header aside2";
+        }
+
+        header {
+            grid-area: header;
+            min-height: 10rem;
+            /*justify-content: center;*/
+            /*align-content: center;*/
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 1rem;
+            /*display: grid;*/
+            /*justify-content: center;*/
+            /*align-content: center;*/
+
+            /*display: flex;*/
+            /*flex-direction: column;*/
+            /*align-items: center;*/
+            /*justify-content: center;*/
+        }
+
+        header > * {
+            background-color: #ffcb6b;
+        }
+
+        /*header > * {*/
+        /*background-color: #ff666d;*/
+        /*}*/
+
+        .first-callout {
+            grid-area: aside1;
+        }
+
+        .second-callout {
+            grid-area: aside2;
+        }
+
+        /*.first-callout {*/
+        /*grid-area: aside1;*/
+        /*}*/
+
+        /*.second-callout {*/
+        /*grid-area: aside2;*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+<ol>
+    <li>Play with grid areas</li>
+</ol>
+
+<hr>
+
+<main class="grid-container">
+    <header>
+        <h1>Hello!</h1>
+        <p>Welcome to my wonderful website!</p>
+    </header>
+    <aside class="first-callout">Aside 1</aside>
+    <aside class="second-callout">Aside 2</aside>
+</main>
+
+</body>
+</html>

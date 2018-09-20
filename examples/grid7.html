@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport'
+          content='width=device-width, initial-scale=1.0'>
+    <title>Whole container.</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            font: 1em sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-gap: .2rem;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            grid-auto-flow: dense;
+        }
+
+        div {
+            height: 100px;
+            background-color: #ff666d;
+        }
+
+        .special {
+            background-color: #ffcb6b;
+            grid-column: span 3;
+        }
+    </style>
+</head>
+<body>
+<ol>
+    <li>Play with spans on grid items</li>
+</ol>
+
+<hr>
+
+<main class="grid-container">
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div class="special">hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+</main>
+
+</body>
+</html>

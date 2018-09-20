@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport'
+          content='width=device-width, initial-scale=1.0'>
+    <title>justify self.</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            font: 1em sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr;
+            margin-left: 1rem;
+            align-items: end;
+            justify-items: end;
+            /*display: grid;*/
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            /*grid-template-columns: 1fr 1fr;*/
+            /*grid-template-rows: 1fr 1fr;*/
+            /*grid-template: 1fr 1fr / 1fr 1fr;*/
+            /*align-items: end;*/
+            /*justify-items: end;*/
+        }
+
+        div:nth-child(1), div:nth-child(2) {
+            align-self: start;
+        }
+
+        div:nth-child(1), div:nth-child(3) {
+            justify-self: start;
+        }
+    </style>
+</head>
+<body>
+<ol>
+    <li>Justify the contents</li>
+</ol>
+
+<hr>
+
+<main class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+</main>
+
+</body>
+</html>

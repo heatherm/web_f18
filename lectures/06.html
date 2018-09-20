@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>NYU Web Dev Fall 2018</title>
+    <meta name="description" content="HTML, CSS and Javascript Basics">
+    <meta name="author" content="Heather Moore">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css"
+          id="theme">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js" defer></script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+
+        <section>
+            <h2>Sign up for facilitation</h2>
+            <p>Right now!</p>
+        </section>
+
+        <section>
+            <h2>Homework Notes</h2>
+        </section>
+
+        <section>
+            <h2>Q: Element or div with class?</h2>
+            <p>A: Element where it makes sense</p>
+        </section>
+
+        <section>
+            <h2>Q: Attributes and values with or without space?</h2>
+            <p>A: Without</p>
+        </section>
+
+        <section>
+            <h2><a href="https://dev.w3.org/html5/spec-LC/syntax.html#unquoted">Specs</a> vs <a
+                    href="https://google.github.io/styleguide/htmlcssguide.html">Real life</a></h2>
+        </section>
+
+        <section>
+            <blockquote>There are only two hard things in Computer Science: cache invalidation and naming things.
+            </blockquote>
+            <cite><a href="https://martinfowler.com/bliki/TwoHardThings.html">- Phil Karlton</a></cite>
+        </section>
+
+        <section>
+            <h2>Q: Two letter class names?</h2>
+            <p>A: Maybe, but try <a
+                    href="https://google.github.io/styleguide/htmlcssguide.html#ID_and_Class_Naming">this</a> and
+                <a href="https://css-tricks.com/semantic-class-names/">this</a>.</p>
+        </section>
+
+        <section>
+            <h2>Q: kabob-case or camelCase?</h2>
+            <p>A: <a href="https://google.github.io/styleguide/htmlcssguide.html#ID_and_Class_Name_Delimiters">kabob</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Q: 6 elements or 1?</h2>
+            <p>A: Depends. What's instructive? Do you need the nesting?</p>
+        </section>
+
+        <section>
+            <h2>Q: ID or Class?</h2>
+            <p>A: Likely a <a href="https://css-tricks.com/the-difference-between-id-and-class/">class</a>.</p>
+        </section>
+
+        <section>
+            <h2>Q: How much whitespace?</h2>
+            <p>A: Just
+                <a href="https://google.github.io/styleguide/htmlcssguide.html#Indentation">enough</a>, but
+                <a href="https://google.github.io/styleguide/htmlcssguide.html#General_Formatting">apply</a>
+                <a href="https://google.github.io/styleguide/htmlcssguide.html#Declaration_Block_Separation">consistently</a>
+                <a href="https://google.github.io/styleguide/htmlcssguide.html#Rule_Separation">please</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Q: Single or Double quotes?</h2>
+            <p>A: HTML
+                <a href="https://google.github.io/styleguide/htmlcssguide.html#HTML_Quotation_Marks">double</a>; CSS
+                <a href="https://google.github.io/styleguide/htmlcssguide.html#CSS_Quotation_Marks">single</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Q: em or rem?</h2>
+            <p>A: rem</p>
+            <p>A2: rems for modules, ems for cascade-able things</p>
+        </section>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li>Review</li>
+                <li>More Flexbox</li>
+                <li>Grid</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Inline-Block</h2>
+            <p>Inline, but with width and height</p>
+        </section>
+
+        <section>
+            <h2>Move beyond floated items with <br>clear: both</h2>
+        </section>
+
+        <section>
+            <h2>Float Shapes</h2>
+            <p>Only for inline content adjacent to floats</p>
+        </section>
+
+        <section>
+            <h2>Floats are mostly Hacks; Use Flex</h2>
+        </section>
+
+        <section>
+            <h2>Until now: Boxes ↓ and Text →</h2>
+        </section>
+
+        <section>
+            <h2>Now: nuanced columns ↓ and rows →</h2>
+        </section>
+
+        <section>
+            <h2>Flex is Best:</h2>
+            <ul>
+                <li>Centering</li>
+                <li>Sidebars</li>
+                <li>Fluid grid layouts</li>
+                <li>Equal height cards</li>
+                <li>Footers at the bottom</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>display: flex</h2>
+            <p>Set on parent; allows alignment of <em>direct</em> children</p>
+        </section>
+
+        <section>
+            <ol>
+                <li>Direction</li>
+                <li>Alignment</li>
+                <li>Order</li>
+                <li>Flexibility</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Direction</h2>
+            <ul>
+                <li>flex-direction
+                    <ul>
+                        <li>row: default</li>
+                        <li>column</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Alignment Rows</h2>
+            <ul>
+                <li>justify-content (horizontal)
+                    <ul>
+                        <li>flex-end/flex-start</li>
+                        <li>center</li>
+                        <li>space-between/space-around</li>
+                    </ul>
+                </li>
+                <li>align-items (vertical)
+                    <ul>
+                        <li>flex-end/flex-start</li>
+                        <li>center</li>
+                        <li>stretch: default</li>
+                        <li><a href="https://codepen.io/heathrm/pen/PdVbMJ">baseline</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Alignment Columns</h2>
+            <ul>
+                <li>justify-content (vertical)</li>
+                <li>align-items (horizontal)</li>
+                <li>align-self (vertically in item)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Order</h2>
+            <ul>
+                <li>explicit: 1, 2, 3</li>
+                <li>before all : -1</li>
+                <li>flex-direction for flipping order
+                    <ul>
+                        <li>row-reverse</li>
+                        <li>column-reverse</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Flexibility</h2>
+            <ul>
+                <li>flex: 1</li>
+                <li>align-items: stretch (grow height to fill container)</li>
+            </ul>
+        </section>
+
+        <section>
+            <ul>
+                <li>flex: initial for static width</li>
+                <li>margin-left: auto to push last element right</li>
+                <li>flex-basis : usually content width, but can be explicit width</li>
+                <li>flex-shrink : 0 for do not shrink</li>
+                <li>flex-grow : 1 for grow as large as you can</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Let's talk about grid</h2>
+        </section>
+
+        <section>
+            <p>display: grid</p>
+            <p>slices element into a grid tracks</p>
+        </section>
+
+        <section>
+            <h2>Like Flex</h2>
+            <p>We have containers and direct grid children</p>
+            <p>Let's see some <a href="../examples/grid.html">examples</a></p>
+        </section>
+    </div>
+</div>
+<script>
+    Reveal.initialize({
+        history: true
+    })
+</script>
+</body>
+</html>

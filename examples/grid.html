@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport'
+          content='width=device-width, initial-scale=1.0'>
+    <title>How to grid.</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            font: 1em sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: .2rem;
+            /*display: grid;*/
+            /*grid-gap: .2rem;*/
+            /*grid-template-columns: repeat(7, 1fr);*/
+            /*grid-template-columns: repeat(auto-fit, minmax(10rem, auto));*/
+            /*grid-template-columns: repeat(auto-fill, minmax(10rem, auto));*/
+            /*grid-auto-rows: minmax(2rem, 10rem);*/
+        }
+
+        div {
+            border: 1px solid black;
+            background-color: #ff666d;
+        }
+    </style>
+</head>
+<body>
+<ol>
+    <li>Create a grid container</li>
+    <li>Create some grid items</li>
+</ol>
+
+<hr>
+
+<main class="grid-container">
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+    <div>hi</div>
+</main>
+
+</body>
+</html>

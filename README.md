@@ -44,7 +44,8 @@ Class time will be spent on lecture, live-coding, Q&A, and student facilitations
 
 ### 30% - Peer Facilitation
 
-Leading Class Discussion. Presentations are an opportunity for a pair of students to structure and facilitate the discussion of an assigned activity.
+Leading Class Discussion. Presentations are an opportunity for a student to structure and facilitate the discussion of an assigned activity.
+Please see the [facilitation guide](facilitation.md) for more information.
 
 ### 30% - Final Project
 
@@ -85,7 +86,7 @@ If you are student with a disability who is requesting accommodations, please
 
 ## Feedback
 
-We would love your feedback on the course! Please DM me in Slack.
+I would love your feedback on the course! Please DM me in Slack.
 
 ## Notable Dates
 You can find the official academic calendar [here](https://www.nyu.edu/registrar/calendars/university-academic-calendar.html#1184)
@@ -97,13 +98,14 @@ Last day to drop Fall 2018 classes and not receive a grade of 'W'
 **Monday, October 8, 2018** - Fall Recess
 No classes scheduled
 
+**Tuesday, October 9, 2018** - Legistlative day operating on a Monday schedule. Our class will not run on the 9th.
+
 **Monday, November 5, 2018** - Last day to use the Leave and Withdrawal process to submit a fall semester term withdrawal request or submit a request to withdraw from a course. Students should consult the academic calendar of their home school for specific deadlines pertaining to course withdrawal for the term.
 
 **Wednesday, November 21, 2018 - Friday, November 23, 2018** - Student Thanksgiving Recess
 No classes scheduled
 
 **Friday, December 14, 2018** - Last day of Fall 2018 classes
-
 
 ## Schedule of Meetings & Readings
 
@@ -133,6 +135,8 @@ Refs
 
 **Week 2 (9/11,9/13): CSS, Box Model**
 
+[Homework](hw/02.md)
+
 Activities
 * Style pages from external style sheets
 * Create a basic webpage with box model layout
@@ -158,21 +162,29 @@ Refs
 
 **Week 3 (9/18,9/20): Flexbox & CSS Grid**
 
+[Homework](hw/03.md)
+
 Activities
 * Redo page with flexbox layout
 * Add CSS Grid to a component better rendered via grid
 
 Topics
-* Browser compatibility
-* Resets
+* CSS style guides
+* Layout browser compatibility
+* Flexbox
+* Grid
 
 Refs
 [Flex Box Froggy](https://flexboxfroggy.com/)
 [Grid Garden](https://cssgridgarden.com/)
-
- 
+[Flex or Grid?](https://www.youtube.com/watch?v=hs3piaN4b5I)
+[CSS Guidelines](https://cssguidelin.es/)
+[Patterns & Fallbacks for old browsers](https://gridbyexample.com/patterns/)
+[Amazing women of CSS](https://rachelandrew.co.uk/archives/2016/10/11/the-amazing-women-of-css/)
 
 **Week 4 (9/25,9/27): UX, Mobile CSS, em, rem, fonts**
+
+[Homework](hw/04.md)
 
 Activities
 * Create a wireframe
@@ -197,6 +209,8 @@ Refs
 
 **Week 5 (10/2,10/4): Frameworks**
 
+[Homework](hw/05.md)
+
 Activities
 * Overlay a framework onto your page
 * Inspect a progress bar component to see what you get for free
@@ -215,6 +229,8 @@ Refs
 
 
 **Week 6 (10/11): Javascript Intro, JSON, DOM Events**
+
+[Homework](hw/06.md)
 
 Activities
 * Make an alert pop up from browser console
@@ -237,7 +253,11 @@ have class on the 9th.
 
 **Week 7 (10/16,10/18): JS Continued**
 
+[Homework](hw/07.md)
+
 **Week 8 (10/23,10/25): CSS Animations, Touch Events**
+
+[Homework](hw/08.md)
 
 Activities
 * Make page react to swipes & taps
@@ -254,6 +274,8 @@ Refs
 * https://easings.net/en
 
 **Week 9 (10/30,11/1): Accessibility, Bubbling/Capturing Events**
+
+[Homework](hw/09.md)
 
 Activities
 * Guest lecture (Claire) on accessibility on 11/1 
@@ -276,6 +298,8 @@ Refs
 
 **Week 10 (11/6,11/8): Forms, Http Methods**
 
+[Homework](hw/10.md)
+
 Activities
 * Build a form and submit it
 
@@ -291,6 +315,8 @@ Refs
 
 **Week 11 (11/13,11/15): JS Application**
 
+[Homework](hw/11.md)
+
 Activities
 * Build basic vue.js app
 
@@ -303,6 +329,8 @@ Refs
 
 **Week 12 (11/20): JS Application Continued**
 
+[Homework](hw/12.md)
+
 Activities
 
 Topics
@@ -310,6 +338,8 @@ Topics
 Refs
 
 **Week 13 (11/27,11/29): JS Application Continued, User Testing**
+
+[Homework](hw/13.md)
 
 Activities
 * Perform a UX test on a peer
@@ -322,6 +352,8 @@ Refs
 
 
 **Week 14 (12/4,12/6): PMing & Freelancing**
+
+[Homework](hw/14.md)
 
 Activities
 * Create a useful user story
@@ -340,4 +372,6 @@ Refs
 * https://www.mbopartners.com/blog/what-should-an-independent-contractor-agreement-include
 
 **Week 15 (12/11,12/13): Final Presentations**
+
+[Final](final.md)
 

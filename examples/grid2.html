@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport'
+          content='width=device-width, initial-scale=1.0'>
+    <title>Auto stretch.</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            font: 1em sans-serif;
+        }
+
+        .container {
+            display: grid;
+            /*display: flex;*/
+            /*display: grid;*/
+            /*grid-gap: .2rem;*/
+            grid-template-columns: 1fr auto;
+        }
+
+        input {
+            /*flex: 1;*/
+        }
+    </style>
+</head>
+<body>
+<ol>
+    <li>Stretch one item</li>
+</ol>
+
+<hr>
+
+<form class="container">
+    <input type="text">
+    <!--<p>khfeshd</p>-->
+    <button>Submit</button>
+</form>
+
+</body>
+</html>
