@@ -7,7 +7,7 @@
     Tuesdays & Thursdays • 8:30-10:20a • 2 MTC Room 824 • 3 credit hrs
     Office hours directly after class or by appointment 
 
-### [nyuweb.slack.com](nyuweb.slack.com)
+### [nyuweb.slack.com](https://nyuweb.slack.com)
 
 ## Course prerequisites
 
