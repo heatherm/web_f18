@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>NYU Web Dev Fall 2018</title>
+    <meta name="description" content="HTML, CSS and Javascript Basics">
+    <meta name="author" content="Heather Moore">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css"
+          id="theme">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js" defer></script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li>Review</li>
+                <li>Print styles</li>
+                <li>Media Queries</li>
+                <li>Feature Queries</li>
+                <li>Fonts</li>
+                <li>Rems + Ems</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Flex & Grid</h2>
+            <p>One direction & Two directions</p>
+        </section>
+
+        <section>
+            <h2>Flex (↓ OR →)</h2>
+            <p>Great at 1 dimensional layout</p>
+            <p>Works from the content outward</p>
+        </section>
+
+        <section>
+            <h2>Grid (↓ AND →)</h2>
+            <p>Great at 2 dimensional layout</p>
+            <p>Works from the layout inward</p>
+        </section>
+
+        <section>
+            <h2>Let's play flex or grid?</h2>
+        </section>
+
+        <section>
+            <p>Q: I have stuff I want to space equally on the page and it's different sizes?</p>
+        </section>
+
+        <section>
+            <p>A: Flexbox</p>
+        </section>
+
+        <section>
+            <p>Q: I want my row to always be as large as the largest content in it?</p>
+        </section>
+
+        <section>
+            <p>A: Grid</p>
+        </section>
+
+        <section>
+            <p>Q: I want two of my divs to overlap?</p>
+        </section>
+
+        <section>
+            <p>A: Grid</p>
+        </section>
+
+        <section>
+            <p>Q: I want certain elements to span twice as wide as others?</p>
+        </section>
+
+        <section>
+            <p>A: Grid</p>
+        </section>
+
+        <section>
+            <p>Q: I want alignment horizontally but I don't care if they line up vertically?</p>
+        </section>
+
+        <section>
+            <p>A: Flexbox</p>
+        </section>
+
+        <section>
+            <p>Q: I want super easy auto-margins (think login button)?</p>
+        </section>
+
+        <section>
+            <p>A: Flexbox</p>
+        </section>
+
+        <section>
+            <p>Q: I need a card grid with different heights?</p>
+        </section>
+
+        <section>
+            <p>A: Flexbox</p>
+        </section>
+
+        <section>
+            <h2><a href="https://codepen.io/chriscoyier/pen/LWMdRv">Grid > Flex</a></h2>
+        </section>
+
+        <section>
+            <h2><a href="https://codepen.io/chriscoyier/pen/VpqXyY">Flex > Grid</a></h2>
+        </section>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li style="text-decoration: line-through">Review</li>
+                <li>Media Queries</li>
+                <li>Print styles</li>
+                <li>Feature Queries</li>
+                <li>Fonts</li>
+                <li>Rems + Ems</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Applying CSS to specific Media</h2>
+            <p>Ex: make it look different when you print it out</p>
+        </section>
+
+        <section>
+            <h2>Old: Link Tag</h2>
+            <h4>
+                &lt;link rel="stylesheet" media="print" href="printer.css"&gt;
+            </h4>
+        </section>
+
+        <section>
+            <h2>New: CSS Query</h2>
+
+            <h2>
+            <pre>
+        @media print {
+            ???
+        }
+            </pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>When and how would I use?</h2>
+            <p>To focus on printed content</p>
+        </section>
+
+        <section>
+            <h2>
+            <pre>
+    @media print {
+        #header, #footer, #nav {
+            display: none;
+        }
+    }
+            </pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>
+            <pre>
+    @media print {
+        #main {
+            font-family: serif;
+        }
+    }
+            </pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>
+            <pre>
+    @media print {
+        #main {
+            font-size: 12pt;
+        }
+    }
+            </pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>@page</h2>
+            <h2>
+                <pre>
+@page {size: 8in 10in;}
+@page {margin: .75in;}
+                </pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>@page</h2>
+            <h2>
+                <pre>
+@page <mark>normal</mark> {size: portrait;
+              margin: .5in;}
+@page rotate {size: landscape;
+              margin: .2in;}
+
+#main {page: <mark>normal</mark>;}
+#gallery {page: rotate;}
+                </pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>Media Queries</h2>
+            <p>Modify styles based on device type, screen properties or resolution</p>
+        </section>
+
+        <section>
+            <h2>Sizing</h2>
+        </section>
+
+        <section>
+            <h4>@media (min-width: 10em) and <br>
+                (orientation: landscape) { }</h4>
+        </section>
+
+        <section>
+            <h4>@media (width <= 10em) { }</h4>
+        </section>
+
+        <section>
+            <h4>@media (10em <= width <= 20em ) { }</h4>
+        </section>
+
+        <section>
+            <h2>Features</h2>
+        </section>
+
+        <section>
+            <h4>@media (not(hover))</h4>
+        </section>
+
+        <section>
+            <h4>@media (not(color))</h4>
+        </section>
+
+        <section>
+            <h2>Devices</h2>
+            <h2>
+                <pre>
+@media
+  (max-device-width: 42mm)
+  and (min-device-width: 38mm) { }
+                </pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>Q: Do I use with Grid/Flex?</h2>
+            <p>A: Yes</p>
+        </section>
+
+        <section>
+            <h2>Flex by Orientation</h2>
+            <h2>
+            <pre>
+@media (orientation: portrait) {
+  .container {
+    flex-direction: column;
+  }
+}
+            </pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>Style by Feature</h2>
+        </section>
+
+        <section>
+            <h2>Feature Queries</h2>
+            <h2>
+                <pre>
+@supports (display: grid ) {
+    #main {display: grid;}
+}
+                </pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>Feature Inside Media</h2>
+            <h2>
+                <pre>
+@supports (display: grid ) {
+    @media (orientation: portrait) {}
+    @media (orientation: landscape) {}
+}
+                </pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>Fonts</h2>
+        </section>
+
+        <section>
+            <h2>5 Families</h2>
+        </section>
+
+        <section>
+            <h2 style="font-family: 'Times New Roman',serif">Serif</h2>
+            <p style="font-family: 'Times New Roman',serif">Times New Roman</p>
+        </section>
+
+        <section>
+            <h2 style="font-family: 'Helvetica', sans-serif">Sans Serif</h2>
+            <p style="font-family: 'Helvetica', sans-serif">Helvetica</p>
+        </section>
+
+        <section>
+            <h2 style="font-family: 'Courier',monospace">Monospace</h2>
+            <h2 style="font-family: 'Courier',monospace">Courier</h2>
+        </section>
+
+        <section>
+            <h2 style="font-family: 'Courier',monospace">Monospace hello</h2>
+            <h2 style="font-family: 'Helvetica', sans-serif">Sans Serif hello</h2>
+        </section>
+
+        <section>
+            <h2 style="font-family: cursive">Cursive</h2>
+            <h2 style="font-family: fantasy">Fantasy</h2>
+        </section>
+
+        <section>
+            <h2>Safest Web Fonts?</h2>
+            <ul>
+                <li>Arial</li>
+                <li>Helvetica</li>
+                <li>Times New Roman</li>
+                <li>Courier</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Sizing</h2>
+        </section>
+
+        <section>
+            <h2>The em box</h2>
+            <p>font-size sets the size of the designer chosen em-box for a font</p>
+        </section>
+
+        <section>
+            <p>Uniform height pieces, set to width of uppercase M (square/box)</p>
+            <img src="http://glennmerdan.com/wp-content/uploads/2010/11/DSC_3452.jpg" alt="lead type pieces">
+        </section>
+
+        <section>
+            <h2>Smart defaults</h2>
+            <p>font-size: small / medium / large</p>
+            <p>medium 16px, default</p>
+            <p>small * 1.5 = medium</p>
+            <p>large  * .66 = medium</p>
+        </section>
+
+        <section>
+            <h2>Q: What do I inherit?</h2>
+            <p>A: The computed value</p>
+            <p><a href="../examples/larger_font.html">Example with keywords</a></p>
+            <p><a href="../examples/em_font.html">Example with ems</a></p>
+        </section>
+
+        <section>
+            <h2>Browser defaults</h2>
+            <p><a href="../examples/monospace_font.html">Example with ems</a></p>
+        </section>
+
+        <section>
+            <h2>Ems and Rems</h2>
+            <p><a href="../examples/em_rem_font.html">Example scaling</a></p>
+        </section>
+
+        <section>
+            <h2><a href="https://github.com/heatherm/web_f18/blob/master/final.md">The Final.</a></h2>
+        </section>
+    </div>
+</div>
+<script>
+    Reveal.initialize({
+        history: true
+    })
+</script>
+</body>
+</html>

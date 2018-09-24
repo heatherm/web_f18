@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport'
+          content='width=device-width, initial-scale=1.0'>
+    <title>Ems.</title>
+    <style>
+        :root {
+            font-size: 16px;
+        }
+        .div1 {
+            font-size: 2em;
+        }
+        .div2 {
+            font-size: 1em;
+        }
+        .div2sibling {
+            font-size: 1rem;
+        }
+
+        .div3 {
+            border: 3px solid black;
+            font-size:3em;
+        }
+
+        .div4 {
+            border: 3px solid red;
+            margin: 2em;
+            font-size: .66em;
+        }
+
+        .div4sibling {
+            border: 3px solid blue;
+            margin: 2rem;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<ol>
+    <li>Update div2 to 2em and see the cascade</li>
+</ol>
+
+<main>
+    <h2>Fonts Scaling</h2>
+    <div class="div1">Div 1
+        <div class="div2">Div 2 receives cascade
+        </div>
+        <div class="div2sibling">Div 2 Sib Does not receive cascade
+        </div>
+    </div>
+
+    <h2>Layout Scaling</h2>
+    <div class="div3">Div 3
+        <div class="div4">Div 4
+        </div>
+        <div class="div4sibling">Div 4 Sib
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

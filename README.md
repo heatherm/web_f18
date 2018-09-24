@@ -199,8 +199,8 @@ Topics
 * Feature queries
 
 Refs
-* https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good
--b8e2a6c78b06
+* https://www.buildthis.io/a/web-safe-fonts-html-css/
+* https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06
 * https://github.com/necolas/idiomatic-css
 * https://goodstuff.fm/nbsp/137
 * https://www.nngroup.com/
