@@ -6,15 +6,18 @@
           content='width=device-width, initial-scale=1.0'>
     <title>Absolute vs relative keywords.</title>
     <style>
-        .div1 {
-            font-size: larger;
+        h1 {
+            color: green;
         }
-        .div2 {
-            font-size: larger;
+
+        @media (orientation: landscape) {
+
+            h1 {
+                color: red;
+            }
         }
-        .div3 {
-            font-size: larger;
-        }
+
+
     </style>
 </head>
 <body>
@@ -25,11 +28,7 @@
 </ol>
 
 <main>
-    <div class="div1">Div 1
-        <div class="div2">Div 2
-            <div class="div3">Div 3</div>
-        </div>
-    </div>
+    <h1>Red</h1>
 </main>
 
 </body>
