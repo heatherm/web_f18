@@ -1,0 +1,19 @@
+:root {
+    --grid-colums: 12;
+    --grid-gutter: 30px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-colums), 1fr);
+    grid-gap: var(--grid-gutter);
+}
+
+.col-sm-1, .col-sm-2 {
+    grid-column: span var(--grid-colums);
+}
+
+@media (min-width: 1200px) {
+    .col-lg-1 { grid-column: span 1 }
+    .col-lg-2 { grid-column: span 2 }
+}

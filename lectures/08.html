@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>NYU Web Dev Fall 2018</title>
+    <meta name='description' content='HTML, CSS and Javascript Basics'>
+    <meta name='author' content='Heather Moore'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css'>
+    <link rel='stylesheet' href='../examples/print.css' media='print'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css'
+          id='theme'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js' defer></script>
+    <base target="_blank">
+</head>
+<body>
+<div class='reveal'>
+    <div class='slides'>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li>Review</li>
+                <li>Intro to Frameworks</li>
+                <li>Make a Framework</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Media Queries</h2>
+            <p>Modify styles based on device type, screen properties or resolution</p>
+        </section>
+
+        <section>
+            <h2>
+            <pre>
+    @media print {
+        #header, #footer, #nav {
+            display: none;
+        }
+    }
+            </pre>
+            </h2>
+        </section>
+
+        <section>
+            <h4>@media (not(hover))</h4>
+        </section>
+
+        <section>
+            <h2>Feature Queries</h2>
+            <h2>
+                <pre>
+@supports (display: grid ) {
+    #main {display: grid;}
+}
+                </pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>Feature Inside Media</h2>
+            <h2>
+                <pre>
+@supports (display: grid ) {
+    @media (orientation: portrait) {}
+    @media (orientation: landscape) {}
+}
+                </pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>@page</h2>
+            <h2>
+                <pre>
+@page {size: 8in 10in;}
+@page {margin: .75in;}
+                </pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>5 Default Font Families</h2>
+        </section>
+
+        <section>
+            <h2>Generally "Safest"</h2>
+            <ul>
+                <li style="font-family: arial,serif;">Arial</li>
+                <li style="font-family: Helvetica,serif;">Helvetica</li>
+                <li style="font-family: 'Times New Roman',serif;">Times New Roman</li>
+                <li style="font-family: Courier, serif;">Courier</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ems and Rems</h2>
+            <p>Inherited vs Root Inherited</p>
+            <p>Button example @ <a href="https://www.youtube.com/watch?v=_-aDOAMmDHI">9:30</a></p>
+        </section>
+
+        <section>
+            <h2><a href='https://github.com/heatherm/web_f18/blob/master/final.md'>The Final.</a></h2>
+        </section>
+
+        <section>
+            <h2>Final Questions?</h2>
+        </section>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li style='text-decoration: line-through'>Review</li>
+                <li>Intro to Frameworks</li>
+                <li>Make a Framework</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>CSS Framework</h2>
+            <ul>
+                <li>Creates a layout system for you</li>
+                <li>Gives you classes that do things to apply to your html</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Bootstrap</h2>
+            <p><a href="http://getbootstrap.com/docs/4.1/getting-started/introduction/">Let's take a look under the hood</a></p>
+            <p><a href="http://getbootstrap.com/docs/4.1/layout/grid/">Bootstrap "Grid" is actually Flexbox backed</a></p>
+        </section>
+
+        <section>
+            <h2>Smart Defaults</h2>
+            <ul>
+                <li>Quick to <a href="http://getbootstrap.com/docs/4.1/examples/dashboard/">prototype</a> with</li>
+                <li>Marketplace for <a href="http://themes.getbootstrap.com/preview/?theme_id=5348">plug and play</a></li>
+                <li>Handle a vast array of <a href="http://getbootstrap.com/docs/4.1/getting-started/browsers-devices/">browsers</a> well</li>
+                <li>Have made <a href="http://getbootstrap.com/docs/4.1/components/buttons/">design decisions</a> for you</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Frameworks for Days</h2>
+            <a href="https://www.keycdn.com/blog/front-end-frameworks/">Top 10 Lists??</a>
+        </section>
+
+        <section>
+            <h2>Foundation</h2>
+            <p>Also has <a href="https://foundation.zurb.com/templates-previews-sites-f6/portfolio.html">templates</a></p>
+            <p>And component <a href="https://foundation.zurb.com/building-blocks/kits/dashboard.html">kits</a></p>
+            <p>But you can also do custom <a href="https://foundation.zurb.com/sites/download.html/#customBuild">grids</a></p>
+        </section>
+
+        <section>
+            <h2>Email Templates!</h2>
+            <p></p>
+        </section>
+
+        <section>
+            <h2><a href="https://bulma.io/">Bulma</a></h2>
+            <p>Also based on <a href="https://bulma.io/documentation/columns/sizes/">Flexbox</a></p>
+            <p>Also has <a href="https://bulma.io/documentation/components/navbar/#transparent-navbar">components</a></p>
+            <p>It's all just <a href="https://github.com/Semantic-Org/Semantic-UI/blob/master/dist/semantic.css">css</a></p>
+        </section>
+
+        <section>
+            <h2>How many?</h2>
+            <p>No number. Just be able to figure them out.</p>
+            <p>Which classes to they use to make rows and columns?</p>
+        </section>
+
+        <section>
+            <h2>Which one?</h2>
+            <p>What are you doing with it?</p>
+        </section>
+
+        <section>
+            <h2>Common Considerations</h2>
+        </section>
+
+        <section>
+            <h2>Activity</h2>
+            <p>Commits, releases, stack overflows</p>
+            <p>Will this change as CSS changes?</p>
+        </section>
+
+        <section>
+            <h2>Documentation</h2>
+            <p>Read the docs for 5 min. Are they clear?</p>
+        </section>
+
+        <section>
+            <h2>Functionality</h2>
+            <p>Are the default components ones you want?</p>
+        </section>
+
+        <section>
+            <h2>Size</h2>
+            <p>Is it performant?</p>
+            <p>Is this too bulky for my simple mobile focused site? <a href="https://milligram.io/">2kb</a> vs <a href="https://gist.github.com/primaryobjects/64a4e7e3351c646f51eee07949215ad4">95kb</a></p>
+            <p>Does that even matter? <a href="https://www.expedient.com/file-transfer-time-calculator/">Timing breakdown</a></p>
+        </section>
+
+        <section>
+            <h2>Community</h2>
+            <p>Who runs the show? Do you want to engage with them?</p>
+        </section>
+
+        <section>
+            <h2>Philosophy</h2>
+            <p>Design patterns? Tech patterns? Rems? Grids?</p>
+        </section>
+
+        <section>
+            <h2>No "one size fits all"</h2>
+        </section>
+
+        <section>
+            <h2>Let's talk <a href="http://sass-lang.com/">SASS</a></h2>
+            <p>(And CSS Preprocessors)</p>
+        </section>
+
+        <section>
+            <h2>Processes Something into CSS</h2>
+        </section>
+
+        <section>
+            <h2>Why?</h2>
+            <ul>
+                <li style="text-decoration: line-through">Variables</li>
+                <li>Nesting (not for <a href="https://tabatkins.github.io/specs/css-nesting/">long</a>)</li>
+                <li>Inheritance (<a href="http://tabatkins.github.io/specs/css-extend-rule/">uh-oh</a>)</li>
+                <li><a href="http://sass-lang.com/guide#topic-6-SCSS">Functions</a></li>
+                <li>Calculating things (width: 600px / 960px * 100%)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>SCSS in Action</h2>
+            <p><a href="https://codepen.io/heathrm/pen/wYKaRe">Codepen</a></p>
+        </section>
+
+        <section>
+            <h2>LESS</h2>
+            <p>Even <a href="http://lesscss.org/">more</a> functionality</p>
+        </section>
+
+        <section>
+            <h2>Native CSS > Frameworks</h2>
+            <p>Now that Grid + Flex are supported widely</p>
+        </section>
+
+        <section>
+            <h2>Distinct Native Possibilities</h2>
+            <p>A <a href="https://www.mozilla.org/en-US/developer/css-grid/">consideration</a> for rolling your own</p>
+        </section>
+
+        <section>
+            <h2>Let's make a grid</h2>
+            <p><a href="../examples/grid_framework.html">Example!</a></p>
+        </section>
+
+        <section>
+            <h2>Homework 5</h2>
+        </section>
+    </div>
+</div>
+<script>
+    Reveal.initialize({
+        history: true
+    })
+</script>
+</body>
+</html>

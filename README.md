@@ -178,9 +178,11 @@ Refs
 * [Flex Box Froggy](https://flexboxfroggy.com/)
 * [Grid Garden](https://cssgridgarden.com/)
 * [Flex or Grid?](https://www.youtube.com/watch?v=hs3piaN4b5I)
+* [Grid challenges](https://goodstuff.fm/nbsp/137#t=15:30)
 * [CSS Guidelines](https://cssguidelin.es/)
 * [Patterns & Fallbacks for old browsers](https://gridbyexample.com/patterns/)
 * [Amazing women of CSS](https://rachelandrew.co.uk/archives/2016/10/11/the-amazing-women-of-css/)
+* [Alignment Cheatsheet](https://rachelandrew.co.uk/css/cheatsheets/box-alignment)
 
 **Week 4 (9/25,9/27): UX, Mobile CSS, em, rem, fonts**
 
@@ -199,13 +201,14 @@ Topics
 * Feature queries
 
 Refs
-* https://www.buildthis.io/a/web-safe-fonts-html-css/
-* https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06
-* https://github.com/necolas/idiomatic-css
-* https://goodstuff.fm/nbsp/137
+* [Safe fonts](https://www.buildthis.io/a/web-safe-fonts-html-css/)
+* [How does Medium.com do css](https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06)
+* [Idiomatic CSS](https://github.com/necolas/idiomatic-css)
+* [CSS Round Display](https://goodstuff.fm/nbsp/137#t=38:00)
 * https://www.nngroup.com/
 * https://color.adobe.com/explore/?filter=most-popular&time=month
-* http://www.colorzilla.com/gradient-editor/
+* [Gradient editor](http://www.colorzilla.com/gradient-editor/)
+* [vh bug](https://bugs.webkit.org/show_bug.cgi?id=141832)
 
 **Week 5 (10/2,10/4): Frameworks**
 
@@ -219,14 +222,14 @@ Activities
 Topics
 * When to use a framework?
 * HTML email styling
+* SASS/SCSS/LESS
+* Framework composition
 * Beware: Over-specific selectors
-* SASS
 * BEM
 
 Refs
-* http://getskeleton.com/
-* https://foundation.zurb.com/emails/email-templates.html
-
+* [Skeleton](http://getskeleton.com/)
+* [Email templates](https://foundation.zurb.com/emails/email-templates.html)
 
 **Week 6 (10/11): Javascript Intro, JSON, DOM Events**
 
@@ -244,9 +247,10 @@ Topics
 * Numbers, Strings, Expressions
 
 Refs
-* http://es6katas.org/
-* https://syntax.fm/show/039/is-jquery-dead
-* https://githubengineering.com/removing-jquery-from-github-frontend/
+* [ES6 compatibility](http://kangax.github.io/compat-table/es6/)
+* [Practice ES6](http://es6katas.org/)
+* [On jQuery](https://syntax.fm/show/039/is-jquery-dead)
+* [GitHub removes jQuery](https://githubengineering.com/removing-jquery-from-github-frontend/)
 
 - October 9th is a Legistlative day operating on a Monday schedule. We will not 
 have class on the 9th.
@@ -295,6 +299,7 @@ Refs
 * https://www.w3.org/WAI/fundamentals/accessibility-intro/
 * http://zomigi.com/blog/videos-of-screen-readers-using-aria-updated/
 * https://javascript.info/bubbling-and-capturing
+* https://tenon.io/index.php
 
 **Week 10 (11/6,11/8): Forms, Http Methods**
 

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport'
+          content='width=device-width, initial-scale=1.0'>
+    <link rel="stylesheet" href="minireset.css"/>
+    <link rel="stylesheet" href="grid.css"/>
+    <title>Grid Framework</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 50rem;
+            margin: 0 auto;
+            padding: 1rem;
+            font: 1rem/1.5 Helvetica, sans-serif;
+            color: #333;
+        }
+
+        .row,
+        .row > * {
+            background-color: rgba(0,0,255,.15);
+            border: 1px solid rgba(0,0,255,.25);
+        }
+
+        .row {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-sm-1 col-lg-1">col-sm-1</div>
+    <div class="col-sm-2 col-lg-2">col-sm-2</div>
+    <div class="col-sm-1 col-lg-1">col-sm-1</div>
+</div>
+
+</body>
+</html>
