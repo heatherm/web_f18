@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>NYU Web Dev Fall 2018</title>
+    <meta name='description' content='HTML, CSS and Javascript Basics'>
+    <meta name='author' content='Heather Moore'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css'>
+    <link rel='stylesheet' href='../examples/print.css' media='print'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css'
+          id='theme'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js' defer></script>
+    <base target="_blank">
+</head>
+<body>
+<div class='reveal'>
+    <div class='slides'>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li>Review</li>
+                <li>Email Frameworks</li>
+                <li>BEM Syntax</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>CSS Framework</h2>
+            <ul>
+                <li>Creates a layout system for you</li>
+                <li>Gives you classes that do things to apply to your html</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Smart Defaults</h2>
+            <ul>
+                <li>Quick to <a href="http://getbootstrap.com/docs/4.1/examples/dashboard/">prototype</a> with</li>
+                <li>Marketplace for <a href="http://themes.getbootstrap.com/preview/?theme_id=5348">plug and play</a>
+                </li>
+                <li>Handle a vast array of <a href="http://getbootstrap.com/docs/4.1/getting-started/browsers-devices/">browsers</a>
+                    well
+                </li>
+                <li>Have made <a href="http://getbootstrap.com/docs/4.1/components/buttons/">design decisions</a> for
+                    you
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Which one?</h2>
+            <p>What are you doing with it?</p>
+        </section>
+
+        <section>
+            <h2>Philosophy</h2>
+            <p>Design patterns? Tech patterns? Rems? Grids?</p>
+        </section>
+
+        <section>
+            <h2><a href="http://sass-lang.com/">SASS</a></h2>
+            <p>(And other CSS Preprocessors)</p>
+        </section>
+
+        <section>
+            <ul>
+                <li style="text-decoration: line-through">Variables</li>
+                <li>Nesting (not for <a href="https://tabatkins.github.io/specs/css-nesting/">long</a>)</li>
+                <li>Inheritance (<a href="http://tabatkins.github.io/specs/css-extend-rule/">uh-oh</a>)</li>
+                <li><a href="http://sass-lang.com/guide#topic-6-SCSS">Functions</a></li>
+                <li>Calculating things (width: 600px / 960px * 100%)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Let's make a grid</h2>
+            <p><a href="../examples/grid_framework.html">Example!</a></p>
+        </section>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li style="text-decoration: line-through;">Review</li>
+                <li>Email Frameworks</li>
+                <li>BEM Syntax</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Email. Is. Different.</h2>
+        </section>
+
+        <section>
+            <blockquote>
+                Implementing responsive email design can be a bit of a drag
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>2 Types: HTML and TXT</h2>
+            <p>One is plain text and one can have formatting and pictures.</p>
+        </section>
+
+        <section>
+            <h2>2 Main Client Types: Desktop and Web</h2>
+            <p>Thunderbird vs gmail.com</p>
+        </section>
+
+        <section>
+            <h2>HTML for emails</h2>
+            <p>Not the same as web HTML</p>
+        </section>
+
+        <section>
+            <h2>Web based HTML for emails</h2>
+            <p>Your HTML is rendered inside someone else's HTML</p>
+        </section>
+
+        <section>
+            <h2>Clients Preprocess</h2>
+            <p>Strip anything potential harmful for the mail client to render</p>
+        </section>
+
+        <section>
+            <h2>Result</h2>
+            <p>Most people default to a limited set of HTML when writing emails</p>
+        </section>
+
+        <section>
+            <h2>Safe to Use</h2>
+            <ul>
+                <li>HTML Tables</li>
+                <li>Width 600px</li>
+                <li>Inline CSS</li>
+                <li>Web safe fonts</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Maybe?</h2>
+            <ul>
+                <li>Background Images</li>
+                <li>Custom Fonts</li>
+                <li>Embedded Fonts</li>
+                <li>Wide layouts</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Nope.</h2>
+            <ul>
+                <li>Iframe</li>
+                <li>Audio</li>
+                <li>Video</li>
+                <li>Forms</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Clients * OSs * Devices * Browsers!</h2>
+        </section>
+
+        <section>
+            <h2>90+ Unique Email Clients</h2>
+            <p><a href="https://www.campaignmonitor.com/css/">caniuse.com (for email)</a></p>
+        </section>
+
+        <section>
+            <h2>Let's look at a single property</h2>
+            <p><a href="https://www.campaignmonitor.com/css/positioning-display/display/">display: ????</a></p>
+        </section>
+
+        <section>
+            <h2>Grid in <a href="https://twitter.com/M_J_Robbins/status/847104166556250112">webmail</a> clients</h2>
+            <p>Pushing in the right direction</p>
+        </section>
+
+        <section>
+            <h2>You can buy help</h2>
+            <p><a href="https://litmus.com/email-testing">Live previews from Litmus</a></p>
+        </section>
+
+        <section>
+            <h2>Use Simple Boilerplates</h2>
+            <p><a href="https://github.com/seanpowell/Email-Boilerplate">Three generic styles</a></p>
+        </section>
+
+        <section>
+            <h2>Use Frameworks</h2>
+            <p><a href="https://foundation.zurb.com/emails/templates/marketing.html">Zurb Inky</a></p>
+        </section>
+
+        <section>
+            <h2>Don't expect perfection</h2>
+            <p>See note at bottom of <a href="https://foundation.zurb.com/emails/docs/visibility.html">page</a></p>
+        </section>
+
+        <section>
+            <h2>Lesson?</h2>
+            <p>CSS rules are not well encapsulated</p>
+        </section>
+
+        <section>
+            <h2>Shadow DOM Soon</h2>
+        </section>
+
+        <section>
+            <h2>BEM</h2>
+        </section>
+
+        <section>
+            <h2>Block Element Modifier</h2>
+        </section>
+
+        <section>
+            <h2>It's a naming <a href="http://getbem.com/">convention</a></h2>
+        </section>
+
+        <section>
+            <h2>It's a design <a href="http://getbem.com/">methodology</a></h2>
+        </section>
+
+        <section>
+            <h2>Goals</h2>
+            <ul>
+                <li>Simplicity</li>
+                <li>Reusability</li>
+                <li>Sharability</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>What's it made of?</h2>
+        </section>
+
+        <section>
+            <h2>Blocks</h2>
+            <p>Can I draw a line around it?</p>
+        </section>
+
+        <section>
+            <img src="https://cdn-images-1.medium.com/max/1600/1*KANbx3IJWy-IzffvXIzRnQ.png" alt="block bem example">
+        </section>
+
+        <section>
+            <h2>Element</h2>
+            <p>Inside the standalone</p>
+            <p>Can it exist in another block? Then it's a block.</p>
+        </section>
+
+        <section>
+            <h2>Modifier</h2>
+            <p>State/look of block or element</p>
+        </section>
+
+        <section>
+            <h2>-- and __</h2>
+        </section>
+
+        <section>
+            <h2>CSS Syntax Helps us see B__E--M</h2>
+        </section>
+
+        <section>
+            <h2>
+                <pre>
+    .block {}
+    .block__element {}
+    .block--modifier {}
+                </pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>Mid -- 'M' odifier</h2>
+        </section>
+
+        <section>
+            <h2>
+                <pre>
+    .person {}
+    .person__hand {}
+    .person--female {}
+    .person--female__hand {}
+    .person__hand--left {}
+                </pre>
+            </h2>
+        </section>
+
+        <section>
+            <p>Can look at CSS to see HTML dependencies</p>
+        </section>
+
+        <section>
+            <h2>.person__hand vs .hand</h2>
+        </section>
+
+        <section>
+            <h2>Is there a .hand elsewhere?</h2>
+        </section>
+
+        <section>
+            <h3>
+                <pre>
+&#x3C;a class=&#x22;btn btn--big btn--orange&#x22; href=&#x22;&#x22;&#x3E;
+  &#x3C;span class=&#x22;btn__price&#x22;&#x3E;$9.99&#x3C;/span&#x3E;
+  &#x3C;span class=&#x22;btn__text&#x22;&#x3E;Subscribe&#x3C;/span&#x3E;
+&#x3C;/a&#x3E;
+                </pre>
+            </h3>
+        </section>
+
+        <section>
+            <h2>What's Happening?</h2>
+            <p>Two things.</p>
+        </section>
+
+        <section>
+            <h2>Separate Structure from Cosmetics</h2>
+            <p>Block styles and modifier styles</p>
+        </section>
+
+        <section>
+            <h3>
+                <pre>
+.btn {
+  display: inline-block;
+  padding: 1em 2em;
+  vertical-align: middle;
+}
+
+.btn--success {
+  background-color: green;
+  color: white;
+}
+                </pre>
+            </h3>
+        </section>
+
+        <section>
+            <h2>Allow Styles to be Composed</h2>
+        </section>
+
+        <section>
+            <h3>
+                <pre>
+&#x3C;a class=&#x22;btn btn--big btn--orange&#x22; href=&#x22;&#x22;&#x3E;
+                </pre>
+            </h3>
+        </section>
+
+        <section>
+            <h1>SRP + DRY</h1>
+        </section>
+
+        <section>
+            <h2>Flatten the Specificity Hierarchy</h2>
+        </section>
+
+        <section>
+            <h2>.one .two vs .one--two</h2>
+        </section>
+
+        <section>
+            <h3>Raise specificity while maintaining portability</h3>
+        </section>
+
+        <section>
+            <h2>CSS Extras</h2>
+        </section>
+
+        <section>
+            <h2>[id="hack"] { }</h2>
+            <p>ID as Attribute</p>
+        </section>
+
+        <section>
+            <h2>writing-mode: vertical-rl</h2>
+        </section>
+
+        <section>
+            <h2>No class the 9th</h2>
+            <h2>Sarah Intro to JS on the 11th</h2>
+            <h2>No Graded HW Next Week</h2>
+        </section>
+    </div>
+</div>
+<script>
+    Reveal.initialize({
+        history: true
+    })
+</script>
+</body>
+</html>

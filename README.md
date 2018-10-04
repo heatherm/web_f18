@@ -230,6 +230,8 @@ Topics
 Refs
 * [Skeleton](http://getskeleton.com/)
 * [Email templates](https://foundation.zurb.com/emails/email-templates.html)
+* [Email Journey Infographic](https://litmus.com/blog/wp-content/uploads/2012/04/Litmus-Road-To-Rendering-Infographic.png)
+* [Mobile Devices and Emails](https://litmus.com/blog/mobile-email-how-devices-operating-systems-app-engines-affect-rendering)
 
 **Week 6 (10/11): Javascript Intro, JSON, DOM Events**
 

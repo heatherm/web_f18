@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Inline-block height and width examples</title>
+    <style>
+        .board {
+            display: grid;
+            grid-template-columns: repeat(5, 8rem);
+            grid-template-rows: repeat(5, 8rem);
+        }
+
+        .board__cell {
+            display: flex;
+            border: 2px solid black;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .board__cell--top {
+            transform: rotate(180deg);
+        }
+
+        .board__cell--right {
+            transform: rotate(-90deg);
+        }
+
+        .board__cell--left {
+            transform: rotate(90deg);
+        }
+
+        .board__cell--bottom-left {
+            transform: rotate(45deg);
+        }
+
+        .board__cell:nth-child(1){
+            grid-row: 1;
+            grid-column: 1;
+        }
+        .board__cell:nth-child(6){
+            grid-row: 2;
+            grid-column: 5;
+        }
+        .board__cell:nth-child(7){
+            grid-row: 3;
+            grid-column: 5;
+        }
+        .board__cell:nth-child(8){
+            grid-row: 4;
+            grid-column: 5;
+        }
+        .board__cell:nth-child(9){
+            grid-row: 5;
+            grid-column: 5;
+        }
+        .board__cell:nth-child(10){
+            grid-row: 5;
+            grid-column: 4;
+        }
+        .board__cell:nth-child(11){
+            grid-row: 5;
+            grid-column: 3;
+        }
+        .board__cell:nth-child(12){
+            grid-row: 5;
+            grid-column: 2;
+        }
+        .board__cell:nth-child(13){
+            grid-row: 5;
+            grid-column: 1;
+        }
+        .board__cell:nth-child(14){
+            grid-row: 4;
+            grid-column: 1;
+        }
+        .board__cell:nth-child(15){
+            grid-row: 3;
+            grid-column: 1;
+        }
+        .board__cell:nth-child(16){
+            grid-row: 2;
+            grid-column: 1;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="board">
+    <li class="board__cell board__cell--top-left">1</li>
+    <li class="board__cell board__cell--top">2</li>
+    <li class="board__cell board__cell--top">3</li>
+    <li class="board__cell board__cell--top">4</li>
+    <li class="board__cell board__cell--top-right">5</li>
+    <li class="board__cell board__cell--right">6</li>
+    <li class="board__cell board__cell--right">7</li>
+    <li class="board__cell board__cell--right">8</li>
+    <li class="board__cell board__cell--bottom-right">9</li>
+    <li class="board__cell">10</li>
+    <li class="board__cell">11</li>
+    <li class="board__cell">12</li>
+    <li class="board__cell"><span class="board__cell--bottom-left">13</span></li>
+    <li class="board__cell board__cell--left ">14</li>
+    <li class="board__cell board__cell--left">15</li>
+    <li class="board__cell board__cell--left">16</li>
+</ul>
+
+</body>
+</html>
