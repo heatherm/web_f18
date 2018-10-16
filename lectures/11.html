@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>NYU Web Dev Fall 2018</title>
+    <meta name='description' content='HTML, CSS and Javascript Basics'>
+    <meta name='author' content='Heather Moore'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css'>
+    <link rel='stylesheet' href='../examples/print.css' media='print'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css'
+          id='theme'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js' defer></script>
+    <base target="_blank">
+</head>
+<body>
+<div class='reveal'>
+    <div class='slides'>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li>JS Review</li>
+                <li>JS Continued</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>JavaScript Is Ubiquitous</h2>
+        </section>
+
+        <section>
+            <h2>It is THE way</h2>
+            <p>to get interactivity into your pages</p>
+        </section>
+
+        <section>
+            <h2>ES6</h2>
+            <p>Originally proposed in 2011; official in 2015</p>
+        </section>
+
+        <section>
+            <h2>ES6 is a Superset</h2>
+            <p>Always backwards compatible</p>
+            <p><a href="http://kangax.github.io/compat-table/es6/">Compatibility Table</a></p>
+        </section>
+
+        <section>
+            <h2>ES6</h2>
+            <p>Introduced classes, modules, lexical block scoping, iterators, generators, native language support for promises</p>
+        </section>
+
+        <section>
+            <h2>ES6 -> ES5</h2>
+            <p>Requires Transpilers</p>
+        </section>
+
+        <section>
+            <h2>Babel</h2>
+            <p>Popular transpiler</p>
+            <p><a href="https://babeljs.io/"></a></p>
+        </section>
+
+        <section>
+            <h2>The language itself</h2>
+        </section>
+
+        <section>
+            <h2>for (let i = 0; i < 5; i++) { ... }</h2>
+        </section>
+
+        <section>
+            <h2>while (true) { ... } </h2>
+        </section>
+
+        <section>
+            <h2>if (thing) { ... } else { ... } </h2>
+        </section>
+
+        <section>
+            <h2>function add(one ,two) { return one+two }</h2>
+            <p>Example function, params not typed</p>
+        </section>
+
+        <section>
+            <h2>Hoisting?</h2>
+            <p>Ex: pull functions to the top</p>
+        </section>
+
+        <section>
+            <h2>Dynamic Typing</h2>
+            <p>Do not need to declare what type of info is stored in the variable</p>
+        </section>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li style="text-decoration: line-through;">JS Review</li>
+                <li>JS Continued</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>var / let / const</h2>
+            <p>Example js 4</p>
+        </section>
+
+        <section>
+            <h2>const+let vs var</h2>
+            <p>block scope keeps things clean</p>
+        </section>
+
+        <section>
+            <h2>Blocks</h2>
+            <p>Group of statements {} - not BEM</p>
+        </section>
+
+        <section>
+            <h2>Primitives</h2>
+            <ul>
+                <li>boolean</li>
+                <li>number</li>
+                <li>string</li>
+                <li>symbol</li>
+                <li>null</li>
+                <li>undefined</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Boolean</h2>
+            <p>true / false</p>
+        </section>
+
+        <section>
+            <h2>Number</h2>
+            <p>doubles: 10.22</p>
+            <p>64 bit floating point</p>
+        </section>
+
+        <section>
+            <h2>String</h2>
+            <p>'one' or "Two"</p>
+        </section>
+
+        <section>
+            <h2>Oddities</h2>
+            <p>Precision errors</p>
+            <p>L to R concat</p>
+        </section>
+
+        <section>
+            <h2>Symbol</h2>
+            <p>Kinda like unique strings.</p>
+        </section>
+
+        <section>
+            <h2>Null</h2>
+            <p>assigned no value</p>
+        </section>
+
+        <section>
+            <h2>Undefined</h2>
+            <p>no value assigned</p>
+        </section>
+
+        <section>
+            <h2>Objects</h2>
+            <ul>
+                <li>Array</li>
+                <li>Date</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Loose Equality</h2>
+            <p>==</p>
+            <p>console.log(num == str);</p>
+        </section>
+
+        <section>
+            <h2>Strong Equality</h2>
+            <p>===</p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#A_model_for_understanding_equality_comparisons">
+                Model for understanding
+            </a></p>
+        </section>
+
+        <section>
+            <h2>JavaScript is event driven</h2>
+        </section>
+
+        <section>
+            <h2>JS -> DOM <- HTML </h2>
+        </section>
+
+        <section>
+            <h2>let button = document.querySelector('.button');</h2>
+            <p><a href="../examples/js1.html">Example add event</a></p>
+        </section>
+
+        <section>
+            <h2>Attributes</h2>
+            <p>via dot syntax (ex: .src)</p>
+        </section>
+
+        <section>
+            <h2>innerHTML vs textContent</h2>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#Security_considerations">
+                What happens when you parse the content?
+            </a></p>
+        </section>
+
+        <section>
+            <h2>Classes are special</h2>
+            <p>via .classList.add/remove</p>
+        </section>
+
+        <section>
+            <h2>Elements are Nodes</h2>
+            <p>HTMLImageElement</p>
+        </section>
+
+        <section>
+            <h2>Node Interface</h2>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node">MDN Docs</a></p>
+        </section>
+
+        <section>
+            <h2>of vs in</h2>
+            <p><a href="../examples/js2.html">Example enumerations</a></p>
+        </section>
+
+        <section>
+            <h2>Event.currentTarget vs target</h2>
+            <p>Sometimes what you click is not what is listening</p>
+            <p><a href="../examples/js3.html">Example</a></p>
+        </section>
+
+        <section>
+            <h2>currentTarget</h2>
+            <p>object event is attached to</p>
+        </section>
+
+        <section>
+            <h2>target</h2>
+            <p>element you clicked</p>
+        </section>
+
+
+
+
+    </div>
+</div>
+<script>
+    Reveal.initialize({
+        history: true
+    })
+</script>
+</body>
+</html>

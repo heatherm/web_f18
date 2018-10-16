@@ -235,7 +235,7 @@ Refs
 
 **Week 6 (10/11): Javascript Intro, JSON, DOM Events**
 
-[Homework](hw/06.md)
+No homework this week
 
 Activities
 * Make an alert pop up from browser console

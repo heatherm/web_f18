@@ -1,0 +1,13 @@
+.nav {
+    display: flex;
+}
+.nav__button {
+    border: 2px solid blue;
+    border-radius: 1rem;
+    color: blue;
+    padding: 1rem;
+}
+
+.nav__button:hover {
+    cursor: pointer;
+}
