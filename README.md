@@ -261,6 +261,18 @@ have class on the 9th.
 
 [Homework](hw/07.md)
 
+Topics
+* ES6
+* let/const/var
+* Event binding
+* Equality
+* Securely updating text / accessing attributes
+* Enumerations
+
+Refs
+* [AirBnb JS Style Guide](https://github.com/airbnb/javascript#variables)
+* [Walmart Labs ESLint](https://github.com/walmartlabs/eslint-config-walmart/blob/master/docs/styleguide.md)
+
 **Week 8 (10/23,10/25): CSS Animations, Touch Events**
 
 [Homework](hw/08.md)
@@ -284,11 +296,11 @@ Refs
 [Homework](hw/09.md)
 
 Activities
+* Show capture vs bubble stack and how to control event propogation
+* Show a focus event that does not bubble
 * Guest lecture (Claire) on accessibility on 11/1 
 * Show examples of accessible and inaccessible websites
 * Try to navigate with just your keyboard
-* Show capture vs bubble stack and how to control event propogation
-* Show a focus event that does not bubble
 
 Topics
 *The A11Y Project

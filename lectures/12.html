@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>NYU Web Dev Fall 2018</title>
+    <meta name='description' content='HTML, CSS and Javascript Basics'>
+    <meta name='author' content='Heather Moore'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css'>
+    <link rel='stylesheet' href='../examples/print.css' media='print'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css'
+          id='theme'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js' defer></script>
+    <base target="_blank">
+</head>
+<body>
+<div class='reveal'>
+    <div class='slides'>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li>JS Review</li>
+                <li>JS Continued</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>ES6 is a Superset</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROCXVCXIEbWFJJxTlmFgwCIGPZShIOEf5NBiDLBc2Hoh-CzH7e">
+        </section>
+
+        <section>
+            <h3>We transpile to become backwards compatible</h3>
+            <p>Ex: <a href="https://babeljs.io/">Babel</a></p>
+        </section>
+
+        <section>
+            <h2>Dynamic Typing</h2>
+            <p>Do not need to declare what type of info is stored in the variable</p>
+        </section>
+
+        <section>
+            <h2>
+                <code>
+                    <pre>
+function add(left=0, right=0) {
+  return left + right;
+}
+                        </pre>
+                </code></h2>
+        </section>
+
+        <section>
+            <h3>
+                <code>
+                    <pre>
+const add = (left=0, right=0) => left + right ;
+                        </pre>
+                </code></h3>
+        </section>
+
+        <section>
+            <h3>ES6: One line functions may remove {} and return</h3>
+        </section>
+
+        <section>
+            <code>
+                <pre>
+                // ES5
+                var x = function(x, y) {
+                  return x * y;
+                }
+
+                // ES6
+                const x = (x, y) => x * y;
+                    </pre>
+            </code>
+        </section>
+
+        <section>
+            <h2>const + let</h2>
+            <p>block scope keeps things clean</p>
+        </section>
+
+        <section>
+            <code>
+            <pre>
+                let apple = "Granny Smith";
+
+                var x = function(x, y) {
+                  let apple = "Fuji";
+                  return x * y;
+                }
+
+                // apple is back to Granny Smith here
+                    </pre>
+            </code>
+        </section>
+
+        <section>
+            <h2>Prefer Strong Equality</h2>
+            <p>===</p>
+            <p>!==</p>
+        </section>
+
+        <section>
+            <h3>Set text with .textContent = ''</h3>
+        </section>
+
+        <section>
+            <h2>of vs in</h2>
+            <h2>[] vs {}</h2>
+        </section>
+
+        <section>
+            <h2>in is for object</h2>
+            <h2>of is for list</h2>
+        </section>
+
+        <section>
+            <h2>Error: x is not iterable</h2>
+            <h2>Undefined</h2>
+        </section>
+
+        <section>
+            <h2>finding and creating</h2>
+            <p>document.querySelector('<mark>.</mark>div')</p>
+            <p>document.createElement('div')</p>
+        </section>
+
+        <section>
+            <h2>adding to the dom</h2>
+            <p>nav.appendChild(element)</p>
+        </section>
+
+        <section>
+            <h2>adding and removing classes</h2>
+            <p>element.classList.add('<mark>nav__button</mark>');</p>
+            <p>element.classList.remove('<mark>nav__button</mark>');</p>
+        </section>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li style="text-decoration: line-through;">JS Review</li>
+                <li>data- attributes</li>
+                <li>defer</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>defer</h2>
+            <p><a href="../examples/defer.html">example</a></p>
+        </section>
+
+        <section>
+            <h2>data- attribute / dataset object</h2>
+            <p><a href="../examples/data-attrs.html">example</a></p>
+        </section>
+
+        <section>
+            <h4>Do not store content that should be <em>visible</em> and <em>accessible</em> in data attributes</h4>
+        </section>
+
+        <section>
+            <h4>Crawlers do not index data attribute values</h4>
+        </section>
+
+        <section>
+            <h2>
+            <code>
+                <pre>
+&#x3C;div id=&#x22;tic-tac-toe&#x22;&#x3E;
+      &#x3C;div data-index=&#x22;0&#x22;&#x3E;&#x3C;/div&#x3E;
+      &#x3C;div data-index=&#x22;1&#x22;&#x3E;&#x3C;/div&#x3E;
+      &#x3C;div data-index=&#x22;2&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+                </pre>
+            </code>
+            </h2>
+        </section>
+
+        <section>
+            <h2>Let's build an album</h2>
+            <p><a href="../examples/album.html">example</a></p>
+        </section>
+
+
+
+    </div>
+</div>
+<script>
+    Reveal.initialize({
+        history: true
+    })
+</script>
+</body>
+</html>

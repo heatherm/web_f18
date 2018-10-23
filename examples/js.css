@@ -11,3 +11,42 @@
 .nav__button:hover {
     cursor: pointer;
 }
+
+.container--blue {
+    background: blue;
+}
+
+article[data-article-id='asdfg'] {
+    background: #ff666d;
+}
+
+#modal.hidden {
+    display: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+img {
+    cursor: pointer;
+    border: 3px solid #5a7880;
+    margin: 5px;
+    padding: 5px;
+    height: 150px;
+}
+
+#modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

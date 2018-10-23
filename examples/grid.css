@@ -1,19 +1,278 @@
-:root {
-    --grid-colums: 12;
-    --grid-gutter: 30px;
+/*:root {*/
+    /*--grid-colums: 12;*/
+    /*--grid-gutter: 30px;*/
+/*}*/
+
+/*.row {*/
+    /*display: grid;*/
+    /*grid-template-columns: repeat(var(--grid-colums), 1fr);*/
+    /*grid-gap: var(--grid-gutter);*/
+/*}*/
+
+/*.col-sm-1, .col-sm-2 {*/
+    /*grid-column: span var(--grid-colums);*/
+/*}*/
+
+/*@media (min-width: 1200px) {*/
+    /*.col-lg-1 { grid-column: span 1 }*/
+    /*.col-lg-2 { grid-column: span 2 }*/
+/*}*/
+
+
+html {
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
 }
 
-.row {
-    display: grid;
-    grid-template-columns: repeat(var(--grid-colums), 1fr);
-    grid-gap: var(--grid-gutter);
+main {
+    display: flex;
+    flex-direction: column;
 }
 
-.col-sm-1, .col-sm-2 {
-    grid-column: span var(--grid-colums);
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: start;
 }
 
-@media (min-width: 1200px) {
-    .col-lg-1 { grid-column: span 1 }
-    .col-lg-2 { grid-column: span 2 }
+h1 {
+    color: black;
+    background-color:white;
+    grid-column: 1/2;
+    justify-content: center;
+}
+
+h3{
+    font-size: 12px;
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display:flex;
+}
+
+nav > h1{
+    margin: 30px;
+    justify-content: right;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li{
+    text-decoration: none;
+    padding:10px;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+section{
+    display: flex;
+    background-color:white;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 7px black double;
+    border-bottom: 7px black double;
+}
+
+section > div > img {
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px 50px 10px 10px;
+    border-right: 2px #d7d7d7 solid;
+}
+section > div > h3 {
+    align-items: center;
+}
+
+
+main{
+    display:grid;
+    grid-template-columns: 2fr 50px 2fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+    margin: 50px;
+}
+
+.one{
+    margin: 20px;
+    grid-column:4;
+    grid-row:1;
+    justify-self:center;
+    align-self: center;
+
+}
+
+.two{
+    margin: 20px;
+    grid-column:5;
+    grid-row:1;
+    justify-self: start;
+    align-self: center;
+    padding-left:20px;
+
+}
+
+.three{
+    margin: 20px;
+    grid-column:4;
+    grid-row:2;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.four{
+    margin: 20px;
+    grid-column:5;
+    grid-row:2;
+    justify-self: start;
+    align-self: center;
+    padding-left:20px;
+
+}
+
+.five {
+    grid-area: 1/1/3/3;
+    margin: 20px;
+    justify-self: center;
+    align-self: start;
+}
+
+article > div > img{
+    height: 200px;
+    width: 300px;
+}
+
+.main-pic {
+    width: 750px;
+    height:500px;
+    padding-right: 20px;
+    border-right: 2px #d7d7d7 solid;
+}
+
+.border {
+    padding-right: 30px;
+    border-right: 2px solid #d7d7d7;
+}
+
+@media (max-width: 1500px){
+
+    header{
+        display:flex;
+        flex-direction: column;
+    }
+
+    nav {
+        grid-row: 1/4;
+        grid-column: 1;
+        display:flex; '''affects the list so that it goes down the side'''
+    }
+
+    nav > h1{
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    ul{
+        margin:0;
+        padding:0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+
+    li{
+        padding:5px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .t-one > img {
+        width: 25%;
+        height: 25%;
+    }
+    .t-two > img{
+        width: 25%;
+        height: 25%;
+    }
+    .t-three > img{
+        width: 25%;
+        height: 25%;
+    }
+    .t-four > img{
+        width: 25%;
+        height: 25%;
+    }
+    .t-five > img{
+        width: 25%;
+        height: 25%;
+    }
+
+    .five{
+        margin:0;
+        padding:0;
+        align-self: start;
+    }
+    .one {
+        margin:0;
+        padding:0;
+        align-self: start;
+    }
+    .two {
+        margin:0;
+        padding:0;
+        align-self: start;
+    }
+    .three {
+        margin:0;
+        padding:0;
+        align-self: start;
+    }
+    .four {
+        margin:0;
+        padding:0;
+        align-self: start;
+    }
+
+    .border{
+        border: 0px #ffffff;
+        margin: 0;
+    }
+}
+
+@media print {
+    p{
+        color: #000000;
+    }
+
+    header{
+        opacity: 0;
+    }
+
+    nav {
+        opacity: 0;
+    }
+
+
 }
