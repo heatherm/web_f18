@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>NYU Web Dev Fall 2018</title>
+    <meta name='description' content='HTML, CSS and Javascript Basics'>
+    <meta name='author' content='Heather Moore'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css'>
+    <link rel='stylesheet' href='../examples/print.css' media='print'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css'
+          id='theme'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js' defer></script>
+    <base target="_blank">
+</head>
+<body>
+<div class='reveal'>
+    <div class='slides'>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li>Touch Events</li>
+                <li>Animations</li>
+                <li>JS Organization</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Animation</h2>
+            <ul>
+                <li>Transforms</li>
+                <li>Transitions</li>
+                <li>Keyframes</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Transform</h2>
+            <h3>f(x) -> y</h3>
+        </section>
+
+        <section>
+            <h2>translateX(-5em)</h2>
+            <h2>rotate(45deg)</h2>
+            <h2>scale(1.2)</h2>
+            <h2>perspective(500px)</h2>
+        </section>
+
+        <section>
+            <h2>Quicker and more optimized than absolute/relative positioning</h2>
+        </section>
+
+        <section>
+            <h5>img#one {transform: translateX(200px) rotate(45deg);}</h5>
+            <h5>img#two {transform: rotate(45deg) translateX(200px);}</h5>
+        </section>
+
+        <section>
+            <h2>You can update the transform-origin</h2>
+            <h5>But initial value is 50% 50%</h5>
+        </section>
+
+        <section>
+            <h2>What happens when you transform inline-level boxes?</h2>
+        </section>
+
+        <section>
+            <h2>You can't (for now)</h2>
+        </section>
+
+        <section>
+            <h2>Transition</h2>
+            <h3>-> Make that, gradual transitions</h3>
+        </section>
+
+        <section>
+            <hh3>Most style changes are ~16ms to repaint</hh3>
+            <h3>'transition' gives us a handle to slow it down.</h3>
+        </section>
+
+        <section>
+            <h5>transition: PROPERTY DURATION FN DELAY;</h5>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">Full list of properties</a></p>
+        </section>
+
+        <section>
+            <h2>is it numeric? has a midpoint?</h2>
+            <p>display values like block and inline-block aren’t animatable</p>
+        </section>
+
+        <section>
+            <p>There are performance costs with some animations</p>
+            <p>Animate the opacity of a duplicated background image instead of animating the blur</p>
+            <p><a href="https://codepen.io/ainalem/pen/ZagjYM/">Blur Transition</a></p>
+        </section>
+
+        <section>
+            <h5>transition: color 200ms ease-in 50ms;</h5>
+        </section>
+
+        <section>
+            <h5>transition: <mark>transform</mark> 200ms ease-in 50ms;</h5>
+        </section>
+
+        <section>
+            <h2>Béziers</h2>
+            <img src="img/beziers.png">
+            <p><a href="http://cubic-bezier.com/#.17,.67,.83,.67">Create some here...</a></p>
+        </section>
+
+        <section>
+            <h2>Step Functions</h2>
+            <img src="img/steps.png">
+        </section>
+
+        <section>
+            <h5>transition-duration: 1s, 2s, 3s;</h5>
+            <h5>transition-property: all, border-radius, opacity;</h5>
+        </section>
+
+        <section>
+            <h3>Beware: Negative values for transition-duration will invalidate the entire property value.</h3>
+        </section>
+
+        <section>
+            <h3>Generally, the best effects range between 100 and 200 milliseconds</h3>
+        </section>
+
+        <section>
+            <h2>Placing the transition</h2>
+            <p><a href="../examples/transition.html">Example</a></p>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+// Event knows the property, pseudoElement & elapsedTime
+// Does not happen on hover
+
+document.querySelector('div').addEventListener('transitionend',
+    function (e) {
+      console.log(e.propertyName);
+});
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+// You can use interaction to update your css transition
+element.style.transform = 'translateX(' + shift + 'px)';
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+// This is high specificity. To reset:
+element.style.transform = '';
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>Generally, don't update css like this</h2>
+            <p>But do if you need dynamic updates</p>
+        </section>
+
+        <section>
+            <h2>More control than transition in CSS?</h2>
+        </section>
+
+        <section>
+            <h2>Keyframe animations</h2>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+@keyframes animation_identifier {
+  keyframe_selector {
+    property: value;
+    property: value;
+  }
+  keyframe_selector {
+    property: value;
+    property: value;
+  }
+}
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+// The from is the 0% mark. The to is the 100% mark
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+@keyframes color-pop {
+    0% {
+        color: black;
+        background-color: white;
+    }
+    33% {
+        color: gray;
+        background-color: yellow;
+    }
+    100% {
+        color: white;
+        background-color: orange;
+    }
+}
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+// Apply multiple
+div { animation-name: change_bgcolor, bg-shift; }
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h3>keyframes don’t say how long the animation takes</h3>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+// Add timing and iteration counts
+
+div {
+   animation-name: change_bgcolor, round;
+   animation-duration: 200ms, 100ms;
+   animation-iteration-count: 2;
+}
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h3>Animate infinitely...</h3>
+            <p><a href="https://codepen.io/SitePoint/pen/KzLbGe">Animation shorthand</a></p>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+// Bounce ?
+
+div {
+  animation-direction: alternate-reverse;
+}
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+@media (prefers-reduced-motion) {
+  * {animation: none !important; transition: none !important;}
+}
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>Old way:</h2>
+            <h3>Touchmove & Mousemove</h3>
+        </section>
+
+        <section>
+            <h2>New way: Pointer Events</h2>
+            <p>Same on desktop and device</p>
+            <p>But! Not in ff yet!</p>
+            <p>And! Safari is not into it</p>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+event.target.setPointerCapture(event.pointerId);
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+    image.addEventListener('pointerdown', startSwipe);
+    image.addEventListener('pointermove', swiping);
+    image.addEventListener('pointerup', stopSwipe);
+    image.addEventListener('pointercancel', stopSwipe);
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+
+
+
+
+    </div>
+</div>
+<script>
+    Reveal.initialize({
+        history: true
+    })
+</script>
+</body>
+</html>

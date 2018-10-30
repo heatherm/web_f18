@@ -296,7 +296,7 @@ Refs
 [Homework](hw/09.md)
 
 Activities
-* Show capture vs bubble stack and how to control event propogation
+* Show capture vs bubble stack and how to control event propagation
 * Show a focus event that does not bubble
 * Guest lecture (Claire) on accessibility on 11/1 
 * Show examples of accessible and inaccessible websites
@@ -314,6 +314,7 @@ Refs
 * http://zomigi.com/blog/videos-of-screen-readers-using-aria-updated/
 * https://javascript.info/bubbling-and-capturing
 * https://tenon.io/index.php
+* https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd
 
 **Week 10 (11/6,11/8): Forms, Http Methods**
 
@@ -376,7 +377,7 @@ Refs
 
 Activities
 * Create a useful user story
-* Review a real readlined IC Agreement
+* Review a real redlined IC Agreement
 
 Topics
 * LLC vs Corp

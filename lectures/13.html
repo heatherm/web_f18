@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>NYU Web Dev Fall 2018</title>
+    <meta name='description' content='HTML, CSS and Javascript Basics'>
+    <meta name='author' content='Heather Moore'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css'>
+    <link rel='stylesheet' href='../examples/print.css' media='print'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css'
+          id='theme'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js' defer></script>
+    <base target="_blank">
+</head>
+<body>
+<div class='reveal'>
+    <div class='slides'>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li>Portfolio Album Continued</li>
+                <li>Add navigation</li>
+                <li>Add animation</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Click events and...</h2>
+            <ul>
+                <li>Keyboard events</li>
+                <li>Pointer/mobile events</li>
+                <li>Animation events</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+// Create a blueprint for image creation
+
+const createImage = (path) => {
+    const image = document.createElement('img');
+    image.src = path;
+    return image;
+};
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+// Define what we do when we click on it
+
+const onImageClick = (event) => {
+    const image = createImage(event.currentTarget.src);
+    modal.appendChild(image);
+    modal.classList.remove('hidden');
+};
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+// Create the images and add their events
+
+for (let imagePath of PHOTOS) {
+    const image = createImage(imagePath);
+    image.addEventListener('click', onImageClick);
+    images.appendChild(image);
+}
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <section>Let's close the modal</section>
+        </section>
+
+        <section>
+            <h2>Let's close the modal</h2>
+            <ol>
+                <li>Define an event: What happens when we click the modal</li>
+                <li>Make the modal listen to that event</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Let's close the modal</h2>
+            <ol>
+                <li>Define an event: What happens when we click the modal</li>
+                <li>Make the modal listen to that event</li>
+            </ol>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+// Define what we do when we click on it
+
+const onModalClick = (event) => {
+    modal.REMOVE_CONTENTS;
+    modal.HIDE;
+};
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+// Define what we do when we click on it
+
+const onModalClick = (event) => {
+    modal.classList.add('hidden');
+    modal.innerHTML = '';
+};
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+// Make it listen
+
+const modal = document.querySelector('#modal');
+model.LISTEN
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+// Make it listen
+
+const modal = document.querySelector('#modal');
+model.addEventListener('click', onModalClick);
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>Keyboard</h2>
+            <ul>
+                <li>keydown</li>
+                <li>keyup</li>
+                <li>keypress</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+// Prefer document over window when adding
+document.addEventListener('keypress', function (event) { });
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+// Use keyup for most things. Users expect this.
+document.addEventListener('keyup', function (event) { });
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+// Different browsers may have different keys
+if (key === 'Escape' || key === 'Esc' || key === 27) { }
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+document.addEventListener('keyup', function (event) {
+    var key = event.key || event.keyCode;
+
+    if (key === 'Escape' || key === 'Esc' || key === 27) {
+        yourCustomFunction();
+    }
+});
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>Keycodes</h2>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values">A full list</a></p>
+        </section>
+
+        <section>
+            <h2>When do we want to listen to keys?</h2>
+            <p>Does the action occur when the modal is open or closed?</p>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+  modal.classList.remove('hidden');
+  document.addEventListener('keyup', showNext);
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+
+const onImageClick = (event) => {
+    event.currentTarget.WHICH_ONE?
+    const image = createImage(event.currentTarget.src);
+    modal.appendChild(image);
+    modal.classList.remove('hidden');
+};
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>Recall dataset object?</h2>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+for (let [i, imagePath] of PHOTOS.entries()) {
+    const image = createImage(imagePath);
+    image.dataset.index = i;
+    image.addEventListener('click', onImageClick);
+    images.appendChild(image);
+}
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+let currentIndex = null;
+const onImageClick = (event) => {
+    currentIndex = event.currentTarget.dataset.index;
+    const image = createImage(event.currentTarget.src);
+    modal.appendChild(image);
+    modal.classList.remove('hidden');
+};
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+        <h4>
+                <pre>
+                    <code>
+
+function showNext(event) {
+    let nextIndex = currentIndex;
+    if (event.key === 'ArrowLeft') {
+        nextIndex--;
+    } else {
+        nextIndex++;
+    }
+    const photoSrc = PHOTOS[nextIndex];
+    modal.innerHTML = '';
+    const image = createImage(photoSrc);
+    modal.appendChild(image);
+    currentIndex = nextIndex;
+}
+
+                    </code>
+                </pre>
+        </h4>
+    </section>
+
+    <section>
+        <h2>Close the modal on 'esc'</h2>
+    </section>
+
+    <section>
+        <h2>Don't respond to non-arrow clicks</h2>
+    </section>
+
+    <section>
+        <h2>Don't let me go too far back or forward</h2>
+    </section>
+
+        <section>
+            <h2>TouchEvents</h2>
+            <ul>
+                <li>touchstart</li>
+                <li>touchend</li>
+                <li>touchmove</li>
+                <li>touchcancel</li>
+            </ul>
+        </section>
+
+        <section>
+            <a href="https://mobilehtml5.org/ts/?id=11">Try One</a>
+        </section>
+
+        <section>
+            <h2>Pointer Events</h2>
+            <p>Same on desktop and device</p>
+            <p>pointermove (not in ff!)</p>
+        </section>
+
+
+
+    </div>
+</div>
+<script>
+    Reveal.initialize({
+        history: true
+    })
+</script>
+</body>
+</html>

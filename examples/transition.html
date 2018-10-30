@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        a {
+            background: yellow;
+            transition: 200ms background-color linear 0s;
+        }
+        a:hover {
+            background-color: orange;
+            /* delay when going TO the :hover state */
+            transition-delay: 50ms;
+        }
+
+        .ball {
+            animation-name: bounce;
+            animation-duration: 2000ms;
+            animation-delay: -600ms;
+            animation-iteration-count: 10;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+        }
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(500px);
+            }
+        }
+
+        /*.ball {*/
+            /*animation-name: bouncing;*/
+            /*animation-duration: 8000ms;*/
+            /*animation-iteration-count: infinite;*/
+            /*animation-direction: alternate-reverse;*/
+        /*}*/
+        /*@keyframes bouncing {*/
+            /*from {*/
+                /*transform: translateY(500px);*/
+            /*}*/
+            /*to {*/
+                /*transform: translateY(0);*/
+            /*}*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div>
+<a href="#">Hello I am a link!</a>
+</div>
+
+<div>
+    <div class="ball">sadjfkjhsdafklh</div>
+</div>
+</body>
+</html>
