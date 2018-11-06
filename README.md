@@ -293,7 +293,7 @@ Refs
 
 **Week 9 (10/30,11/1): Accessibility, Bubbling/Capturing Events**
 
-[Homework](hw/09.md)
+[Homework](hw/08.md)
 
 Activities
 * Show capture vs bubble stack and how to control event propagation
@@ -318,7 +318,7 @@ Refs
 
 **Week 10 (11/6,11/8): Forms, Http Methods**
 
-[Homework](hw/10.md)
+[Homework](hw/9.md)
 
 Activities
 * Build a form and submit it

@@ -88,9 +88,27 @@ img {
 
 @keyframes slide-from-right {
     from {
-        margin-left: 200%;
+        margin-right: -200%;
     }
+
     to {
-        margin-left: 0;
+        margin-right: 0;
     }
 }
+
+
+
+
+
+/*.animate-next {*/
+    /*animation: slide-from-right 0.5s;*/
+/*}*/
+
+/*@keyframes slide-from-right {*/
+    /*from {*/
+        /*margin-left: 200%;*/
+    /*}*/
+    /*to {*/
+        /*margin-left: 0;*/
+    /*}*/
+/*}*/

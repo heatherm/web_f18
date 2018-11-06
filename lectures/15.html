@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>NYU Web Dev Fall 2018</title>
+    <meta name='description' content='HTML, CSS and Javascript Basics'>
+    <meta name='author' content='Heather Moore'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css'>
+    <link rel='stylesheet' href='../examples/print.css' media='print'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css'
+          id='theme'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js' defer></script>
+    <base target="_blank">
+</head>
+<body>
+<div class='reveal'>
+    <div class='slides'>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li>Review</li>
+                <li>Pointer Events Cont</li>
+                <li>HTTP Verbs</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Animation</h2>
+            <ul>
+                <li>Transforms</li>
+                <li>Transitions</li>
+                <li>Keyframes</li>
+            </ul>
+        </section>
+
+        <section>
+            <h5>img#one {transform: translateX(200px) rotate(45deg);}</h5>
+            <h5>img#two {transform: rotate(45deg) translateX(200px);}</h5>
+        </section>
+
+        <section>
+            <h2>Transitions & Animations</h2>
+            <p>is it numeric? has a midpoint?</p>
+        </section>
+
+        <section>
+            <h5>transition:
+                <mark>transform</mark>
+                200ms ease-in 50ms;
+            </h5>
+        </section>
+
+        <section>
+            <h2>Placing the transition</h2>
+            <p><a href="../examples/transition.html">Example</a></p>
+        </section>
+
+        <section>
+            <h2>More control than transition in CSS?</h2>
+        </section>
+
+        <section>
+            <h2>Keyframe animations</h2>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+&lt;div&gt;&lt;/div&gt;
+
+div {
+  animation-name: fadeout, shift;
+  animation-duration: 200ms, 100ms;
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+
+@media (prefers-reduced-motion) {
+  * {animation: none !important; transition: none !important;}
+}
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>Current way:</h2>
+            <h3>Touchmove & Mousemove</h3>
+        </section>
+
+        <section>
+            <h2>Future way: Pointer Events</h2>
+            <p>Same on desktop and device</p>
+            <p>But! Not in ff yet!</p>
+            <p>And! Safari is not into it</p>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+    image.addEventListener('pointerdown', startSwipe);
+    image.addEventListener('pointermove', swiping);
+    image.addEventListener('pointerup', stopSwipe);
+    image.addEventListener('pointercancel', stopSwipe);
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li style="text-decoration: line-through;">Review</li>
+                <li>Pointer Events Cont</li>
+                <li>HTTP Verbs</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>PointerEvents</h2>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events">MDN Docs</a></p>
+        </section>
+
+        <section>
+            <h2>Pointer capture</h2>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events#Pointer_capture">
+                Follow events even after they leave the connected element
+            </a></p>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+let originX = null;
+function startSwipe(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    originX = event.clientX;
+
+    event.target.setPointerCapture(event.pointerId);
+}
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>Event bubbling - call both</h2>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault">
+                Prevent Default
+            </a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation">
+                Stop propagation
+            </a></p>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+function swiping(event) {
+    if (originX) {
+        let delta = event.clientX - originX;
+        const element = event.currentTarget;
+        element.style.transform = 'translateX(' + delta + 'px)';
+    }
+}
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+element.style.transform = 'translateX(' + delta + 'px)';
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+// what goes here to make the code below work?
+console.log("I'm " + age + " years old!");
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+function stopSwipe(event) {}
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>What does it need to do?</h2>
+            <ul>
+                <li>Assess which direction our pointer has moved</li>
+                <li>Show the photo associated wit that direction</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+    let nextIndex = currentIndex;
+    if (delta < 0) {
+        nextIndex++;
+    } else {
+        nextIndex--;
+    }
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+    const photoSrc = PHOTOS[nextIndex];
+    const image = createImage(photoSrc);
+
+    modal.innerHTML = '';
+
+    image.addEventListener('pointerdown', startSwipe);
+    image.addEventListener('pointermove', swiping);
+    image.addEventListener('pointerup', stopSwipe);
+
+    modal.appendChild(image);
+    currentIndex = nextIndex;
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>We can also dynamically add animations once we:</h2>
+            <ul>
+                <li>Know the swipe direction</li>
+                <li>Have the new image created to animate in</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+    if (delta < 0) {
+        image.classList.add('animate-next');
+    } else {
+        image.classList.add('animate-prev');
+    }
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+.animate-next {
+    animation: slide-from-right 0.5s;
+}
+
+@keyframes slide-from-right {
+    from {
+        margin-left: 200%;
+    }
+    to {
+        margin-left: 0;
+    }
+}
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+//create slide-from-left
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>HTTP Verbs</h2>
+        </section>
+
+        <section>
+            <h2>GET</h2>
+            <p>Read information</p>
+        </section>
+
+        <section>
+            <h2>POST</h2>
+            <p>Create information</p>
+        </section>
+
+        <section>
+            <h2>Curl GET Example</h2>
+        </section>
+
+        <section>
+            <h2>Fetch API</h2>
+            <p>fetch('stuff.txt');</p>
+            <p>Loads information into the browser from remote servers</p>
+        </section>
+
+        <section>
+            <h2>Send John to the store for milk</h2>
+            <ol>
+                <li>Me: Hey John, can you go to the store to get milk?</li>
+                <li>John: Yes I'll go</li>
+                <li>Me: Remember when you said you'd get milk? I see you're back. Can I have it?</li>
+            </ol>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+        john.getMilk({ fat: 'whole' })
+          .then(onMilkFound, onMilkNotFound);                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+        fetch('images.txt')
+          .then(onSuccess, onFail);
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+const promise = fetch('images.txt');
+promise.then(onSuccess, onFail);
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+ python -m SimpleHTTPServer
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>Ngrok</h2>
+        </section>
+
+        <section>
+            <h2>Json Placeholder API</h2>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+fetch('https://jsonplaceholder.typicode.com/photos?albumId=1')
+    .then(response => response.json())
+    .then(json => console.log(json));
+                    </code>
+                </pre>
+            </h4>
+        </section>
+    </div>
+</div>
+<script>
+    Reveal.initialize({
+        history: true
+    })
+</script>
+</body>
+</html>
