@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>NYU Web Dev Fall 2018</title>
+    <meta name='description' content='HTML, CSS and Javascript Basics'>
+    <meta name='author' content='Heather Moore'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css'>
+    <link rel='stylesheet' href='../examples/print.css' media='print'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css'
+          id='theme'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js' defer></script>
+    <base target="_blank">
+</head>
+<body>
+<div class='reveal'>
+    <div class='slides'>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li>Review</li>
+                <li>Fetch API Cont</li>
+                <li>Build a form</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+        john.getMilk({ fat: 'whole' })
+          .then(onMilkFound, onMilkNotFound);                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h3>
+                <pre>
+                    <code>
+        fetch('images.txt')
+          .then(onSuccess, onFail);
+                    </code>
+                </pre>
+            </h3>
+        </section>
+
+
+        <section>
+            <h3>
+                <pre>
+                    <code>
+const promise = fetch('images.txt');
+promise.then(onSuccess, onFail);
+                    </code>
+                </pre>
+            </h3>
+        </section>
+
+        <section>
+            <h2>
+                <pre>
+                    <code>
+ python -m SimpleHTTPServer
+                    </code>
+                </pre>
+            </h2>
+        </section>
+
+        <section>
+            <h2>Ngrok</h2>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+fetch('https://jsonplaceholder.typicode.com/photos?albumId=1')
+    .then(response => response.json())
+    .then(json => console.log(json));
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li style="text-decoration: line-through">Review</li>
+                <li>Fetch API Cont</li>
+                <li>Build a form</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>Let's Fetch Photos</h2>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+const PHOTOS = [
+    // 'https://foo.com/one_pot_chorizo_and_15611_16x9.jpg',
+    // 'https://foo.com/processed-foods-exlarge-tease.jpg'
+];
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h4>
+                <pre>
+                    <code>
+fetch('https://jsonplaceholder.typicode.com/photos?albumId=1')
+    .then(response => response.json())
+    .then(json => console.log(json));
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+
+        <section>
+            <h2><a href="https://jsonplaceholder.typicode.com/">Filter Resources</a></h2>
+            <h3>
+                <pre>
+                    <code>
+'photos?albumId=1'
+                    </code>
+                </pre>
+            </h3>
+        </section>
+
+        <section>
+            <h2>Query Params</h2>
+            <h3>
+                <pre>
+                    <code>
+'www.foo.com/photos<mark>?</mark>albumId<mark>=</mark>1<mark>&</mark>id<mark>=</mark>7'
+                    </code>
+                </pre>
+            </h3>
+        </section>
+
+        <section>
+            <h2><a href="https://jsonplaceholder.typicode.com/albums/1/photos?id=7">Filter On Id</a></h2>
+        </section>
+
+        <section>
+            <h4>console.log(json) -> addPhotos(json)</h4>
+        </section>
+
+        <section>
+            <h2></h2>
+            <h4>
+                <pre>
+                    <code>
+fetch('https://jsonplaceholder.typicode.com/photos?albumId=1')
+    .then(response => response.json())
+    .then(json => addPhotos(json));
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>addPhotos should:</h2>
+            <h3>
+                <pre>
+                    <code>
+// Populate PHOTOS
+// Then loop through them and add them
+                    </code>
+                </pre>
+            </h3>
+        </section>
+
+        <section>
+            <h2>Loop Through we have</h2>
+            <h4>
+                <pre>
+                    <code>
+function addPhotos(json){
+    // Populate PHOTOS
+
+    for (let [i, imagePath] of PHOTOS.entries()) {
+        const image = createImage(imagePath);
+        image.dataset.index = i;
+        image.addEventListener('pointerdown', onImageClick);
+        images.appendChild(image);
+    }
+}
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>Populate PHOTOS</h2>
+            <h4>
+                <pre>
+                    <code>
+function addPhotos(json){
+    for (let i in json) {
+        let photo = json[i];
+        if (photo.hasOwnProperty('url')){
+            PHOTOS.push(photo.url)
+        }
+    }
+    // Then loop through them and add them
+}
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2></h2>
+            <h4>
+                <pre>
+                    <code>
+    for (let i in json) {
+        let photo = json[i];
+    }
+
+  {
+    "albumId": 1,
+    "id": 1,
+    "title": "accusamus beatae ad facilis cum similique qui sunt",
+    "url": "https://via.placeholder.com/600/92c952",
+    "thumbnailUrl": "https://via.placeholder.com/150/92c952"
+  }
+
+
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>If {} includes 'url'</h2>
+            <h4>
+                <pre>
+                    <code>
+    for (let i in json) {
+        let photo = json[i];
+        if (photo.hasOwnProperty('url')){
+            PHOTOS.push(photo.url);
+        }
+    }
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2> [].push(photo.url)</h2>
+            <h4>
+                <pre>
+                    <code>
+    for (let i in json) {
+        let photo = json[i];
+        if (photo.hasOwnProperty('url')){
+            PHOTOS.push(photo.url);
+        }
+    }
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>.albumId, .id, .title, .url etc</h2>
+            <h4>
+                <pre>
+                    <code>
+ {
+    "albumId": 1,
+    "id": 1,
+    "title": "accusamus beatae ad facilis cum similique qui sunt",
+    "url": "https://via.placeholder.com/600/92c952",
+    "thumbnailUrl": "https://via.placeholder.com/150/92c952"
+  }
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>View different albums</h2>
+            <h4>
+                <pre>
+                    <code>
+    &#x3C;label for=&#x22;album-select&#x22;&#x3E;Choose an album:&#x3C;/label&#x3E;
+    &#x3C;select name=&#x22;choice&#x22; id=&#x22;album-select&#x22;&#x3E;
+        &#x3C;option value=&#x22;&#x22;&#x3E;...choose one&#x3C;/option&#x3E;
+        &#x3C;option value=&#x22;1&#x22;&#x3E;Album 1&#x3C;/option&#x3E;
+        &#x3C;option value=&#x22;2&#x22;&#x3E;Album 2&#x3C;/option&#x3E;
+        &#x3C;option value=&#x22;3&#x22;&#x3E;Album 3&#x3C;/option&#x3E;
+    &#x3C;/select&#x3E;
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>Listen for the Select to change</h2>
+            <h3>
+                <pre>
+                    <code>
+document
+    .querySelector('#album-select')
+    .onchange=refetchAlbumPhotos;
+                    </code>
+                </pre>
+            </h3>
+        </section>
+
+        <section>
+            <h2>Wrap the fetch</h2>
+            <h5>
+                <pre>
+                    <code>
+function doFetch(<mark>albumId</mark>) {
+    fetch(
+      "https://jsonplaceholder.typicode.com/photos?albumId=" + <mark>albumId</mark>
+    ).then(response => response.json())
+     .then(json => addPhotos(json));
+}
+                    </code>
+                </pre>
+            </h5>
+        </section>
+
+        <section>
+            <h2>Call with the event value</h2>
+            <h3>
+                <pre>
+                    <code>
+function refetchAlbumPhotos(event) {
+    doFetch(event.target.value);
+}
+                    </code>
+                </pre>
+            </h3>
+        </section>
+
+        <section>
+            <h2>Recap:</h2>
+            <ol>
+                <li>Add a select element with option elements</li>
+                <li>Listen for changes on te select</li>
+                <li>Execute a fetch with the selected value</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Let's create data</h2>
+            <h4>
+                <pre>
+                    <code>
+ &#x3C;form action=&#x22;https://jsonplaceholder.com/posts&#x22; method=&#x22;post&#x22;&#x3E;
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>Inside the form:</h2>
+            <h4>
+                <pre>
+                    <code>
+        &#x3C;div&#x3E;
+            &#x3C;label <mark>for=</mark>&#x22;title-id&#x22;&#x3E;What title do you want?&#x3C;/label&#x3E;
+            &#x3C;input <mark>id=</mark>&#x22;title-id&#x22; name=&#x22;title&#x22; value=&#x22;My own title&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+                    </code>
+                </pre>
+            </h4>
+        </section>
+
+        <section>
+            <h2>Form elements</h2>
+            <ol>
+                <li>fieldset & ledgend</li>
+                <li>input & label</li>
+                <li>checkbox</li>
+                <li>radio</li>
+                <li>select & option</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Form UX</h2>
+        </section>
+
+        <section>
+            <h2>Use single column</h2>
+        </section>
+
+        <section>
+            <h3>Use multi step/group inputs</h3>
+        </section>
+
+        <section>
+            <h2>Auto focus your first input</h2>
+        </section>
+
+        <section>
+            <h2>Clear call to action</h2>
+            <h4>Primary on right</h4>
+        </section>
+
+        <section>
+            <h2>Allow autofill</h2>
+            <p><a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill">List of options</a></p>
+        </section>
+
+        <section>
+            <h2>Note optional vs required</h2>
+        </section>
+
+        <section>
+            <h2>Show everything under 6 elements</h2>
+        </section>
+
+        <section>
+            <h2>Great examples</h2>
+            <ul>
+                <li><a href="https://www.hioscar.com/get-quote/">Oscar</a></li>
+                <li><a href="https://www.pillow.com/community_onboarding/summary">Pillow</a></li>
+            </ul>
+        </section>
+
+    </div>
+</div>
+<script>
+    Reveal.initialize({
+        history: true
+    })
+</script>
+</body>
+</html>
