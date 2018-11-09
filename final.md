@@ -10,7 +10,7 @@ The site must be 5 pages:
 3. Photo Gallery flowing grid of thumbnails that expand when clicked on
 4. Media page that includes audio or video and custom controls to play it
 5. Styled page of blog posts that show a screenshot of your homework each 
-week and something you learned.
+week or something you learned.
 
 Over all the pages must include:
 
@@ -24,7 +24,7 @@ Over all the pages must include:
 * @media-queries to support an iphoneX as rendered in the Chrome dev tools
     * should work for portrait and landscape
     * mobile navigation that slides in or down
-* Add touch gestures to something with https://hammerjs.github.io/
+* Add touch gestures to something
 * Keyframes
 * Gradients
 * Multimedia element + handmade controls
