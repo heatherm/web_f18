@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>NYU Web Dev Fall 2018</title>
+    <meta name='description' content='HTML, CSS and Javascript Basics'>
+    <meta name='author' content='Heather Moore'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css'>
+    <link rel='stylesheet' href='../examples/print.css' media='print'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css'
+          id='theme'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js' defer></script>
+    <base target="_blank">
+</head>
+<body>
+<div class='reveal'>
+    <div class='slides'>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li>Review</li>
+                <li>SASS/SCSS</li>
+                <li>JS Organization</li>
+                <li>Rails</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>REST APIs</h2>
+            <p>multiple endpoints that return fixed data structures</p>
+        </section>
+
+        <section>
+            <h2>Graph QL</h2>
+            <p>single endpoint, flexible data</p>
+        </section>
+
+        <section>
+            <h3>Varied GET/POST responses</h3>
+            <p>see: /api/users.xml vs /api/users.json (Twillio!)</p>
+        </section>
+
+        <section>
+            <h2>Status Codes</h2>
+            <ul>
+                <li>200</li>
+                <li>404</li>
+                <li>500</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>Remind me? Client - Server</h4>
+        </section>
+
+        <section>
+            <h2>CORS</h2>
+            <p>Cross-Origin Resource Sharing</p>
+        </section>
+
+        <section>
+            <h3>APIs are a special case</h3>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin">Access control allow origin</a></p>
+        </section>
+
+        <section>
+            <h2>Race Conditions</h2>
+            <p>Smart initializations</p>
+        </section>
+
+        <section>
+            <h2>JavaScript is single-threaded</h2>
+        </section>
+
+        <section>
+            <img src="https://s3.amazonaws.com/oodles-technologies1/blog-images/64ce2772-5374-4b99-bf8f-4d4f31a98cac.jpeg">
+        </section>
+
+        <section>
+            <p>When the stack is empty, the event loop allows the task queue to push things onto it</p>
+        </section>
+
+        <section>
+            <p>Lesson: beware of blocking</p>
+        </section>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li style="text-decoration: line-through">Review</li>
+                <li>Revisit SASS/SCSS</li>
+                <li>JS Organization</li>
+                <li>Rails</li>
+            </ul>
+        </section>
+
+        <section>
+            <img src="img/preprocess.png">
+        </section>
+
+        <section>
+            <h3>Exist for several languages</h3>
+            <ul>
+                <li>CoffeeScript</li>
+                <li>Slim</li>
+                <li>Haml</li>
+                <li>Less</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2><a href="http://sass-lang.com/">SASS/SCSS</a></h2>
+            <p>Syntactically Awesome StyleSheets</p>
+            <p>Sassy CSS</p>
+        </section>
+
+        <section>
+            <h3>Process .sass/.scss into .css</h3>
+        </section>
+
+        <section>
+            <h3>sass --watch input.scss:output.css</h3>
+        </section>
+
+        <section>
+            <h3>sass --watch assets/scss:public/css</h3>
+        </section>
+
+        <section>
+            <h2>SASS v SCSS</h2>
+            <p>SCSS is Sass v3</p>
+            <p>New syntax</p>
+        </section>
+
+        <section>
+            <h2><code>sass</code> is the executable</h2>
+        </section>
+
+        <section>
+            <img src="img/sassscss.png" height="500">
+        </section>
+
+        <section>
+            <h3>CSS will run inside of SCSS files</h3>
+        </section>
+
+        <section>
+            <h2>What does SASS add to CSS?</h2>
+            <ul>
+                <li>Nesting</li>
+                <li>Inheritance (Extends)</li>
+                <li>Functions (Mixins)</li>
+                <li>Calculations</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Nesting</h2>
+            <ul>
+                <li>Classes</li>
+                <li>Pseudo Elements</li>
+                <li>Media Queries</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Nesting</h2>
+            <ul>
+                <li>Shows Hierarchy</li>
+                <li>Keeps code together</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Inheritance</h2>
+            <ul>
+                <li>@extend</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Inheritance</h2>
+            <ul>
+                <li>Modularity/cleanliness</li>
+                <li>Code reuse</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Functions</h2>
+            <ul>
+                <li>@mixin</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Functions</h2>
+            <ul>
+                <li><a href="https://caniuse.com/#compare=ie+9,ie+10,ie+11,edge+17,edge+18,firefox+59,firefox+65,chrome+68,chrome+73,safari+10,safari+12">Cohesion</a></li>
+                <li>Code reuse</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Calculations</h2>
+            <ul>
+                <li>* / + -</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Calculations</h2>
+            <ul>
+                <li>Clarity</li>
+                <li>Ease</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>What will CSS soon offer?</h2>
+            <ul>
+                <li>Nesting (<a href="https://tabatkins.github.io/specs/css-nesting/">coming soon</a>)</li>
+                <li>Inheritance (<a href="http://tabatkins.github.io/specs/css-extend-rule/">coming soon</a>)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>What will be left?</h4>
+            <ul>
+                <li><a href="http://sass-lang.com/guide#topic-6-SCSS">Functions</a></li>
+                <li>Calculations (width: 600px / 960px * 100%)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>In sum:</h2>
+
+            <ul>
+                <li>Control</li>
+                <li>Cleanliness</li>
+                <li>Simplicity</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li style="text-decoration: line-through">Review</li>
+                <li style="text-decoration: line-through">Revisit SASS/SCSS</li>
+                <li>JS Organization</li>
+                <li>Rails</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Modular JS</h2>
+        </section>
+
+
+    </div>
+</div>
+<script>
+    Reveal.initialize({
+        history: true
+    })
+</script>
+</body>
+</html>

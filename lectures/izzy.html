@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>NYU Web Dev Fall 2018</title>
+    <meta name='description' content='HTML, CSS and Javascript Basics'>
+    <meta name='author' content='Heather Moore'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <link rel='stylesheet' href='izzy.scss'>
+</head>
+<body>
+<div class="grid">
+    <div class="one">
+        <div class="content">one content</div>
+    </div>
+    <div class="two">2</div>
+    <div class="three">
+        <div class="content">three content</div>
+    </div>
+    <div class="four">4</div>
+    <!--<img src="../examples/icons8-logo-filled.png">-->
+</div>
+<script>
+    let orangeBox = document.querySelector('.one');
+    orangeBox.addEventListener('click', clickBox);
+
+    function clickBox(event){
+        let clicked = event.currentTarget.dataset.clicked;
+
+    }
+</script>
+</body>
+</html>

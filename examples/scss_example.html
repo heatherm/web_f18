@@ -3,11 +3,49 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="foo.css">
+    <link rel="stylesheet" href="foo.css">
 </head>
 <body>
-<h1>
-    <p>lorem ipsum</p>
-</h1>
+
+<!--Nesting-->
+<div class="block">
+    Block
+    <div class="block__element">
+        Element
+    </div>
+</div>
+
+<br>
+
+<div class="block block--modifier">
+    Block with modifier
+    <div class="block__element">
+        Element with parent modifier
+    </div>
+</div>
+
+<div class="btn--negative"></div>
+<div class="btn--positive"></div>
+
+<div class="board">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
 </body>
 </html>

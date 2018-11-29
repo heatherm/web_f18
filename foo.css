@@ -1,0 +1,24 @@
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - foo.scss
+
+Backtrace:
+/Users/heathermoore/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:454:in `read'
+/Users/heathermoore/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
+/Users/heathermoore/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/heathermoore/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/heathermoore/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/heathermoore/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/heathermoore/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/Users/heathermoore/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/heathermoore/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
+/Users/heathermoore/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
+/Users/heathermoore/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/bin/sass:13:in `<top (required)>'
+/Users/heathermoore/.rvm/gems/ruby-2.5.1/bin/sass:23:in `load'
+/Users/heathermoore/.rvm/gems/ruby-2.5.1/bin/sass:23:in `<main>'
+/Users/heathermoore/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:24:in `eval'
+/Users/heathermoore/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:24:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - foo.scss"; }

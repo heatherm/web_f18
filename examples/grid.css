@@ -9,8 +9,12 @@
     grid-gap: var(--grid-gutter);
 }
 
-.col-sm-1, .col-sm-2 {
-    grid-column: span var(--grid-colums);
+.col-sm-1 {
+    grid-column: span 1;
+}
+
+.col-sm-1 {
+    grid-column: span 2;
 }
 
 @media (min-width: 1200px) {

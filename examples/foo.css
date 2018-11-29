@@ -1,5 +1,126 @@
-h1 p {
-  color: blue;
-  height: 100px; }
+.block {
+  padding: 20px;
+  background: lightpink; }
+  .block__element {
+    margin-top: 20px;
+    padding: 20px;
+    background: lightblue; }
+  .block--modifier {
+    color: white;
+    background: red; }
+    .block--modifier .block__element {
+      background: green; }
+      @media screen and (min-width: 500px) {
+        .block--modifier .block__element {
+          background-color: purple;
+          border-radius: 5px;
+          border-style: dotted;
+          border-color: #333; } }
+      .block--modifier .block__element:hover {
+        background: blue; }
+
+.album--section, .recipe--section {
+  border-radius: 10px;
+  padding: 10px 20px; }
+
+.album--section {
+  background: #f2dede;
+  color: #b94a48; }
+
+.recipe--section {
+  background: #f2dede;
+  color: #b94a48; }
+
+.outer, .btn {
+  display: inline-block;
+  padding: 1em;
+  margin: 1em; }
+  .outer--positive, .btn--positive {
+    background-color: green; }
+  .outer--negative, .btn--negative {
+    background-color: red; }
+
+.box {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg); }
+
+.other {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg); }
+
+.light {
+  color: rgba(0, 0, 0, 0.05); }
+
+.dark {
+  color: rgba(0, 0, 0, 0.5); }
+
+span:nth-child(1):before {
+  content: "1"; }
+
+span:nth-child(2):before {
+  content: "2"; }
+
+span:nth-child(3):before {
+  content: "3"; }
+
+span:nth-child(4):before {
+  content: "4"; }
+
+span:nth-child(5):before {
+  content: "5"; }
+
+span:nth-child(6):before {
+  content: "6"; }
+
+span:nth-child(7):before {
+  content: "7"; }
+
+span:nth-child(8):before {
+  content: "8"; }
+
+span:nth-child(9):before {
+  content: "9"; }
+
+span:nth-child(10):before {
+  content: "10"; }
+
+span:nth-child(11):before {
+  content: "11"; }
+
+span:nth-child(12):before {
+  content: "12"; }
+
+span:nth-child(13):before {
+  content: "13"; }
+
+span:nth-child(14):before {
+  content: "14"; }
+
+span:nth-child(15):before {
+  content: "15"; }
+
+span:nth-child(16):before {
+  content: "16"; }
+
+.icon-save {
+  background-image: url("/images/save.png"); }
+
+.icon-cancel {
+  background-image: url("/images/cancel.png"); }
+
+.icon-help {
+  background-image: url("/images/help.png"); }
+
+p {
+  background: #b28080; }
+
+@media (max-width: 768px) {
+  p {
+    font-size: 150%; } }
+  @media (max-width: 768px) and (orientation: landscape) {
+    p {
+      line-height: 75%; } }
 
 /*# sourceMappingURL=foo.css.map */

@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>NYU Web Dev Fall 2018</title>
+    <meta name='description' content='HTML, CSS and Javascript Basics'>
+    <meta name='author' content='Heather Moore'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css'
+          id='theme'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.min.js' defer></script>
+    <base target="_blank">
+</head>
+<body>
+<div class='reveal'>
+    <div class='slides'>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li>Review</li>
+                <li>Rails App Release</li>
+                <li>Final Outline</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>GitHub Pages vs ??</h2>
+            <h4>What is a better dev flow?</h4>
+        </section>
+
+        <section>
+            <h2>Heroku + Rails</h2>
+            <ul>
+                <li>Backend and security upgrades managed by Heroku</li>
+                <li>Smart defaults for web technologies from Rails</li>
+                <li>Free and performant</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>DNS Zone files</h2>
+            <p>Contain mappings between domain names and IP addresses</p>
+        </section>
+
+        <section>
+            <h2>Today</h2>
+            <ul>
+                <li style="text-decoration: line-through">Review</li>
+                <li>Rails App Release!</li>
+                <li>Final Presentations</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>testapp w/o db</h2>
+            <p>`rails new testapp3 --skip-active-record`</p>
+        </section>
+
+        <section>
+            <h3>Define <br/>"root" route</h3>
+            <pre><code>
+                config/routes.rb
+
+                root "home#index"
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>Create <br/>Controller with Action</h3>
+            <pre>
+                <code>
+        app/controllers/home_controller.rb
+
+        class HomeController < ApplicationController
+          def index
+          end
+        end
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h3>Create <br/>View for Action</h3>
+            <pre>
+                <code>
+        app/views/home/index.html
+
+        &#x3C;h2&#x3E;Hi&#x3C;/h2&#x3E;
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h3>Route<br/>Controller<br/>View</h3>
+            <img src="https://www.oreilly.com/library/view/programming-aspnet-mvc/9781449321932/httpatomoreillycomsourceoreillyimages1318524.png" alt="MVC request response cycle visualized">
+        </section>
+
+        <section>
+            <h2>Create App</h2>
+            <pre>
+            <code>
+    heroku login
+    heroku create testapp-heatherwebf18
+    git remote show heroku
+            </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Release</h2>
+            <pre>
+            <code>
+    git add .
+    git commit -m 'initial release'
+    git push heroku master
+            </code>
+            </pre>
+        </section>
+
+        <section>
+            <h3>"The view" or "frontend"</h3>
+            <p>The html, css & js</p>
+        </section>
+
+        <section>
+            <h2>HTML is .html.erb</h2>
+            <p>Templating system that allows for embedded ruby</p>
+        </section>
+
+        <section>
+            <h2>Application Layout</h2>
+        </section>
+
+        <section>
+            <h2>CSS in <br/>application.css.scss</h2>
+        </section>
+
+        <section>
+            <h2>Javascript in <br/>application.js</h2>
+        </section>
+
+        <section>
+            <h2><a href="https://devcenter.heroku.com/articles/github-integration">GitHub Integration</a></h2>
+        </section>
+
+        <section>
+            <h2>Custom Domain</h2>
+            <p>how to get myapp.herokuapp.com to be myapp.com</p>
+        </section>
+
+        <section>
+            <h2>NS record</h2>
+            <p>Specify the servers which are providing DNS services for the domain name</p>
+        </section>
+
+        <section>
+            <h2>A record</h2>
+            <p>Address record maps domain to IP</p>
+            <p>example.com -> 1.2.3.4</p>
+        </section>
+
+        <section>
+            <h2>CNAME record</h2>
+            <p>Map a subdomain such as www or mail to the domain hosting</p>
+            <p>www.example.com -> example.herokuapp.com</p>
+        </section>
+
+        <section>
+            <h2>MX record</h2>
+            <p>Specifies a mail server responsible for accepting email messages on behalf of a domain</p>
+            <p>Example: ASPMX.L.GOOGLE.COM.</p>
+        </section>
+
+        <section>
+            <h2>1. Buy a Domain</h2>
+        </section>
+
+        <section>
+            <h2>1a. Get a DNS Service (optional) </h2>
+        </section>
+
+        <section>
+            <h2>2. Tell Heroku</h2>
+            <pre>
+            <code>
+heroku domains:add example.com
+heroku domains:add www.example.com
+            </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>3. Tell your DNS</h2>
+            <pre>
+            <code>
+                CNAME www example.herokuapp.com
+            </code>
+            </pre>
+            <img src="https://s3.amazonaws.com/heroku-devcenter-files/article-images/952-imported-1443570347-r53-cname.png">
+        </section>
+
+        <section>
+            <h2>4. Redirect to www</h2>
+            <pre>
+            <code>
+Redirect example.com to www.example.com
+            </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Homework</h2>
+            <p>Create your final repo and get it pushing to Heroku on each commit</p>
+            <p>Optional: connect your domain</p>
+        </section>
+
+        <section>
+            <h2>Final Presentations</h2>
+            <ol>
+                <li>Process - 3min</li>
+                <li>Demo - 3min</li>
+                <li>Learnings - 4min</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Process</h2>
+            <p>Give us a glimpse of how you got to your final design- prototypes, wireframes, feedback gathered, tools & resources used & any lessons that informed your final site</p>
+        </section>
+
+        <section>
+            <h2>Demo</h2>
+            <p>Walk us through your site showing the key features, how they were built, and what your design decisions were. Also highlight any usability considerations.</p>
+        </section>
+
+        <section>
+            <h2>Reflections</h2>
+            <p>Learnings from the class; learnings from your web development praxis (not just technical)</p>
+        </section>
+
+    </div>
+</div>
+<script>
+    Reveal.initialize({
+        history: true
+    })
+</script>
+</body>
+</html>

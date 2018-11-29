@@ -1,6 +1,149 @@
-h1 {
-  p {
-    color: blue;
-    height: 100px;
+.block {
+  padding: 20px;
+  background: lightpink;
+
+  &__element {
+    margin-top: 20px;
+    padding: 20px;
+    background: lightblue;
+  }
+
+  &--modifier {
+    color: white;
+    background: red;
+
+    .block__element {
+      background: green;
+
+      @media screen and (min-width: 500px) {
+        background-color: purple;
+        border: {
+          radius: 5px;
+          style: dotted;
+          color: #333;
+        }
+      }
+
+      &:hover {
+        background: blue;
+      }
+
+    }
+  }
+}
+// Inheriting properties @extends
+// full of caveats
+%bordered {
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.album--section {
+  @extend %bordered;
+  background: #f2dede;
+  color: #b94a48;
+}
+
+.recipe--section {
+  @extend %bordered;
+  background: #f2dede;
+  color: #b94a48;
+}
+
+// Inheriting properties @extends
+// full of caveats
+.outer, .btn {
+  display: inline-block;
+  padding: 1em;
+  margin: 1em;
+
+  &--positive {
+    //@extend %btn;
+    background-color: green;
+  }
+
+  &--negative {
+    //@extend %btn;
+    background-color: red;
+  }
+}
+// Can use BEM for this in most places
+//<div class="btn--negative"></div>
+//<div class="btn--positive"></div>
+//
+//.btn  {
+//  display: inline-block;
+//  padding: 1em;
+//  margin: 1em;
+//
+//  &--positive {
+//    background-color: green;
+//  }
+//
+//  &--negative {
+//    background-color: red;
+//  }
+//}
+//
+//<div class="btn btn--negative"></div>
+//<div class="btn btn--positive"></div>
+
+
+//mixins
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+.box {
+  @include transform(rotate(30deg));
+}
+
+.other {
+  @include transform(rotate(30deg));
+}
+
+@mixin black($alpha) {
+  color: rgba(0,0,0,$alpha);
+}
+
+.light {
+  @include black(0.1/2);
+}
+
+.dark {
+  @include black(0.5);
+}
+
+
+@for $i from 1 through 16 {
+  span:nth-child(#{$i}) {
+      &:before {
+        content: '#{$i}';
+      }
+  }
+}
+
+@each $name in 'save' 'cancel' 'help' {
+  .icon-#{$name} {
+    background-image: url('/images/#{$name}.png');
+  }
+}
+
+@function make-reder($value) {
+  @return $value + rgb(50,0,0);
+}
+p {
+  background: make-reder(gray);
+}
+
+// media query nesting
+p {
+  @media (max-width: 768px) {
+    font-size: 150%; // use larger text for smaller screens
+    @media (orientation: landscape) {
+      line-height: 75%; // condense text a bit because of small vertical space
+    }
   }
 }

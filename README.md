@@ -336,50 +336,69 @@ Refs
 **Week 11 (11/13,11/15): JS Application**
 
 [Homework](hw/11.md)
+[11/13 Lecture](lectures/17.html)
+[11/15 Lecture](lectures/18.html)
 
 Activities
-* Build basic vue.js app
+
+* Build fetch requests
 
 Topics
-* Webpack
+* Sass review
+* JS Organization (classes)
+* setTimeout
+* JS Event Loop
+* APIs
+* Query Params
 
 Refs
-* https://jsfiddle.net/boilerplate/vue
-
+* http://history.apievangelist.com/
+* https://medium.com/@sarahelson81/finding-cross-browser-compatibility-issues-in-html-and-css-ccb43c60f9e7
+* https://csswizardry.com/2014/11/when-to-use-extend-when-to-use-a-mixin/
 
 **Week 12 (11/20): JS Application Continued**
 
-[Homework](hw/12.md)
+Make up Week. Submit any missing HW.
+[11/20 Lecture](lectures/19.html)
 
 Activities
 
-Topics
+* Installfest for next week
+    * Rails 5.2
+    * RVM
+    * Ruby 2.5.3
 
-Refs
+* Collaborative portfolio feedback sessions
 
 **Week 13 (11/27,11/29): JS Application Continued, User Testing**
 
-[Homework](hw/13.md)
+[Homework](hw/10.md)
+[11/27 Lecture](lectures/20.html)
+[11/29 Lecture](lectures/21.html)
 
 Activities
-* Perform a UX test on a peer
+* Release a rails app to Heroku
 
 Topics
-* User research
-* UX research
+* Front end development in a framework
+* High level programming languages
+* DNS & Custom domains
 
 Refs
-
+* https://teamtreehouse.com/library/installing-a-rails-5-development-environment-on-mac
+* https://blog.teamtreehouse.com/installing-rails-5-windows
 
 **Week 14 (12/4,12/6): PMing & Freelancing**
 
-[Homework](hw/14.md)
+[Homework](hw/11.md)
 
 Activities
 * Create a useful user story
 * Review a real redlined IC Agreement
 
 Topics
+* User research
+* UX research
 * LLC vs Corp
 * MSA & SOW contracts/redlining
 * IC agreements

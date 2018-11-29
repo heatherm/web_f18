@@ -1,10 +1,6 @@
 const images = document.querySelector('#images');
 const modal = document.querySelector('#modal');
-
-let PHOTOS = [
-    // 'https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/one_pot_chorizo_and_15611_16x9.jpg',
-    // 'https://cdn.cnn.com/cnnnext/dam/assets/171027052520-processed-foods-exlarge-tease.jpg'
-];
+let PHOTOS = [];
 
 const onModalClick = () => {
     document.body.classList.remove('no-scroll');
@@ -105,11 +101,42 @@ function stopSwipe(event) {
     currentIndex = nextIndex;
 }
 
+function alphabetical(a, b)
+{
+    let A = a.toLowerCase();
+    let B = b.toLowerCase();
+    if (A < B){
+        return -1;
+    } else if (A > B){
+        return  1;
+    }else{
+        return 0;
+    }
+}
+
+document.querySelector("form").addEventListener('submit', sortColors);
+function sortColors(event){
+    event.preventDefault();
+    PHOTOS.sort(function(a,b) {
+        return alphabetical(a, b);
+    });
+
+    images.innerHTML = '';
+    for (let [i, imagePath] of PHOTOS.entries()) {
+        const image = createImage(imagePath);
+        image.dataset.index = i;
+        image.addEventListener('pointerdown', onImageClick);
+        images.appendChild(image);
+    }
+}
+
 function addPhotos(json){
     PHOTOS = [];
     images.innerHTML = '';
     let title = document.querySelector('h2');
     title.textContent = 'Album: ' + json[0].albumId;
+
+
     for (let i in json) {
         let photo = json[i];
         if (photo.hasOwnProperty('url')){
