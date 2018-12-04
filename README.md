@@ -395,6 +395,7 @@ Refs
 Activities
 * Create a useful user story
 * Review a real redlined IC Agreement
+* Attach a custom domain to a Heroku app
 
 Topics
 * User research
@@ -409,6 +410,8 @@ Topics
 Refs
 * https://www.northwestregisteredagent.com/
 * https://www.mbopartners.com/blog/what-should-an-independent-contractor-agreement-include
+* [Digital Kanban](www.pivotaltracker.com)
+* [XP Thought leadership](https://twitter.com/RonJeffries)
 
 **Week 15 (12/11,12/13): Final Presentations**
 
