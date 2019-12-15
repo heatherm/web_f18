@@ -11,7 +11,7 @@
 
 ## Course prerequisites
 
-Basic computer knowledge. Basic familiarity with any programming/scripting language is preferred but no required.
+Basic computer knowledge. Basic familiarity with any programming/scripting language is preferred but not required.
 
 ## Course description
 
